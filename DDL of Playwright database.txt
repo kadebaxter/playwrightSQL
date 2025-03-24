@@ -1,0 +1,980 @@
+-- DROP SCHEMA "Playwright2_DBS_Oak";
+
+CREATE SCHEMA "Playwright2_DBS_Oak" AUTHORIZATION dbs25_team_oak;
+
+-- DROP SEQUENCE "Playwright2_DBS_Oak".actual_schedule_performer_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".actual_schedule_performer_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".actual_schedule_play_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".actual_schedule_play_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".complex_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".complex_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".concession_item_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".concession_item_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".customer_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".customer_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".dual_part_certification_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".dual_part_certification_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_certification_1_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_certification_1_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_certification_2_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_certification_2_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_certification_5_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_certification_5_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_certification_6_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_certification_6_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_certification_7_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_certification_7_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_certification_8_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_certification_8_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_certification_9_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_certification_9_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".part_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".part_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".performer_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".performer_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".purchase_concession_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".purchase_concession_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".purchase_concession_item_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".purchase_concession_item_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".purchase_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".purchase_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".purchase_seat_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".purchase_seat_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".schedule_performer_template_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".schedule_performer_template_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".schedule_play_template_week_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".schedule_play_template_week_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".seat_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".seat_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+-- DROP SEQUENCE "Playwright2_DBS_Oak".theatre_id_seq;
+
+CREATE SEQUENCE "Playwright2_DBS_Oak".theatre_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;-- "Playwright2_DBS_Oak".complex definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".complex;
+
+CREATE TABLE "Playwright2_DBS_Oak".complex (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	address varchar(80) NULL,
+	CONSTRAINT complex_pkey PRIMARY KEY (id)
+);
+
+
+-- "Playwright2_DBS_Oak".concession_item definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".concession_item;
+
+CREATE TABLE "Playwright2_DBS_Oak".concession_item (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	"name" varchar(80) NOT NULL,
+	shelf_price money NULL,
+	CONSTRAINT concession_item_pkey PRIMARY KEY (id)
+);
+
+
+-- "Playwright2_DBS_Oak".customer definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".customer;
+
+CREATE TABLE "Playwright2_DBS_Oak".customer (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	"name" varchar(100) NULL,
+	CONSTRAINT customer_pkey PRIMARY KEY (id)
+);
+
+
+-- "Playwright2_DBS_Oak".female definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".female;
+
+CREATE TABLE "Playwright2_DBS_Oak".female (
+	givenname varchar(50) NULL
+);
+
+
+-- "Playwright2_DBS_Oak".male definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".male;
+
+CREATE TABLE "Playwright2_DBS_Oak".male (
+	givenname varchar(50) NULL
+);
+
+
+-- "Playwright2_DBS_Oak".part definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part;
+
+CREATE TABLE "Playwright2_DBS_Oak".part (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	"name" varchar(80) NOT NULL,
+	part_description text NULL,
+	CONSTRAINT part_pkey PRIMARY KEY (id)
+);
+
+
+-- "Playwright2_DBS_Oak".performer definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".performer;
+
+CREATE TABLE "Playwright2_DBS_Oak".performer (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	"name" varchar(100) NOT NULL,
+	CONSTRAINT performer_pkey PRIMARY KEY (id)
+);
+
+
+-- "Playwright2_DBS_Oak".surname definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".surname;
+
+CREATE TABLE "Playwright2_DBS_Oak".surname (
+	familysurname varchar(50) NULL
+);
+
+
+-- "Playwright2_DBS_Oak".dual_part_certification definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".dual_part_certification;
+
+CREATE TABLE "Playwright2_DBS_Oak".dual_part_certification (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_part_3_id int4 NOT NULL,
+	performer_part_4_id int4 NOT NULL,
+	date_dertified date NOT NULL,
+	date_expires date NOT NULL,
+	CONSTRAINT dual_part_certification_pkey PRIMARY KEY (id),
+	CONSTRAINT dual_part_certification_performer_1_id_fkey FOREIGN KEY (performer_part_3_id) REFERENCES "Playwright2_DBS_Oak".performer(id),
+	CONSTRAINT dual_part_certification_performer_2_id_fkey FOREIGN KEY (performer_part_4_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".part_certification_1 definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part_certification_1;
+
+CREATE TABLE "Playwright2_DBS_Oak".part_certification_1 (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NOT NULL,
+	date_certified date NULL,
+	date_expires date NULL,
+	CONSTRAINT part_certification_1_check CHECK ((date_expires > date_certified)),
+	CONSTRAINT part_certification_1_pkey PRIMARY KEY (id),
+	CONSTRAINT part_certification_1_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".part_certification_2 definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part_certification_2;
+
+CREATE TABLE "Playwright2_DBS_Oak".part_certification_2 (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NOT NULL,
+	date_certified date NULL,
+	date_expires date NULL,
+	CONSTRAINT part_certification_2_check CHECK ((date_expires > date_certified)),
+	CONSTRAINT part_certification_2_pkey PRIMARY KEY (id),
+	CONSTRAINT part_certification_2_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".part_certification_5 definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part_certification_5;
+
+CREATE TABLE "Playwright2_DBS_Oak".part_certification_5 (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NOT NULL,
+	date_certified date NULL,
+	date_expires date NULL,
+	CONSTRAINT part_certification_5_check CHECK ((date_expires > date_certified)),
+	CONSTRAINT part_certification_5_pkey PRIMARY KEY (id),
+	CONSTRAINT part_certification_5_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".part_certification_6 definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part_certification_6;
+
+CREATE TABLE "Playwright2_DBS_Oak".part_certification_6 (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NOT NULL,
+	date_certified date NULL,
+	date_expires date NULL,
+	CONSTRAINT part_certification_6_check CHECK ((date_expires > date_certified)),
+	CONSTRAINT part_certification_6_pkey PRIMARY KEY (id),
+	CONSTRAINT part_certification_6_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".part_certification_7 definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part_certification_7;
+
+CREATE TABLE "Playwright2_DBS_Oak".part_certification_7 (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NOT NULL,
+	date_certified date NULL,
+	date_expires date NULL,
+	CONSTRAINT part_certification_7_check CHECK ((date_expires > date_certified)),
+	CONSTRAINT part_certification_7_pkey PRIMARY KEY (id),
+	CONSTRAINT part_certification_7_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".part_certification_8 definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part_certification_8;
+
+CREATE TABLE "Playwright2_DBS_Oak".part_certification_8 (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NOT NULL,
+	date_certified date NULL,
+	date_expires date NULL,
+	CONSTRAINT part_certification_8_check CHECK ((date_expires > date_certified)),
+	CONSTRAINT part_certification_8_pkey PRIMARY KEY (id),
+	CONSTRAINT part_certification_8_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".part_certification_9 definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".part_certification_9;
+
+CREATE TABLE "Playwright2_DBS_Oak".part_certification_9 (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NOT NULL,
+	date_certified date NULL,
+	date_expires date NULL,
+	CONSTRAINT part_certification_9_check CHECK ((date_expires > date_certified)),
+	CONSTRAINT part_certification_9_pkey PRIMARY KEY (id),
+	CONSTRAINT part_certification_9_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES "Playwright2_DBS_Oak".performer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".purchase definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".purchase;
+
+CREATE TABLE "Playwright2_DBS_Oak".purchase (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	customer_id int4 NOT NULL,
+	day_sold timestamp NOT NULL,
+	CONSTRAINT purchase_pkey PRIMARY KEY (id),
+	CONSTRAINT purchase_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES "Playwright2_DBS_Oak".customer(id)
+);
+
+
+-- "Playwright2_DBS_Oak".purchase_concession definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".purchase_concession;
+
+CREATE TABLE "Playwright2_DBS_Oak".purchase_concession (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	complex_id int4 NULL,
+	day_sold timestamp NOT NULL,
+	CONSTRAINT purchase_concession_pkey PRIMARY KEY (id),
+	CONSTRAINT purchase_concession_complex_id_fkey FOREIGN KEY (complex_id) REFERENCES "Playwright2_DBS_Oak".complex(id)
+);
+
+
+-- "Playwright2_DBS_Oak".purchase_concession_item definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".purchase_concession_item;
+
+CREATE TABLE "Playwright2_DBS_Oak".purchase_concession_item (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	concession_item_id int4 NULL,
+	purchase_concession_id int4 NOT NULL,
+	quantity int4 NULL,
+	actual_price money NOT NULL,
+	CONSTRAINT purchase_concession_item_pkey PRIMARY KEY (id),
+	CONSTRAINT purchase_concession_item_concession_item_id_fkey FOREIGN KEY (concession_item_id) REFERENCES "Playwright2_DBS_Oak".concession_item(id),
+	CONSTRAINT purchase_concession_item_purchase_concession_id_fkey FOREIGN KEY (purchase_concession_id) REFERENCES "Playwright2_DBS_Oak".purchase_concession(id)
+);
+
+
+-- "Playwright2_DBS_Oak".theatre definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".theatre;
+
+CREATE TABLE "Playwright2_DBS_Oak".theatre (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	max_capacity int4 NULL,
+	complex_id int4 NULL,
+	CONSTRAINT theatre_pkey PRIMARY KEY (id),
+	CONSTRAINT theatre_complexid_fkey FOREIGN KEY (complex_id) REFERENCES "Playwright2_DBS_Oak".complex(id)
+);
+
+
+-- "Playwright2_DBS_Oak".actual_schedule_play definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".actual_schedule_play;
+
+CREATE TABLE "Playwright2_DBS_Oak".actual_schedule_play (
+	theatre_id int4 NOT NULL,
+	scheduled_time timestamp NOT NULL,
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	CONSTRAINT actual_schedule_play_pkey PRIMARY KEY (id),
+	CONSTRAINT actual_schedule_play_scheduled_time_key UNIQUE (scheduled_time),
+	CONSTRAINT actual_schedule_play_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES "Playwright2_DBS_Oak".theatre(id)
+);
+
+
+-- "Playwright2_DBS_Oak".schedule_play_template_week definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".schedule_play_template_week;
+
+CREATE TABLE "Playwright2_DBS_Oak".schedule_play_template_week (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	theatre_id int4 NOT NULL,
+	day_of_week varchar(8) NOT NULL,
+	time_of_day int4 NOT NULL,
+	CONSTRAINT schedule_play_template_week_pkey PRIMARY KEY (id),
+	CONSTRAINT schedule_play_template_week_theatre_id_day_of_week_time_of__key UNIQUE (theatre_id, day_of_week, time_of_day),
+	CONSTRAINT schedule_play_template_week_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES "Playwright2_DBS_Oak".theatre(id)
+);
+
+
+-- "Playwright2_DBS_Oak".seat definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".seat;
+
+CREATE TABLE "Playwright2_DBS_Oak".seat (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	theatre_id int4 NOT NULL,
+	seat_num int4 NOT NULL,
+	CONSTRAINT seat_pkey PRIMARY KEY (id),
+	CONSTRAINT seat_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES "Playwright2_DBS_Oak".theatre(id)
+);
+
+
+-- "Playwright2_DBS_Oak".actual_schedule_performer definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".actual_schedule_performer;
+
+CREATE TABLE "Playwright2_DBS_Oak".actual_schedule_performer (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	schedule_id int4 NOT NULL,
+	cert_1_id int4 NULL,
+	cert_2_id int4 NULL,
+	dual_cert_id int4 NULL,
+	cert_5_id int4 NULL,
+	cert_6_id int4 NULL,
+	cert_7_id int4 NULL,
+	cert_8_id int4 NULL,
+	cert_9_id int4 NULL,
+	CONSTRAINT actual_schedule_performer_pkey PRIMARY KEY (id),
+	CONSTRAINT actual_schedule_performer_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES "Playwright2_DBS_Oak".part_certification_1(id),
+	CONSTRAINT actual_schedule_performer_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES "Playwright2_DBS_Oak".part_certification_2(id),
+	CONSTRAINT actual_schedule_performer_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES "Playwright2_DBS_Oak".part_certification_5(id),
+	CONSTRAINT actual_schedule_performer_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES "Playwright2_DBS_Oak".part_certification_6(id),
+	CONSTRAINT actual_schedule_performer_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES "Playwright2_DBS_Oak".part_certification_7(id),
+	CONSTRAINT actual_schedule_performer_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES "Playwright2_DBS_Oak".part_certification_8(id),
+	CONSTRAINT actual_schedule_performer_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES "Playwright2_DBS_Oak".part_certification_9(id),
+	CONSTRAINT actual_schedule_performer_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES "Playwright2_DBS_Oak".dual_part_certification(id),
+	CONSTRAINT actual_schedule_performer_schedule_template_id_fkey FOREIGN KEY (schedule_id) REFERENCES "Playwright2_DBS_Oak".actual_schedule_play(id)
+);
+
+-- Table Triggers
+
+create trigger active_certs_active before
+insert
+    or
+update
+    on
+    "Playwright2_DBS_Oak".actual_schedule_performer for each row execute function "Playwright2_DBS_Oak".active_cert_trigger();
+create trigger multiple_parts_active before
+insert
+    or
+update
+    on
+    "Playwright2_DBS_Oak".actual_schedule_performer for each row execute function "Playwright2_DBS_Oak".multiple_parts_trigger();
+
+
+-- "Playwright2_DBS_Oak".purchase_seat definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".purchase_seat;
+
+CREATE TABLE "Playwright2_DBS_Oak".purchase_seat (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	seat_id int4 NOT NULL,
+	actual_schedule_play_id int4 NOT NULL,
+	actual_sell_price money NULL,
+	purchase_id int4 NULL,
+	CONSTRAINT purchase_seat_pkey PRIMARY KEY (id),
+	CONSTRAINT purchase_seat_actual_schedule_play_id_fkey FOREIGN KEY (actual_schedule_play_id) REFERENCES "Playwright2_DBS_Oak".actual_schedule_play(id),
+	CONSTRAINT purchase_seat_purchase_id_fkey FOREIGN KEY (purchase_id) REFERENCES "Playwright2_DBS_Oak".purchase(id),
+	CONSTRAINT purchase_seat_seat_id_fkey FOREIGN KEY (seat_id) REFERENCES "Playwright2_DBS_Oak".seat(id)
+);
+
+
+-- "Playwright2_DBS_Oak".schedule_performer_template definition
+
+-- Drop table
+
+-- DROP TABLE "Playwright2_DBS_Oak".schedule_performer_template;
+
+CREATE TABLE "Playwright2_DBS_Oak".schedule_performer_template (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	schedule_template_id int4 NOT NULL,
+	cert_1_id int4 NULL,
+	cert_2_id int4 NULL,
+	dual_cert_id int4 NULL,
+	cert_5_id int4 NULL,
+	cert_6_id int4 NULL,
+	cert_7_id int4 NULL,
+	cert_8_id int4 NULL,
+	cert_9_id int4 NULL,
+	CONSTRAINT schedule_performer_template_pkey PRIMARY KEY (id),
+	CONSTRAINT schedule_performer_template_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES "Playwright2_DBS_Oak".part_certification_1(id),
+	CONSTRAINT schedule_performer_template_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES "Playwright2_DBS_Oak".part_certification_2(id),
+	CONSTRAINT schedule_performer_template_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES "Playwright2_DBS_Oak".part_certification_5(id),
+	CONSTRAINT schedule_performer_template_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES "Playwright2_DBS_Oak".part_certification_6(id),
+	CONSTRAINT schedule_performer_template_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES "Playwright2_DBS_Oak".part_certification_7(id),
+	CONSTRAINT schedule_performer_template_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES "Playwright2_DBS_Oak".part_certification_8(id),
+	CONSTRAINT schedule_performer_template_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES "Playwright2_DBS_Oak".part_certification_9(id),
+	CONSTRAINT schedule_performer_template_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES "Playwright2_DBS_Oak".dual_part_certification(id),
+	CONSTRAINT schedule_performer_template_schedule_template_id_fkey FOREIGN KEY (schedule_template_id) REFERENCES "Playwright2_DBS_Oak".schedule_play_template_week(id)
+);
+
+-- Table Triggers
+
+create trigger active_certs_template before
+insert
+    or
+update
+    on
+    "Playwright2_DBS_Oak".schedule_performer_template for each row execute function "Playwright2_DBS_Oak".active_cert_trigger();
+create trigger multiple_parts_template before
+insert
+    or
+update
+    on
+    "Playwright2_DBS_Oak".schedule_performer_template for each row execute function "Playwright2_DBS_Oak".multiple_parts_trigger();
+
+
+
+-- DROP FUNCTION "Playwright2_DBS_Oak".active_cert_trigger();
+
+CREATE OR REPLACE FUNCTION "Playwright2_DBS_Oak".active_cert_trigger()
+ RETURNS trigger
+ LANGUAGE plpgsql
+AS $function$
+declare 
+	cert_1_expired date;
+	cert_2_expired date;
+	dual_cert_expired date;
+	cert_5_expired date;
+	cert_6_expired date;
+	cert_7_expired date;
+	cert_8_expired date;
+	cert_9_expired date;
+begin 
+	select date_expires into cert_1_expired from part_certification_1 pc1 where new.cert_1_id = pc1.id;
+    select date_expires into cert_2_expired from part_certification_2 pc2 where new.cert_2_id = pc2.id;
+	select date_expires into cert_5_expired from part_certification_5 pc5 where new.cert_5_id = pc5.id;
+	select date_expires into cert_6_expired from part_certification_6 pc6 where new.cert_6_id = pc6.id;
+	select date_expires into cert_7_expired from part_certification_7 pc7 where new.cert_7_id = pc7.id;
+	select date_expires into cert_8_expired from part_certification_8 pc8 where new.cert_8_id = pc8.id;
+	select date_expires into cert_9_expired from part_certification_9 pc9 where new.cert_9_id = pc9.id;
+	select date_expires into dual_cert_expired from dual_part_certification dpc where new.dual_cert_id = dpc.id;
+
+	if cert_1_expired < now() 
+		or cert_2_expired < now() 
+		or cert_5_expired < now() 
+		or cert_6_expired < now() 
+		or cert_7_expired < now()
+		or cert_8_expired < now()
+		or cert_9_expired < now()
+		or dual_cert_expired < now() then
+			raise exception 'Not all certifications are up-to-date';
+	end if;
+
+	return new;
+end;
+$function$
+;
+
+-- DROP PROCEDURE "Playwright2_DBS_Oak".add_random_performer();
+
+CREATE OR REPLACE PROCEDURE "Playwright2_DBS_Oak".add_random_performer()
+ LANGUAGE plpgsql
+AS $procedure$
+
+declare
+	myName varchar(100);
+begin
+		insert into "Playwright2_DBS_Oak".performer (name) 
+		select * from (select 
+			    concat(
+			        (select givenname from "Playwright2_DBS_Oak".female order by random() limit 1),
+			        ' ',
+			        (select familysurname from "Playwright2_DBS_Oak".surname order by random() limit 1)
+			    ) 		union all
+				select
+			    	concat(
+			        	(select givenname from "Playwright2_DBS_Oak".male order by random() limit 1),
+			        	' ',
+			        	(select familysurname from "Playwright2_DBS_Oak".surname order by random() limit 1)
+			    	) 
+			) as B
+	order by random()
+	limit 1;	
+end;
+$procedure$
+;
+
+-- DROP PROCEDURE "Playwright2_DBS_Oak".make_actual_performer_schedule();
+
+CREATE OR REPLACE PROCEDURE "Playwright2_DBS_Oak".make_actual_performer_schedule()
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+begin
+	insert into actual_schedule_performer(schedule_template_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id)
+	select
+		schedule_template_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id
+	from schedule_performer_template;
+end;
+$procedure$
+;
+
+-- DROP FUNCTION "Playwright2_DBS_Oak".make_actual_play_time(text, int4);
+
+CREATE OR REPLACE FUNCTION "Playwright2_DBS_Oak".make_actual_play_time(p_day_of_week text, p_time_of_day integer)
+ RETURNS timestamp without time zone
+ LANGUAGE plpgsql
+AS $function$
+DECLARE
+    current_d date := current_date;
+    current_dow int;
+    template_dow int;
+    day_offset int;
+    computed_play_time timestamp;
+BEGIN
+    -- Get today's day-of-week (0=Sun, 1=Mon, etc.)
+    current_dow := extract(dow from current_d)::int;
+
+    -- Map text day to a number
+    CASE p_day_of_week
+        WHEN 'Sunday' THEN template_dow := 0;
+        WHEN 'Monday' THEN template_dow := 1;
+        WHEN 'Tuesday' THEN template_dow := 2;
+        WHEN 'Wednesday' THEN template_dow := 3;
+        WHEN 'Thursday' THEN template_dow := 4;
+        WHEN 'Friday' THEN template_dow := 5;
+        WHEN 'Saturday' THEN template_dow := 6;
+        ELSE
+            RAISE EXCEPTION 'Invalid day of week: %', p_day_of_week;
+    END CASE;
+
+    -- Calculate day offset to the next occurrence of the scheduled day
+    day_offset := (template_dow - current_dow + 7) % 7;
+
+    -- If scheduled day is today but the scheduled time has passed, schedule for next week.
+    IF day_offset = 0 AND ((current_d + ((p_time_of_day::text || ' hours')::interval)) < now()) THEN
+        day_offset := 7;
+    END IF;
+
+    -- Compute the full timestamp
+    computed_play_time := (current_d + day_offset) + ((p_time_of_day::text || ' hours')::interval);
+
+    RETURN computed_play_time;
+END;
+$function$
+;
+
+-- DROP PROCEDURE "Playwright2_DBS_Oak".make_actual_schedule();
+
+CREATE OR REPLACE PROCEDURE "Playwright2_DBS_Oak".make_actual_schedule()
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+	hour_of_play int;
+	day_of_play varchar(8);
+	current_dow int;
+	template_dow int;
+	play_time_actual timestamp;
+	day_offset int;
+	play_time_template time;
+begin
+	select day_of_week into day_of_play from schedule_play_template_week;
+	select time_of_day into hour_of_play from schedule_play_template_week;
+	select extract(dow from now())::int into current_dow;
+
+	 case day_of_play
+        when 'Sunday' then template_dow = 0;
+        when 'Monday' then template_dow = 1;
+        when 'Tuesday' then template_dow = 2;
+        when 'Wednesday' then template_dow = 3;
+        when 'Thursday' then template_dow = 4;
+        when 'Friday' then template_dow = 5;
+        when 'Saturday' then template_dow = 6;
+        else
+            raise exception 'Invalid day of week: %', day_of_play;
+    end case;
+
+	day_offset = (template_dow - current_dow + 7) % 7;
+	play_time_actual = (current_date + day_offset) + ((hour_of_play::text || 'hours')::interval);
+
+	if (day_offset = 0) and (play_time_template < now()::time) then
+		play_time_actual = (current_date + 7) + ((hour_of_play::text || 'hours')::interval);
+	end if;
+
+	raise notice 'play time is: %', play_time_actual;
+end;
+$procedure$
+;
+
+-- DROP PROCEDURE "Playwright2_DBS_Oak".make_actual_week_schedule();
+
+CREATE OR REPLACE PROCEDURE "Playwright2_DBS_Oak".make_actual_week_schedule()
+ LANGUAGE plpgsql
+AS $procedure$
+BEGIN
+    INSERT INTO actual_schedule_play(theatre_id, scheduled_time)
+    SELECT 
+        theatre_id, 
+        make_actual_play_time(day_of_week, time_of_day) AS scheduled_time
+    FROM schedule_play_template_week;
+END;
+$procedure$
+;
+
+-- DROP PROCEDURE "Playwright2_DBS_Oak".make_play_template_data();
+
+CREATE OR REPLACE PROCEDURE "Playwright2_DBS_Oak".make_play_template_data()
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+	theatre_ids int[];
+begin
+	select array_agg(id order by id) into theatre_ids from theatre;
+
+	insert into schedule_play_template_week(theatre_id, day_of_week, time_of_day)
+	select 
+		theatre_ids[(series.n % array_length(theatre_ids, 1)) + 1] as theatre_id
+		, case (series.n / 13)
+			when 0 then 'Monday'
+			when 1 then 'Tuesday'
+			when 2 then 'Wednesday'
+			when 3 then 'Thursday'
+			when 4 then 'Friday'
+			when 5 then 'Saturday'
+			when 6 then 'Sunday'
+		end as day_of_week
+		, (series.n % 13) + 7 as time_of_day
+	from generate_series(0, 90) as series(n);
+	
+end;
+$procedure$
+;
+
+-- DROP FUNCTION "Playwright2_DBS_Oak".multiple_parts_constraint();
+
+CREATE OR REPLACE FUNCTION "Playwright2_DBS_Oak".multiple_parts_constraint()
+ RETURNS boolean
+ LANGUAGE plpgsql
+AS $function$
+declare
+	dup_count int;
+begin
+	select count(*) into dup_count 
+	from (
+		select performer, count(*)
+		from (
+			select performer_id as performer from part_certification pc inner join actual_scheduler_performer asp on (asp.cert_1_id = pc.id) union all
+			select performer_id from part_certification pc inner join actual_scheduler_performer asp on (asp.cert_2_id = pc.id) union all
+			select performer_id from part_certification pc inner join actual_scheduler_performer asp on (asp.cert_5_id = pc.id) union all
+			select performer_id from part_certification pc inner join actual_scheduler_performer asp on (asp.cert_6_id = pc.id) union all
+			select performer_id from part_certification pc inner join actual_scheduler_performer asp on (asp.cert_7_id = pc.id) union all
+			select performer_id from part_certification pc inner join actual_scheduler_performer asp on (asp.cert_8_id = pc.id) union all
+			select performer_id from part_certification pc inner join actual_scheduler_performer asp on (asp.cert_9_id = pc.id) union all
+			select performer_1_id from dual_part_certification dpc inner join actual_scheduler_performer asp on (asp.cert_3_4_id = dpc.id) union all
+			select performer_2_id from dual_part_certification dpc inner join actual_scheduler_performer asp on (asp.cert_3_4_id = dpc.id)
+			)
+		group by performer
+		having count(*) > 1 );
+	
+	if dup_count > 0 then 
+		return false;
+	else 
+		return true;
+	end if;
+end;
+$function$
+;
+
+-- DROP FUNCTION "Playwright2_DBS_Oak".multiple_parts_trigger();
+
+CREATE OR REPLACE FUNCTION "Playwright2_DBS_Oak".multiple_parts_trigger()
+ RETURNS trigger
+ LANGUAGE plpgsql
+AS $function$
+declare
+	dup_count int;
+begin
+  with performer_list as (
+        select performer_id as performer from part_certification_1 pc1 where new.cert_1_id = pc1.id
+        union all
+        select performer_id from part_certification_2 pc2 where new.cert_2_id = pc2.id
+        union all
+        select performer_id from part_certification_5 pc5 where new.cert_5_id = pc5.id
+        union all
+        select performer_id from part_certification_6 pc6 where new.cert_6_id = pc6.id
+        union all
+        select performer_id from part_certification_7 pc7 where new.cert_7_id = pc7.id
+        union all
+        select performer_id from part_certification_8 pc8 where new.cert_8_id = pc8.id
+        union all
+        select performer_id from part_certification_9 pc9 where new.cert_9_id = pc9.id
+        union all
+        select performer_part_3_id from dual_part_certification dpc where new.dual_cert_id = dpc.id
+        union all
+        select performer_part_4_id from dual_part_certification dpc where new.dual_cert_id = dpc.id
+    )
+    select count(*) into dup_count
+    from (
+        select performer, count(*)
+        from performer_list
+        group by performer
+        having count(*) > 1
+    );
+
+	if dup_count > 0 then
+		raise exception 'Duplicate actors in this showtime';
+	end if;
+	
+	return new;
+	
+end;
+$function$
+;
+
+-- DROP PROCEDURE "Playwright2_DBS_Oak".populate_theatre_complex();
+
+CREATE OR REPLACE PROCEDURE "Playwright2_DBS_Oak".populate_theatre_complex()
+ LANGUAGE plpgsql
+AS $procedure$
+begin
+	insert into complex(address) values (concat(floor(random() * 101), ' Street'));
+	insert into complex(address) values (concat(floor(random() * 101), ' Street'));
+	insert into theatre(max_capacity, complex_id) 
+		select floor(random() * 101)
+		, (select id from complex order by random() limit 1) as complex_id 
+		from generate_series(1, 3, 1);
+end;
+$procedure$
+;
