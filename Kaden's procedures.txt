@@ -1,17 +1,16 @@
 --works
-CREATE OR REPLACE FUNCTION make_actual_play_time(p_day_of_week text, p_time_of_day int)
+CREATE OR REPLACE FUNCTION make_actual_play_time(p_day_of_week text, p_time_of_day int, start_day timestamp)
 RETURNS timestamp AS $$
 DECLARE
-    current_d date := current_date;
-    current_dow int;
+    start_d date := date(start_day);
+    start_dow int;
     template_dow int;
     day_offset int;
     computed_play_time timestamp;
 BEGIN
-    -- Get today's day-of-week (0=Sun, 1=Mon, etc.)
-    current_dow := extract(dow from current_d)::int;
+  
+    start_dow := extract(dow from start_d)::int;
 
-    -- Map text day to a number
     CASE p_day_of_week
         WHEN 'Sunday' THEN template_dow := 0;
         WHEN 'Monday' THEN template_dow := 1;
@@ -24,43 +23,30 @@ BEGIN
             RAISE EXCEPTION 'Invalid day of week: %', p_day_of_week;
     END CASE;
 
-    -- Calculate day offset to the next occurrence of the scheduled day
-    day_offset := (template_dow - current_dow + 7) % 7;
+    day_offset := (template_dow - start_dow + 7) % 7;
 
-    -- If scheduled day is today but the scheduled time has passed, schedule for next week.
-    IF day_offset = 0 AND ((current_d + ((p_time_of_day::text || ' hours')::interval)) < now()) THEN
+    IF day_offset = 0 AND ((start_d + ((p_time_of_day::text || ' hours')::interval)) < start_day) THEN
         day_offset := 7;
     END IF;
 
-    -- Compute the full timestamp
-    computed_play_time := (current_d + day_offset) + ((p_time_of_day::text || ' hours')::interval);
+    computed_play_time := (start_d + day_offset) + ((p_time_of_day::text || ' hours')::interval);
 
     RETURN computed_play_time;
 END;
 $$ LANGUAGE plpgsql;
 
 --works
-CREATE OR REPLACE PROCEDURE make_actual_week_schedule()
+CREATE OR REPLACE PROCEDURE make_actual_week_schedule(start_day timestamp)
 LANGUAGE plpgsql
 AS $procedure$
 BEGIN
     INSERT INTO actual_schedule_play(theatre_id, scheduled_time)
     SELECT 
         theatre_id, 
-        make_actual_play_time(day_of_week, time_of_day) AS scheduled_time
+        make_actual_play_time(day_of_week, time_of_day, start_day) AS scheduled_time
     FROM schedule_play_template_week;
 END;
 $procedure$;
-
-create or replace procedure make_actual_performer_schedule() as $$
-declare
-begin
-	insert into actual_schedule_performer(schedule_template_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id)
-	select
-		schedule_template_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id
-	from schedule_performer_template;
-end;
-$$ language plpgsql;
 
 --works
 create or replace procedure populate_theatre_complex() as $$
@@ -170,14 +156,48 @@ begin
 end;
 $$ language plpgsql;
 
+--works
+create or replace procedure make_actual_performer_schedule(day_to_schedule timestamp) as $$
+declare
+	asp_id int;
+	asp_scheduled_time timestamp;	
+	next_dow varchar(10);
+	next_hour int;
+begin
+	for asp_id, asp_scheduled_time in select id, scheduled_time from actual_schedule_play where scheduled_time >= day_to_schedule
+	loop 
+		next_dow = to_char(asp_scheduled_time, 'FMDay');
+		next_hour = extract(hour from asp_scheduled_time)::int;
+
+		insert into actual_schedule_performer(schedule_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id)
+		select asp_id, spt.cert_1_id, spt.cert_2_id, spt.dual_cert_id, spt.cert_5_id, spt.cert_6_id, spt.cert_7_id, spt.cert_8_id, spt.cert_9_id
+		from schedule_performer_template spt inner join schedule_play_template_week sptw on (sptw.id = spt.schedule_template_id)
+		where sptw.day_of_week = next_dow and sptw.time_of_day = next_hour;
+			
+	end loop;
+end;
+$$ language plpgsql;
+
+--Check truncated
+select * from schedule_play_template_week;
+select * from schedule_performer_template;
+select * from actual_schedule_play;
+select * from actual_schedule_performer;
+select * from performer p ;
+select * from theatre t ;
+
 --Script for data
-truncate table schedule_performer_template;
+truncate table complex cascade;
 alter sequence schedule_play_template_week_id_seq restart with 1;
 alter sequence schedule_performer_template_id_seq restart with 1;
 alter sequence complex_id_seq restart with 1;
 alter sequence theatre_id_seq restart with 1;
+alter sequence actual_schedule_performer_id_seq restart with 1;
+alter sequence actual_schedule_play_id_seq restart with 1;
 
 call populate_theatre_complex();
-call set_performer_certifications();
 call make_play_template_data();
 call make_performer_template_data();
+
+call make_actual_week_schedule((now() + interval '2 weeks')::timestamp);
+call make_actual_performer_schedule('2025-04-09 7:00:00.000');
