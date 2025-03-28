@@ -1,10 +1,6 @@
--- DROP SCHEMA playwright_oak;
-
-CREATE SCHEMA playwright_oak AUTHORIZATION dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_oak.actual_schedule_performer_id_seq;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_performer_id_seq
+CREATE SEQUENCE actual_schedule_performer_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -13,7 +9,7 @@ CREATE SEQUENCE playwright_oak.actual_schedule_performer_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.actual_schedule_performer_id_seq1;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_performer_id_seq1
+CREATE SEQUENCE actual_schedule_performer_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -22,7 +18,7 @@ CREATE SEQUENCE playwright_oak.actual_schedule_performer_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.actual_schedule_play_id_seq;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_play_id_seq
+CREATE SEQUENCE actual_schedule_play_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -31,7 +27,7 @@ CREATE SEQUENCE playwright_oak.actual_schedule_play_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.actual_schedule_play_id_seq1;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_play_id_seq1
+CREATE SEQUENCE actual_schedule_play_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -40,7 +36,7 @@ CREATE SEQUENCE playwright_oak.actual_schedule_play_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.complex_id_seq;
 
-CREATE SEQUENCE playwright_oak.complex_id_seq
+CREATE SEQUENCE complex_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -49,7 +45,7 @@ CREATE SEQUENCE playwright_oak.complex_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.complex_id_seq1;
 
-CREATE SEQUENCE playwright_oak.complex_id_seq1
+CREATE SEQUENCE complex_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -58,7 +54,7 @@ CREATE SEQUENCE playwright_oak.complex_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.concession_item_id_seq;
 
-CREATE SEQUENCE playwright_oak.concession_item_id_seq
+CREATE SEQUENCE concession_item_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -67,7 +63,7 @@ CREATE SEQUENCE playwright_oak.concession_item_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.concession_item_id_seq1;
 
-CREATE SEQUENCE playwright_oak.concession_item_id_seq1
+CREATE SEQUENCE concession_item_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -76,7 +72,7 @@ CREATE SEQUENCE playwright_oak.concession_item_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.customer_id_seq;
 
-CREATE SEQUENCE playwright_oak.customer_id_seq
+CREATE SEQUENCE customer_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -85,7 +81,7 @@ CREATE SEQUENCE playwright_oak.customer_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.customer_id_seq1;
 
-CREATE SEQUENCE playwright_oak.customer_id_seq1
+CREATE SEQUENCE customer_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -94,7 +90,7 @@ CREATE SEQUENCE playwright_oak.customer_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.dual_part_certification_id_seq;
 
-CREATE SEQUENCE playwright_oak.dual_part_certification_id_seq
+CREATE SEQUENCE dual_part_certification_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -103,7 +99,7 @@ CREATE SEQUENCE playwright_oak.dual_part_certification_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.dual_part_certification_id_seq1;
 
-CREATE SEQUENCE playwright_oak.dual_part_certification_id_seq1
+CREATE SEQUENCE dual_part_certification_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -112,7 +108,7 @@ CREATE SEQUENCE playwright_oak.dual_part_certification_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_1_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_1_id_seq
+CREATE SEQUENCE part_certification_1_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -121,7 +117,7 @@ CREATE SEQUENCE playwright_oak.part_certification_1_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_1_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_1_id_seq1
+CREATE SEQUENCE part_certification_1_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -130,7 +126,7 @@ CREATE SEQUENCE playwright_oak.part_certification_1_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_2_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_2_id_seq
+CREATE SEQUENCE part_certification_2_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -139,7 +135,7 @@ CREATE SEQUENCE playwright_oak.part_certification_2_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_2_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_2_id_seq1
+CREATE SEQUENCE part_certification_2_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -148,7 +144,7 @@ CREATE SEQUENCE playwright_oak.part_certification_2_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_5_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_5_id_seq
+CREATE SEQUENCE part_certification_5_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -157,7 +153,7 @@ CREATE SEQUENCE playwright_oak.part_certification_5_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_5_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_5_id_seq1
+CREATE SEQUENCE part_certification_5_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -166,7 +162,7 @@ CREATE SEQUENCE playwright_oak.part_certification_5_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_6_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_6_id_seq
+CREATE SEQUENCE part_certification_6_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -175,7 +171,7 @@ CREATE SEQUENCE playwright_oak.part_certification_6_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_6_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_6_id_seq1
+CREATE SEQUENCE part_certification_6_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -184,7 +180,7 @@ CREATE SEQUENCE playwright_oak.part_certification_6_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_7_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_7_id_seq
+CREATE SEQUENCE part_certification_7_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -193,7 +189,7 @@ CREATE SEQUENCE playwright_oak.part_certification_7_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_7_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_7_id_seq1
+CREATE SEQUENCE part_certification_7_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -202,7 +198,7 @@ CREATE SEQUENCE playwright_oak.part_certification_7_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_8_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_8_id_seq
+CREATE SEQUENCE part_certification_8_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -211,7 +207,7 @@ CREATE SEQUENCE playwright_oak.part_certification_8_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_8_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_8_id_seq1
+CREATE SEQUENCE part_certification_8_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -220,7 +216,7 @@ CREATE SEQUENCE playwright_oak.part_certification_8_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_9_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_9_id_seq
+CREATE SEQUENCE part_certification_9_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -229,7 +225,7 @@ CREATE SEQUENCE playwright_oak.part_certification_9_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_certification_9_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_9_id_seq1
+CREATE SEQUENCE part_certification_9_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -238,7 +234,7 @@ CREATE SEQUENCE playwright_oak.part_certification_9_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.part_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_id_seq
+CREATE SEQUENCE part_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -247,7 +243,7 @@ CREATE SEQUENCE playwright_oak.part_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.performer_id_seq;
 
-CREATE SEQUENCE playwright_oak.performer_id_seq
+CREATE SEQUENCE performer_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -256,7 +252,7 @@ CREATE SEQUENCE playwright_oak.performer_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.performer_id_seq1;
 
-CREATE SEQUENCE playwright_oak.performer_id_seq1
+CREATE SEQUENCE performer_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -265,7 +261,7 @@ CREATE SEQUENCE playwright_oak.performer_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_concession_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_id_seq
+CREATE SEQUENCE purchase_concession_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -274,7 +270,7 @@ CREATE SEQUENCE playwright_oak.purchase_concession_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_concession_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_id_seq1
+CREATE SEQUENCE purchase_concession_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -283,7 +279,7 @@ CREATE SEQUENCE playwright_oak.purchase_concession_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_concession_item_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_item_id_seq
+CREATE SEQUENCE purchase_concession_item_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -292,7 +288,7 @@ CREATE SEQUENCE playwright_oak.purchase_concession_item_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_concession_item_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_item_id_seq1
+CREATE SEQUENCE purchase_concession_item_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -301,7 +297,7 @@ CREATE SEQUENCE playwright_oak.purchase_concession_item_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_id_seq
+CREATE SEQUENCE purchase_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -310,7 +306,7 @@ CREATE SEQUENCE playwright_oak.purchase_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_id_seq1
+CREATE SEQUENCE purchase_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -319,7 +315,7 @@ CREATE SEQUENCE playwright_oak.purchase_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_seat_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_seat_id_seq
+CREATE SEQUENCE purchase_seat_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -328,7 +324,7 @@ CREATE SEQUENCE playwright_oak.purchase_seat_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.purchase_seat_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_seat_id_seq1
+CREATE SEQUENCE purchase_seat_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -337,7 +333,7 @@ CREATE SEQUENCE playwright_oak.purchase_seat_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.schedule_performer_template_id_seq;
 
-CREATE SEQUENCE playwright_oak.schedule_performer_template_id_seq
+CREATE SEQUENCE schedule_performer_template_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -346,7 +342,7 @@ CREATE SEQUENCE playwright_oak.schedule_performer_template_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.schedule_performer_template_id_seq1;
 
-CREATE SEQUENCE playwright_oak.schedule_performer_template_id_seq1
+CREATE SEQUENCE schedule_performer_template_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -355,7 +351,7 @@ CREATE SEQUENCE playwright_oak.schedule_performer_template_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.schedule_play_template_week_id_seq;
 
-CREATE SEQUENCE playwright_oak.schedule_play_template_week_id_seq
+CREATE SEQUENCE schedule_play_template_week_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -364,7 +360,7 @@ CREATE SEQUENCE playwright_oak.schedule_play_template_week_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.schedule_play_template_week_id_seq1;
 
-CREATE SEQUENCE playwright_oak.schedule_play_template_week_id_seq1
+CREATE SEQUENCE schedule_play_template_week_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -373,7 +369,7 @@ CREATE SEQUENCE playwright_oak.schedule_play_template_week_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.seat_id_seq;
 
-CREATE SEQUENCE playwright_oak.seat_id_seq
+CREATE SEQUENCE seat_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -382,7 +378,7 @@ CREATE SEQUENCE playwright_oak.seat_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.seat_id_seq1;
 
-CREATE SEQUENCE playwright_oak.seat_id_seq1
+CREATE SEQUENCE seat_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -391,7 +387,7 @@ CREATE SEQUENCE playwright_oak.seat_id_seq1
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.theatre_id_seq;
 
-CREATE SEQUENCE playwright_oak.theatre_id_seq
+CREATE SEQUENCE theatre_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -400,7 +396,7 @@ CREATE SEQUENCE playwright_oak.theatre_id_seq
 	NO CYCLE;
 -- DROP SEQUENCE playwright_oak.theatre_id_seq1;
 
-CREATE SEQUENCE playwright_oak.theatre_id_seq1
+CREATE SEQUENCE theatre_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
@@ -412,7 +408,7 @@ CREATE SEQUENCE playwright_oak.theatre_id_seq1
 
 -- DROP TABLE playwright_oak.complex;
 
-CREATE TABLE playwright_oak.complex (
+CREATE TABLE complex (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	address varchar(80) NULL,
 	CONSTRAINT complex_pkey PRIMARY KEY (id)
@@ -425,7 +421,7 @@ CREATE TABLE playwright_oak.complex (
 
 -- DROP TABLE playwright_oak.concession_item;
 
-CREATE TABLE playwright_oak.concession_item (
+CREATE TABLE concession_item (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	"name" varchar(80) NOT NULL,
 	shelf_price money NULL,
@@ -439,7 +435,7 @@ CREATE TABLE playwright_oak.concession_item (
 
 -- DROP TABLE playwright_oak.customer;
 
-CREATE TABLE playwright_oak.customer (
+CREATE TABLE customer (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	"name" varchar(100) NULL,
 	CONSTRAINT customer_pkey PRIMARY KEY (id)
@@ -452,7 +448,7 @@ CREATE TABLE playwright_oak.customer (
 
 -- DROP TABLE playwright_oak.female;
 
-CREATE TABLE playwright_oak.female (
+CREATE TABLE female (
 	givenname varchar(50) NULL
 );
 
@@ -463,7 +459,7 @@ CREATE TABLE playwright_oak.female (
 
 -- DROP TABLE playwright_oak.male;
 
-CREATE TABLE playwright_oak.male (
+CREATE TABLE male (
 	givenname varchar(50) NULL
 );
 
@@ -474,7 +470,7 @@ CREATE TABLE playwright_oak.male (
 
 -- DROP TABLE playwright_oak.performer;
 
-CREATE TABLE playwright_oak.performer (
+CREATE TABLE performer (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	"name" varchar(100) NOT NULL,
 	CONSTRAINT performer_pkey PRIMARY KEY (id)
@@ -487,7 +483,7 @@ CREATE TABLE playwright_oak.performer (
 
 -- DROP TABLE playwright_oak.surname;
 
-CREATE TABLE playwright_oak.surname (
+CREATE TABLE surname (
 	familysurname varchar(50) NULL
 );
 
@@ -498,15 +494,15 @@ CREATE TABLE playwright_oak.surname (
 
 -- DROP TABLE playwright_oak.dual_part_certification;
 
-CREATE TABLE playwright_oak.dual_part_certification (
+CREATE TABLE dual_part_certification (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_part_3_id int4 NOT NULL,
 	performer_part_4_id int4 NOT NULL,
 	date_certified date NOT NULL,
 	date_expires date NOT NULL,
 	CONSTRAINT dual_part_certification_pkey PRIMARY KEY (id),
-	CONSTRAINT dual_part_certification_performer_1_id_fkey FOREIGN KEY (performer_part_3_id) REFERENCES playwright_oak.performer(id),
-	CONSTRAINT dual_part_certification_performer_2_id_fkey FOREIGN KEY (performer_part_4_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT dual_part_certification_performer_1_id_fkey FOREIGN KEY (performer_part_3_id) REFERENCES performer(id),
+	CONSTRAINT dual_part_certification_performer_2_id_fkey FOREIGN KEY (performer_part_4_id) REFERENCES performer(id)
 );
 
 
@@ -516,14 +512,14 @@ CREATE TABLE playwright_oak.dual_part_certification (
 
 -- DROP TABLE playwright_oak.part_certification_1;
 
-CREATE TABLE playwright_oak.part_certification_1 (
+CREATE TABLE part_certification_1 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_1_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_1_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_1_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_1_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES performer(id)
 );
 
 
@@ -533,14 +529,14 @@ CREATE TABLE playwright_oak.part_certification_1 (
 
 -- DROP TABLE playwright_oak.part_certification_2;
 
-CREATE TABLE playwright_oak.part_certification_2 (
+CREATE TABLE part_certification_2 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_2_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_2_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_2_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_2_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES performer(id)
 );
 
 
@@ -550,14 +546,14 @@ CREATE TABLE playwright_oak.part_certification_2 (
 
 -- DROP TABLE playwright_oak.part_certification_5;
 
-CREATE TABLE playwright_oak.part_certification_5 (
+CREATE TABLE part_certification_5 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_5_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_5_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_5_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_5_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES performer(id)
 );
 
 
@@ -567,14 +563,14 @@ CREATE TABLE playwright_oak.part_certification_5 (
 
 -- DROP TABLE playwright_oak.part_certification_6;
 
-CREATE TABLE playwright_oak.part_certification_6 (
+CREATE TABLE part_certification_6 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_6_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_6_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_6_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_6_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES performer(id)
 );
 
 
@@ -584,14 +580,14 @@ CREATE TABLE playwright_oak.part_certification_6 (
 
 -- DROP TABLE playwright_oak.part_certification_7;
 
-CREATE TABLE playwright_oak.part_certification_7 (
+CREATE TABLE part_certification_7 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_7_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_7_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_7_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_7_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES performer(id)
 );
 
 
@@ -601,14 +597,14 @@ CREATE TABLE playwright_oak.part_certification_7 (
 
 -- DROP TABLE playwright_oak.part_certification_8;
 
-CREATE TABLE playwright_oak.part_certification_8 (
+CREATE TABLE part_certification_8 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_8_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_8_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_8_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_8_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES performer(id)
 );
 
 
@@ -618,14 +614,14 @@ CREATE TABLE playwright_oak.part_certification_8 (
 
 -- DROP TABLE playwright_oak.part_certification_9;
 
-CREATE TABLE playwright_oak.part_certification_9 (
+CREATE TABLE part_certification_9 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_9_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_9_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_9_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_9_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES performer(id)
 );
 
 
@@ -635,12 +631,12 @@ CREATE TABLE playwright_oak.part_certification_9 (
 
 -- DROP TABLE playwright_oak.purchase;
 
-CREATE TABLE playwright_oak.purchase (
+CREATE TABLE purchase (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	customer_id int4 NOT NULL,
 	day_sold timestamp NOT NULL,
 	CONSTRAINT purchase_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES playwright_oak.customer(id)
+	CONSTRAINT purchase_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES customer(id)
 );
 
 
@@ -650,12 +646,12 @@ CREATE TABLE playwright_oak.purchase (
 
 -- DROP TABLE playwright_oak.purchase_concession;
 
-CREATE TABLE playwright_oak.purchase_concession (
+CREATE TABLE purchase_concession (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	complex_id int4 NULL,
 	day_sold timestamp NOT NULL,
 	CONSTRAINT purchase_concession_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_concession_complex_id_fkey FOREIGN KEY (complex_id) REFERENCES playwright_oak.complex(id)
+	CONSTRAINT purchase_concession_complex_id_fkey FOREIGN KEY (complex_id) REFERENCES complex(id)
 );
 
 
@@ -665,15 +661,15 @@ CREATE TABLE playwright_oak.purchase_concession (
 
 -- DROP TABLE playwright_oak.purchase_concession_item;
 
-CREATE TABLE playwright_oak.purchase_concession_item (
+CREATE TABLE purchase_concession_item (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	concession_item_id int4 NULL,
 	purchase_concession_id int4 NOT NULL,
 	quantity int4 NULL,
 	actual_price money NOT NULL,
 	CONSTRAINT purchase_concession_item_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_concession_item_concession_item_id_fkey FOREIGN KEY (concession_item_id) REFERENCES playwright_oak.concession_item(id),
-	CONSTRAINT purchase_concession_item_purchase_concession_id_fkey FOREIGN KEY (purchase_concession_id) REFERENCES playwright_oak.purchase_concession(id)
+	CONSTRAINT purchase_concession_item_concession_item_id_fkey FOREIGN KEY (concession_item_id) REFERENCES concession_item(id),
+	CONSTRAINT purchase_concession_item_purchase_concession_id_fkey FOREIGN KEY (purchase_concession_id) REFERENCES purchase_concession(id)
 );
 
 
@@ -683,12 +679,12 @@ CREATE TABLE playwright_oak.purchase_concession_item (
 
 -- DROP TABLE playwright_oak.theatre;
 
-CREATE TABLE playwright_oak.theatre (
+CREATE TABLE theatre (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	max_capacity int4 NULL,
 	complex_id int4 NULL,
 	CONSTRAINT theatre_pkey PRIMARY KEY (id),
-	CONSTRAINT theatre_complexid_fkey FOREIGN KEY (complex_id) REFERENCES playwright_oak.complex(id)
+	CONSTRAINT theatre_complexid_fkey FOREIGN KEY (complex_id) REFERENCES complex(id)
 );
 
 
@@ -698,177 +694,64 @@ CREATE TABLE playwright_oak.theatre (
 
 -- DROP TABLE playwright_oak.actual_schedule_play;
 
-CREATE TABLE playwright_oak.actual_schedule_play (
+CREATE TABLE actual_schedule_play (
 	theatre_id int4 NOT NULL,
 	scheduled_time timestamp NOT NULL,
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	CONSTRAINT actual_schedule_play_pkey PRIMARY KEY (id),
 	CONSTRAINT actual_schedule_play_scheduled_time_key UNIQUE (scheduled_time),
-	CONSTRAINT actual_schedule_play_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_oak.theatre(id)
+	CONSTRAINT actual_schedule_play_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES theatre(id)
 );
 
+-- DROP FUNCTION playwright_oak.multiple_parts_trigger();
 
--- playwright_oak.schedule_play_template_week definition
+CREATE OR REPLACE FUNCTION multiple_parts_trigger()
+ RETURNS trigger
+ LANGUAGE plpgsql
+AS $function$
+declare
+	dup_count int;
+begin
+  with performer_list as (
+        select performer_id as performer from part_certification_1 pc1 where new.cert_1_id = pc1.id
+        union all
+        select performer_id from part_certification_2 pc2 where new.cert_2_id = pc2.id
+        union all
+        select performer_id from part_certification_5 pc5 where new.cert_5_id = pc5.id
+        union all
+        select performer_id from part_certification_6 pc6 where new.cert_6_id = pc6.id
+        union all
+        select performer_id from part_certification_7 pc7 where new.cert_7_id = pc7.id
+        union all
+        select performer_id from part_certification_8 pc8 where new.cert_8_id = pc8.id
+        union all
+        select performer_id from part_certification_9 pc9 where new.cert_9_id = pc9.id
+        union all
+        select performer_part_3_id from dual_part_certification dpc where new.dual_cert_id = dpc.id
+        union all
+        select performer_part_4_id from dual_part_certification dpc where new.dual_cert_id = dpc.id
+    )
+    select count(*) into dup_count
+    from (
+        select performer, count(*)
+        from performer_list
+        group by performer
+        having count(*) > 1
+    );
 
--- Drop table
-
--- DROP TABLE playwright_oak.schedule_play_template_week;
-
-CREATE TABLE playwright_oak.schedule_play_template_week (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	theatre_id int4 NOT NULL,
-	day_of_week varchar(10) NOT NULL,
-	time_of_day int4 NOT NULL,
-	CONSTRAINT schedule_play_template_week_pkey PRIMARY KEY (id),
-	CONSTRAINT schedule_play_template_week_theatre_id_day_of_week_time_of__key UNIQUE (theatre_id, day_of_week, time_of_day),
-	CONSTRAINT schedule_play_template_week_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_oak.theatre(id)
-);
-
-
--- playwright_oak.seat definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.seat;
-
-CREATE TABLE playwright_oak.seat (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	theatre_id int4 NOT NULL,
-	seat_num int4 NOT NULL,
-	CONSTRAINT seat_pkey PRIMARY KEY (id),
-	CONSTRAINT seat_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_oak.theatre(id)
-);
-
-
--- playwright_oak.actual_schedule_performer definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.actual_schedule_performer;
-
-CREATE TABLE playwright_oak.actual_schedule_performer (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	schedule_id int4 NOT NULL,
-	cert_1_id int4 NULL,
-	cert_2_id int4 NULL,
-	dual_cert_id int4 NULL,
-	cert_5_id int4 NULL,
-	cert_6_id int4 NULL,
-	cert_7_id int4 NULL,
-	cert_8_id int4 NULL,
-	cert_9_id int4 NULL,
-	CONSTRAINT actual_schedule_performer_pkey PRIMARY KEY (id),
-	CONSTRAINT actual_schedule_performer_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES playwright_oak.part_certification_1(id),
-	CONSTRAINT actual_schedule_performer_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES playwright_oak.part_certification_2(id),
-	CONSTRAINT actual_schedule_performer_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES playwright_oak.part_certification_5(id),
-	CONSTRAINT actual_schedule_performer_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES playwright_oak.part_certification_6(id),
-	CONSTRAINT actual_schedule_performer_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES playwright_oak.part_certification_7(id),
-	CONSTRAINT actual_schedule_performer_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES playwright_oak.part_certification_8(id),
-	CONSTRAINT actual_schedule_performer_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES playwright_oak.part_certification_9(id),
-	CONSTRAINT actual_schedule_performer_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES playwright_oak.dual_part_certification(id),
-	CONSTRAINT actual_schedule_performer_schedule_template_id_fkey FOREIGN KEY (schedule_id) REFERENCES playwright_oak.actual_schedule_play(id)
-);
-
--- Table Triggers
-
-create trigger active_certs_active before
-insert
-    or
-update
-    on
-    playwright_oak.actual_schedule_performer for each row execute function playwright_oak.active_cert_trigger();
-create trigger multiple_parts_active before
-insert
-    or
-update
-    on
-    playwright_oak.actual_schedule_performer for each row execute function playwright_oak.multiple_parts_trigger();
-
-
--- playwright_oak.purchase_seat definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.purchase_seat;
-
-CREATE TABLE playwright_oak.purchase_seat (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	seat_id int4 NOT NULL,
-	actual_schedule_play_id int4 NOT NULL,
-	actual_sell_price money NULL,
-	purchase_id int4 NULL,
-	CONSTRAINT purchase_seat_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_seat_actual_schedule_play_id_fkey FOREIGN KEY (actual_schedule_play_id) REFERENCES playwright_oak.actual_schedule_play(id),
-	CONSTRAINT purchase_seat_purchase_id_fkey FOREIGN KEY (purchase_id) REFERENCES playwright_oak.purchase(id),
-	CONSTRAINT purchase_seat_seat_id_fkey FOREIGN KEY (seat_id) REFERENCES playwright_oak.seat(id)
-);
-
-
--- playwright_oak.schedule_performer_template definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.schedule_performer_template;
-
-CREATE TABLE playwright_oak.schedule_performer_template (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	schedule_template_id int4 NOT NULL,
-	cert_1_id int4 NULL,
-	cert_2_id int4 NULL,
-	dual_cert_id int4 NULL,
-	cert_5_id int4 NULL,
-	cert_6_id int4 NULL,
-	cert_7_id int4 NULL,
-	cert_8_id int4 NULL,
-	cert_9_id int4 NULL,
-	CONSTRAINT schedule_performer_template_pkey PRIMARY KEY (id),
-	CONSTRAINT schedule_performer_template_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES playwright_oak.part_certification_1(id),
-	CONSTRAINT schedule_performer_template_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES playwright_oak.part_certification_2(id),
-	CONSTRAINT schedule_performer_template_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES playwright_oak.part_certification_5(id),
-	CONSTRAINT schedule_performer_template_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES playwright_oak.part_certification_6(id),
-	CONSTRAINT schedule_performer_template_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES playwright_oak.part_certification_7(id),
-	CONSTRAINT schedule_performer_template_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES playwright_oak.part_certification_8(id),
-	CONSTRAINT schedule_performer_template_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES playwright_oak.part_certification_9(id),
-	CONSTRAINT schedule_performer_template_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES playwright_oak.dual_part_certification(id),
-	CONSTRAINT schedule_performer_template_schedule_template_id_fkey FOREIGN KEY (schedule_template_id) REFERENCES playwright_oak.schedule_play_template_week(id)
-);
-
--- Table Triggers
-
-create trigger active_certs_template before
-insert
-    or
-update
-    on
-    playwright_oak.schedule_performer_template for each row execute function playwright_oak.active_cert_trigger();
-create trigger multiple_parts_template before
-insert
-    or
-update
-    on
-    playwright_oak.schedule_performer_template for each row execute function playwright_oak.multiple_parts_trigger();
-
-
--- playwright_oak.availableseats source
-
-CREATE OR REPLACE VIEW playwright_oak.availableseats
-AS SELECT a.seatid
-   FROM ( SELECT s.id AS seatid
-           FROM playwright_oak.actual_schedule_play asp
-             JOIN playwright_oak.theatre t ON asp.theatre_id = t.id
-             JOIN playwright_oak.seat s ON s.theatre_id = t.id
-          WHERE asp.id = 2) a
-     LEFT JOIN ( SELECT ps2.seat_id AS seatid
-           FROM playwright_oak.purchase_seat ps2
-          WHERE ps2.actual_schedule_play_id = 2) b ON a.seatid = b.seatid
-  WHERE b.seatid IS NULL
-  ORDER BY a.seatid;
-
-
+	if dup_count > 0 then
+		raise exception 'Duplicate actors in this showtime';
+	end if;
+	
+	return new;
+	
+end;
+$function$
+;
 
 -- DROP FUNCTION playwright_oak.active_cert_trigger();
 
-CREATE OR REPLACE FUNCTION playwright_oak.active_cert_trigger()
+CREATE OR REPLACE FUNCTION active_cert_trigger()
  RETURNS trigger
  LANGUAGE plpgsql
 AS $function$
@@ -907,27 +790,184 @@ end;
 $function$
 ;
 
+-- playwright_oak.schedule_play_template_week definition
+
+-- Drop table
+
+-- DROP TABLE playwright_oak.schedule_play_template_week;
+
+CREATE TABLE schedule_play_template_week (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	theatre_id int4 NOT NULL,
+	day_of_week varchar(10) NOT NULL,
+	time_of_day int4 NOT NULL,
+	CONSTRAINT schedule_play_template_week_pkey PRIMARY KEY (id),
+	CONSTRAINT schedule_play_template_week_theatre_id_day_of_week_time_of__key UNIQUE (theatre_id, day_of_week, time_of_day),
+	CONSTRAINT schedule_play_template_week_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES theatre(id)
+);
+
+
+-- playwright_oak.seat definition
+
+-- Drop table
+
+-- DROP TABLE playwright_oak.seat;
+
+CREATE TABLE seat (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	theatre_id int4 NOT NULL,
+	seat_num int4 NOT NULL,
+	CONSTRAINT seat_pkey PRIMARY KEY (id),
+	CONSTRAINT seat_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES theatre(id)
+);
+
+
+-- playwright_oak.actual_schedule_performer definition
+
+-- Drop table
+
+-- DROP TABLE playwright_oak.actual_schedule_performer;
+
+CREATE TABLE actual_schedule_performer (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	schedule_id int4 NOT NULL,
+	cert_1_id int4 NULL,
+	cert_2_id int4 NULL,
+	dual_cert_id int4 NULL,
+	cert_5_id int4 NULL,
+	cert_6_id int4 NULL,
+	cert_7_id int4 NULL,
+	cert_8_id int4 NULL,
+	cert_9_id int4 NULL,
+	CONSTRAINT actual_schedule_performer_pkey PRIMARY KEY (id),
+	CONSTRAINT actual_schedule_performer_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES part_certification_1(id),
+	CONSTRAINT actual_schedule_performer_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES part_certification_2(id),
+	CONSTRAINT actual_schedule_performer_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES part_certification_5(id),
+	CONSTRAINT actual_schedule_performer_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES part_certification_6(id),
+	CONSTRAINT actual_schedule_performer_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES part_certification_7(id),
+	CONSTRAINT actual_schedule_performer_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES part_certification_8(id),
+	CONSTRAINT actual_schedule_performer_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES part_certification_9(id),
+	CONSTRAINT actual_schedule_performer_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES dual_part_certification(id),
+	CONSTRAINT actual_schedule_performer_schedule_template_id_fkey FOREIGN KEY (schedule_id) REFERENCES actual_schedule_play(id)
+);
+
+-- Table Triggers
+
+create trigger active_certs_active before
+insert
+    or
+update
+    on
+    actual_schedule_performer for each row execute function active_cert_trigger();
+create trigger multiple_parts_active before
+insert
+    or
+update
+    on
+    actual_schedule_performer for each row execute function multiple_parts_trigger();
+
+
+-- playwright_oak.purchase_seat definition
+
+-- Drop table
+
+-- DROP TABLE playwright_oak.purchase_seat;
+
+CREATE TABLE purchase_seat (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	seat_id int4 NOT NULL,
+	actual_schedule_play_id int4 NOT NULL,
+	actual_sell_price money NULL,
+	purchase_id int4 NULL,
+	CONSTRAINT purchase_seat_pkey PRIMARY KEY (id),
+	CONSTRAINT purchase_seat_actual_schedule_play_id_fkey FOREIGN KEY (actual_schedule_play_id) REFERENCES actual_schedule_play(id),
+	CONSTRAINT purchase_seat_purchase_id_fkey FOREIGN KEY (purchase_id) REFERENCES purchase(id),
+	CONSTRAINT purchase_seat_seat_id_fkey FOREIGN KEY (seat_id) REFERENCES seat(id)
+);
+
+
+-- playwright_oak.schedule_performer_template definition
+
+-- Drop table
+
+-- DROP TABLE playwright_oak.schedule_performer_template;
+
+CREATE TABLE schedule_performer_template (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	schedule_template_id int4 NOT NULL,
+	cert_1_id int4 NULL,
+	cert_2_id int4 NULL,
+	dual_cert_id int4 NULL,
+	cert_5_id int4 NULL,
+	cert_6_id int4 NULL,
+	cert_7_id int4 NULL,
+	cert_8_id int4 NULL,
+	cert_9_id int4 NULL,
+	CONSTRAINT schedule_performer_template_pkey PRIMARY KEY (id),
+	CONSTRAINT schedule_performer_template_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES part_certification_1(id),
+	CONSTRAINT schedule_performer_template_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES part_certification_2(id),
+	CONSTRAINT schedule_performer_template_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES part_certification_5(id),
+	CONSTRAINT schedule_performer_template_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES part_certification_6(id),
+	CONSTRAINT schedule_performer_template_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES part_certification_7(id),
+	CONSTRAINT schedule_performer_template_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES part_certification_8(id),
+	CONSTRAINT schedule_performer_template_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES part_certification_9(id),
+	CONSTRAINT schedule_performer_template_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES dual_part_certification(id),
+	CONSTRAINT schedule_performer_template_schedule_template_id_fkey FOREIGN KEY (schedule_template_id) REFERENCES schedule_play_template_week(id)
+);
+
+-- Table Triggers
+
+create trigger active_certs_template before
+insert
+    or
+update
+    on
+    schedule_performer_template for each row execute function active_cert_trigger();
+create trigger multiple_parts_template before
+insert
+    or
+update
+    on
+    schedule_performer_template for each row execute function multiple_parts_trigger();
+
+
+-- playwright_oak.availableseats source
+
+CREATE OR REPLACE VIEW availableseats
+AS SELECT a.seatid
+   FROM ( SELECT s.id AS seatid
+           FROM actual_schedule_play asp
+             JOIN theatre t ON asp.theatre_id = t.id
+             JOIN seat s ON s.theatre_id = t.id
+          WHERE asp.id = 2) a
+     LEFT JOIN ( SELECT ps2.seat_id AS seatid
+           FROM purchase_seat ps2
+          WHERE ps2.actual_schedule_play_id = 2) b ON a.seatid = b.seatid
+  WHERE b.seatid IS NULL
+  ORDER BY a.seatid;
+
+
 -- DROP PROCEDURE playwright_oak.add_random_customer();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.add_random_customer()
+CREATE OR REPLACE PROCEDURE add_random_customer()
  LANGUAGE plpgsql
 AS $procedure$
 
 declare
 	myName varchar(100);
 begin
-		insert into playwright_oak.customer (name) 
+		insert into customer (name) 
 		select * from (select 
 			    concat(
-			        (select givenname from playwright_oak.female order by random() limit 1),
+			        (select givenname from female order by random() limit 1),
 			        ' ',
-			        (select familysurname from playwright_oak.surname order by random() limit 1)
+			        (select familysurname from surname order by random() limit 1)
 			    ) 		union all
 				select
 			    	concat(
-			        	(select givenname from playwright_oak.male order by random() limit 1),
+			        	(select givenname from male order by random() limit 1),
 			        	' ',
-			        	(select familysurname from playwright_oak.surname order by random() limit 1)
+			        	(select familysurname from surname order by random() limit 1)
 			    	) 
 			) as B
 	order by random()
@@ -938,25 +978,25 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.add_random_performer();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.add_random_performer()
+CREATE OR REPLACE PROCEDURE add_random_performer()
  LANGUAGE plpgsql
 AS $procedure$
 
 declare
 	myName varchar(100);
 begin
-		insert into playwright_oak.performer (name) 
+		insert into performer (name) 
 		select * from (select 
 			    concat(
-			        (select givenname from playwright_oak.female order by random() limit 1),
+			        (select givenname from female order by random() limit 1),
 			        ' ',
-			        (select familysurname from playwright_oak.surname order by random() limit 1)
+			        (select familysurname from surname order by random() limit 1)
 			    ) 		union all
 				select
 			    	concat(
-			        	(select givenname from playwright_oak.male order by random() limit 1),
+			        	(select givenname from male order by random() limit 1),
 			        	' ',
-			        	(select familysurname from playwright_oak.surname order by random() limit 1)
+			        	(select familysurname from surname order by random() limit 1)
 			    	) 
 			) as B
 	order by random()
@@ -967,7 +1007,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.generate_new_seats(int4);
 
-CREATE OR REPLACE PROCEDURE playwright_oak.generate_new_seats(IN stage_id integer)
+CREATE OR REPLACE PROCEDURE generate_new_seats(IN stage_id integer)
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1018,7 +1058,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.generate_new_seats(int4, int4);
 
-CREATE OR REPLACE PROCEDURE playwright_oak.generate_new_seats(IN stage_id integer, IN num_seats integer)
+CREATE OR REPLACE PROCEDURE generate_new_seats(IN stage_id integer, IN num_seats integer)
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1057,7 +1097,7 @@ $procedure$
 
 -- DROP FUNCTION playwright_oak.get_seat(int4);
 
-CREATE OR REPLACE FUNCTION playwright_oak.get_seat(asp_id integer)
+CREATE OR replace function get_seat(asp_id integer)
  RETURNS integer
  LANGUAGE plpgsql
 AS $function$
@@ -1113,7 +1153,7 @@ $function$
 
 -- DROP PROCEDURE playwright_oak.make_actual_performer_schedule();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_performer_schedule()
+CREATE OR REPLACE PROCEDURE make_actual_performer_schedule()
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1128,7 +1168,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.make_actual_performer_schedule(timestamp);
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_performer_schedule(IN day_to_schedule timestamp without time zone)
+CREATE OR REPLACE PROCEDURE make_actual_performer_schedule(IN day_to_schedule timestamp without time zone)
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1154,7 +1194,7 @@ $procedure$
 
 -- DROP FUNCTION playwright_oak.make_actual_play_time(text, int4, timestamp);
 
-CREATE OR REPLACE FUNCTION playwright_oak.make_actual_play_time(p_day_of_week text, p_time_of_day integer, start_day timestamp without time zone)
+CREATE OR REPLACE FUNCTION make_actual_play_time(p_day_of_week text, p_time_of_day integer, start_day timestamp without time zone)
  RETURNS timestamp without time zone
  LANGUAGE plpgsql
 AS $function$
@@ -1195,7 +1235,7 @@ $function$
 
 -- DROP FUNCTION playwright_oak.make_actual_play_time(text, int4);
 
-CREATE OR REPLACE FUNCTION playwright_oak.make_actual_play_time(p_day_of_week text, p_time_of_day integer)
+CREATE OR REPLACE FUNCTION make_actual_play_time(p_day_of_week text, p_time_of_day integer)
  RETURNS timestamp without time zone
  LANGUAGE plpgsql
 AS $function$
@@ -1240,7 +1280,7 @@ $function$
 
 -- DROP PROCEDURE playwright_oak.make_actual_schedule();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_schedule()
+CREATE OR REPLACE PROCEDURE make_actual_schedule()
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1282,7 +1322,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.make_actual_week_schedule(timestamp);
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_week_schedule(IN start_day timestamp without time zone)
+CREATE OR REPLACE PROCEDURE make_actual_week_schedule(IN start_day timestamp without time zone)
  LANGUAGE plpgsql
 AS $procedure$
 BEGIN
@@ -1297,7 +1337,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.make_actual_week_schedule();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_week_schedule()
+CREATE OR REPLACE PROCEDURE make_actual_week_schedule()
  LANGUAGE plpgsql
 AS $procedure$
 BEGIN
@@ -1312,7 +1352,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.make_performer_template_data();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_performer_template_data()
+CREATE OR REPLACE PROCEDURE make_performer_template_data()
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1352,7 +1392,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.make_play_template_data();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_play_template_data()
+CREATE OR REPLACE PROCEDURE make_play_template_data()
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1381,7 +1421,7 @@ $procedure$
 
 -- DROP FUNCTION playwright_oak.multiple_parts_constraint();
 
-CREATE OR REPLACE FUNCTION playwright_oak.multiple_parts_constraint()
+CREATE OR REPLACE FUNCTION multiple_parts_constraint()
  RETURNS boolean
  LANGUAGE plpgsql
 AS $function$
@@ -1414,55 +1454,10 @@ end;
 $function$
 ;
 
--- DROP FUNCTION playwright_oak.multiple_parts_trigger();
-
-CREATE OR REPLACE FUNCTION playwright_oak.multiple_parts_trigger()
- RETURNS trigger
- LANGUAGE plpgsql
-AS $function$
-declare
-	dup_count int;
-begin
-  with performer_list as (
-        select performer_id as performer from part_certification_1 pc1 where new.cert_1_id = pc1.id
-        union all
-        select performer_id from part_certification_2 pc2 where new.cert_2_id = pc2.id
-        union all
-        select performer_id from part_certification_5 pc5 where new.cert_5_id = pc5.id
-        union all
-        select performer_id from part_certification_6 pc6 where new.cert_6_id = pc6.id
-        union all
-        select performer_id from part_certification_7 pc7 where new.cert_7_id = pc7.id
-        union all
-        select performer_id from part_certification_8 pc8 where new.cert_8_id = pc8.id
-        union all
-        select performer_id from part_certification_9 pc9 where new.cert_9_id = pc9.id
-        union all
-        select performer_part_3_id from dual_part_certification dpc where new.dual_cert_id = dpc.id
-        union all
-        select performer_part_4_id from dual_part_certification dpc where new.dual_cert_id = dpc.id
-    )
-    select count(*) into dup_count
-    from (
-        select performer, count(*)
-        from performer_list
-        group by performer
-        having count(*) > 1
-    );
-
-	if dup_count > 0 then
-		raise exception 'Duplicate actors in this showtime';
-	end if;
-	
-	return new;
-	
-end;
-$function$
-;
 
 -- DROP PROCEDURE playwright_oak.populate_theatre_complex();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.populate_theatre_complex()
+CREATE OR REPLACE PROCEDURE populate_theatre_complex()
  LANGUAGE plpgsql
 AS $procedure$
 begin
@@ -1478,7 +1473,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.sell_tickets(int4, int4, int4, timestamp, money);
 
-CREATE OR REPLACE PROCEDURE playwright_oak.sell_tickets(IN qty integer, IN asp_id integer, IN cust_id integer, IN time_sold timestamp without time zone, IN price_per_seat money)
+CREATE OR REPLACE PROCEDURE sell_tickets(IN qty integer, IN asp_id integer, IN cust_id integer, IN time_sold timestamp without time zone, IN price_per_seat money)
  LANGUAGE plpgsql
 AS $procedure$
 
@@ -1569,7 +1564,7 @@ $procedure$
 
 -- DROP PROCEDURE playwright_oak.set_performer_certifications();
 
-CREATE OR REPLACE PROCEDURE playwright_oak.set_performer_certifications()
+CREATE OR REPLACE PROCEDURE set_performer_certifications()
  LANGUAGE plpgsql
 AS $procedure$
 declare
