@@ -1,777 +1,1361 @@
--- DROP SCHEMA playwright_oak;
+-- DROP SCHEMA playwright_combotables;
 
-CREATE SCHEMA playwright_oak AUTHORIZATION dbs25_team_oak;
+CREATE SCHEMA playwright_combotables AUTHORIZATION dbs25_team_oak;
 
--- DROP SEQUENCE playwright_oak.actual_schedule_performer_id_seq;
+-- DROP SEQUENCE playwright_combotables.actual_schedule_play_id_seq;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_performer_id_seq
+CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.actual_schedule_performer_id_seq1;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_performer_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.actual_schedule_play_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.actual_schedule_play_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.actual_schedule_play_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.actual_schedule_play_id_seq;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_play_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.actual_schedule_play_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.actual_schedule_play_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.actual_schedule_play_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.actual_schedule_play_id_seq1;
 
-CREATE SEQUENCE playwright_oak.actual_schedule_play_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.actual_schedule_play_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.actual_schedule_play_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.complex_id_seq;
+
+CREATE SEQUENCE playwright_combotables.complex_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.complex_id_seq;
 
-CREATE SEQUENCE playwright_oak.complex_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.complex_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.complex_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.complex_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.complex_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.complex_id_seq1;
 
-CREATE SEQUENCE playwright_oak.complex_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.complex_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.complex_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.complex_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.complex_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.concession_item_id_seq;
 
-CREATE SEQUENCE playwright_oak.concession_item_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.complex_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.complex_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.concession_item_id_seq;
+
+CREATE SEQUENCE playwright_combotables.concession_item_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.concession_item_id_seq1;
 
-CREATE SEQUENCE playwright_oak.concession_item_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.concession_item_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.concession_item_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.concession_item_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.concession_item_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.customer_id_seq;
 
-CREATE SEQUENCE playwright_oak.customer_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.concession_item_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.concession_item_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.concession_item_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.concession_item_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.customer_id_seq1;
 
-CREATE SEQUENCE playwright_oak.customer_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.concession_item_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.concession_item_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.customer_id_seq;
+
+CREATE SEQUENCE playwright_combotables.customer_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.dual_part_certification_id_seq;
 
-CREATE SEQUENCE playwright_oak.dual_part_certification_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.customer_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.customer_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.customer_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.customer_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.dual_part_certification_id_seq1;
 
-CREATE SEQUENCE playwright_oak.dual_part_certification_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.customer_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.customer_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.customer_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.customer_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_1_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_1_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.customer_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.customer_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.dual_part_certification_id_seq;
+
+CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_1_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_1_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.dual_part_certification_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.dual_part_certification_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.dual_part_certification_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_2_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_2_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.dual_part_certification_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.dual_part_certification_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.dual_part_certification_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_2_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_2_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.dual_part_certification_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.dual_part_certification_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.htest;
+
+CREATE SEQUENCE playwright_combotables.htest
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 10
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.htest OWNER TO postgres;
+GRANT ALL ON SEQUENCE playwright_combotables.htest TO postgres;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_1_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_5_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_5_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_1_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_1_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_1_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_5_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_5_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_1_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_1_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_1_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_6_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_6_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_1_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_1_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_2_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_6_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_6_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_2_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_2_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_2_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_7_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_7_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_2_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_2_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_2_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_7_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_7_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_2_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_2_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_5_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_8_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_8_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_5_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_5_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_5_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_8_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_8_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_5_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_5_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_5_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_9_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_certification_9_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_5_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_5_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_6_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_certification_9_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_certification_9_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_6_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_6_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_6_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_id_seq;
 
-CREATE SEQUENCE playwright_oak.part_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_6_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_6_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_6_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.part_id_seq1;
 
-CREATE SEQUENCE playwright_oak.part_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_6_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_6_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_7_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.performer_id_seq;
 
-CREATE SEQUENCE playwright_oak.performer_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_7_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_7_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_7_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.performer_id_seq1;
 
-CREATE SEQUENCE playwright_oak.performer_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_7_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_7_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_7_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_concession_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_7_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_7_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_8_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_concession_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_8_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_8_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_8_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_concession_item_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_item_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_8_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_8_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_8_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_concession_item_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_concession_item_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_8_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_8_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_9_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_9_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_9_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_9_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_9_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_9_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_certification_9_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_seat_id_seq;
 
-CREATE SEQUENCE playwright_oak.purchase_seat_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_certification_9_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_certification_9_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.part_id_seq;
+
+CREATE SEQUENCE playwright_combotables.part_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.purchase_seat_id_seq1;
 
-CREATE SEQUENCE playwright_oak.purchase_seat_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.part_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.part_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.performer_id_seq;
+
+CREATE SEQUENCE playwright_combotables.performer_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.schedule_performer_template_id_seq;
 
-CREATE SEQUENCE playwright_oak.schedule_performer_template_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.performer_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.performer_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.performer_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.performer_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.schedule_performer_template_id_seq1;
 
-CREATE SEQUENCE playwright_oak.schedule_performer_template_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.performer_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.performer_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.performer_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.performer_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.schedule_play_template_week_id_seq;
 
-CREATE SEQUENCE playwright_oak.schedule_play_template_week_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.performer_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.performer_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.performer_rejection_log_id_seq;
+
+CREATE SEQUENCE playwright_combotables.performer_rejection_log_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.schedule_play_template_week_id_seq1;
 
-CREATE SEQUENCE playwright_oak.schedule_play_template_week_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.performer_rejection_log_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.performer_rejection_log_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_concession_id_seq;
+
+CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.seat_id_seq;
 
-CREATE SEQUENCE playwright_oak.seat_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_concession_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_concession_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.seat_id_seq1;
 
-CREATE SEQUENCE playwright_oak.seat_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_concession_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_concession_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq2
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.theatre_id_seq;
 
-CREATE SEQUENCE playwright_oak.theatre_id_seq
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_concession_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_concession_item_id_seq;
+
+CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
 	NO CYCLE;
--- DROP SEQUENCE playwright_oak.theatre_id_seq1;
 
-CREATE SEQUENCE playwright_oak.theatre_id_seq1
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_concession_item_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_item_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_concession_item_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq1
 	INCREMENT BY 1
 	MINVALUE 1
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
-	NO CYCLE;-- playwright_oak.complex definition
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_concession_item_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_item_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_concession_item_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq2
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_concession_item_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_item_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_id_seq;
+
+CREATE SEQUENCE playwright_combotables.purchase_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.purchase_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.purchase_id_seq2
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_seat_id_seq;
+
+CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_seat_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_seat_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_seat_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_seat_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_seat_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.purchase_seat_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq2
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.purchase_seat_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.purchase_seat_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.schedule_play_template_id_seq;
+
+CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.schedule_play_template_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.schedule_play_template_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.schedule_play_template_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.schedule_play_template_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.schedule_play_template_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.schedule_play_template_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq2
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.schedule_play_template_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.schedule_play_template_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.seat_id_seq;
+
+CREATE SEQUENCE playwright_combotables.seat_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.seat_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.seat_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.seat_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.seat_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.seat_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.seat_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.seat_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.seat_id_seq2
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.seat_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.seat_id_seq2 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.theatre_id_seq;
+
+CREATE SEQUENCE playwright_combotables.theatre_id_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.theatre_id_seq OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.theatre_id_seq TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.theatre_id_seq1;
+
+CREATE SEQUENCE playwright_combotables.theatre_id_seq1
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.theatre_id_seq1 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.theatre_id_seq1 TO dbs25_team_oak;
+
+-- DROP SEQUENCE playwright_combotables.theatre_id_seq2;
+
+CREATE SEQUENCE playwright_combotables.theatre_id_seq2
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 1
+	CACHE 1
+	NO CYCLE;
+
+-- Permissions
+
+ALTER SEQUENCE playwright_combotables.theatre_id_seq2 OWNER TO dbs25_team_oak;
+GRANT ALL ON SEQUENCE playwright_combotables.theatre_id_seq2 TO dbs25_team_oak;
+-- playwright_combotables.complex definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.complex;
+-- DROP TABLE playwright_combotables.complex;
 
-CREATE TABLE playwright_oak.complex (
+CREATE TABLE playwright_combotables.complex (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	address varchar(80) NULL,
 	CONSTRAINT complex_pkey PRIMARY KEY (id)
 );
 
+-- Permissions
 
--- playwright_oak.concession_item definition
+ALTER TABLE playwright_combotables.complex OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.complex TO dbs25_team_oak;
+
+
+-- playwright_combotables.concession_item definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.concession_item;
+-- DROP TABLE playwright_combotables.concession_item;
 
-CREATE TABLE playwright_oak.concession_item (
+CREATE TABLE playwright_combotables.concession_item (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	"name" varchar(80) NOT NULL,
 	shelf_price money NULL,
 	CONSTRAINT concession_item_pkey PRIMARY KEY (id)
 );
 
+-- Permissions
 
--- playwright_oak.customer definition
+ALTER TABLE playwright_combotables.concession_item OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.concession_item TO dbs25_team_oak;
+
+
+-- playwright_combotables.customer definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.customer;
+-- DROP TABLE playwright_combotables.customer;
 
-CREATE TABLE playwright_oak.customer (
+CREATE TABLE playwright_combotables.customer (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	"name" varchar(100) NULL,
 	CONSTRAINT customer_pkey PRIMARY KEY (id)
 );
 
+-- Permissions
 
--- playwright_oak.female definition
+ALTER TABLE playwright_combotables.customer OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.customer TO dbs25_team_oak;
+
+
+-- playwright_combotables.female definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.female;
+-- DROP TABLE playwright_combotables.female;
 
-CREATE TABLE playwright_oak.female (
+CREATE TABLE playwright_combotables.female (
 	givenname varchar(50) NULL
 );
 
+-- Permissions
 
--- playwright_oak.male definition
+ALTER TABLE playwright_combotables.female OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.female TO dbs25_team_oak;
+
+
+-- playwright_combotables.male definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.male;
+-- DROP TABLE playwright_combotables.male;
 
-CREATE TABLE playwright_oak.male (
+CREATE TABLE playwright_combotables.male (
 	givenname varchar(50) NULL
 );
 
+-- Permissions
 
--- playwright_oak.part definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.part;
-
-CREATE TABLE playwright_oak.part (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	"name" varchar(80) NOT NULL,
-	part_description text NULL,
-	CONSTRAINT part_pkey PRIMARY KEY (id)
-);
+ALTER TABLE playwright_combotables.male OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.male TO dbs25_team_oak;
 
 
--- playwright_oak.performer definition
+-- playwright_combotables.performer definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.performer;
+-- DROP TABLE playwright_combotables.performer;
 
-CREATE TABLE playwright_oak.performer (
+CREATE TABLE playwright_combotables.performer (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	"name" varchar(100) NOT NULL,
 	CONSTRAINT performer_pkey PRIMARY KEY (id)
 );
 
+-- Permissions
 
--- playwright_oak.surname definition
+ALTER TABLE playwright_combotables.performer OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.performer TO dbs25_team_oak;
+
+
+-- playwright_combotables.surname definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.surname;
+-- DROP TABLE playwright_combotables.surname;
 
-CREATE TABLE playwright_oak.surname (
+CREATE TABLE playwright_combotables.surname (
 	familysurname varchar(50) NULL
 );
 
+-- Permissions
 
--- playwright_oak.dual_part_certification definition
+ALTER TABLE playwright_combotables.surname OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.surname TO dbs25_team_oak;
+
+
+-- playwright_combotables.dual_part_certification definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.dual_part_certification;
+-- DROP TABLE playwright_combotables.dual_part_certification;
 
-CREATE TABLE playwright_oak.dual_part_certification (
+CREATE TABLE playwright_combotables.dual_part_certification (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_part_3_id int4 NOT NULL,
 	performer_part_4_id int4 NOT NULL,
 	date_certified date NOT NULL,
 	date_expires date NOT NULL,
 	CONSTRAINT dual_part_certification_pkey PRIMARY KEY (id),
-	CONSTRAINT dual_part_certification_performer_1_id_fkey FOREIGN KEY (performer_part_3_id) REFERENCES playwright_oak.performer(id),
-	CONSTRAINT dual_part_certification_performer_2_id_fkey FOREIGN KEY (performer_part_4_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT dual_part_certification_performer_1_id_fkey FOREIGN KEY (performer_part_3_id) REFERENCES playwright_combotables.performer(id),
+	CONSTRAINT dual_part_certification_performer_2_id_fkey FOREIGN KEY (performer_part_4_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.part_certification_1 definition
+ALTER TABLE playwright_combotables.dual_part_certification OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.dual_part_certification TO dbs25_team_oak;
+
+
+-- playwright_combotables.part_certification_1 definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.part_certification_1;
+-- DROP TABLE playwright_combotables.part_certification_1;
 
-CREATE TABLE playwright_oak.part_certification_1 (
+CREATE TABLE playwright_combotables.part_certification_1 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_1_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_1_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_1_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_1_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.part_certification_2 definition
+ALTER TABLE playwright_combotables.part_certification_1 OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.part_certification_1 TO dbs25_team_oak;
+
+
+-- playwright_combotables.part_certification_2 definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.part_certification_2;
+-- DROP TABLE playwright_combotables.part_certification_2;
 
-CREATE TABLE playwright_oak.part_certification_2 (
+CREATE TABLE playwright_combotables.part_certification_2 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_2_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_2_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_2_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_2_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.part_certification_5 definition
+ALTER TABLE playwright_combotables.part_certification_2 OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.part_certification_2 TO dbs25_team_oak;
+
+
+-- playwright_combotables.part_certification_5 definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.part_certification_5;
+-- DROP TABLE playwright_combotables.part_certification_5;
 
-CREATE TABLE playwright_oak.part_certification_5 (
+CREATE TABLE playwright_combotables.part_certification_5 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_5_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_5_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_5_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_5_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.part_certification_6 definition
+ALTER TABLE playwright_combotables.part_certification_5 OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.part_certification_5 TO dbs25_team_oak;
+
+
+-- playwright_combotables.part_certification_6 definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.part_certification_6;
+-- DROP TABLE playwright_combotables.part_certification_6;
 
-CREATE TABLE playwright_oak.part_certification_6 (
+CREATE TABLE playwright_combotables.part_certification_6 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_6_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_6_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_6_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_6_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.part_certification_7 definition
+ALTER TABLE playwright_combotables.part_certification_6 OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.part_certification_6 TO dbs25_team_oak;
+
+
+-- playwright_combotables.part_certification_7 definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.part_certification_7;
+-- DROP TABLE playwright_combotables.part_certification_7;
 
-CREATE TABLE playwright_oak.part_certification_7 (
+CREATE TABLE playwright_combotables.part_certification_7 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_7_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_7_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_7_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_7_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.part_certification_8 definition
+ALTER TABLE playwright_combotables.part_certification_7 OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.part_certification_7 TO dbs25_team_oak;
+
+
+-- playwright_combotables.part_certification_8 definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.part_certification_8;
+-- DROP TABLE playwright_combotables.part_certification_8;
 
-CREATE TABLE playwright_oak.part_certification_8 (
+CREATE TABLE playwright_combotables.part_certification_8 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_8_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_8_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_8_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_8_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.part_certification_9 definition
+ALTER TABLE playwright_combotables.part_certification_8 OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.part_certification_8 TO dbs25_team_oak;
+
+
+-- playwright_combotables.part_certification_9 definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.part_certification_9;
+-- DROP TABLE playwright_combotables.part_certification_9;
 
-CREATE TABLE playwright_oak.part_certification_9 (
+CREATE TABLE playwright_combotables.part_certification_9 (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	performer_id int4 NOT NULL,
 	date_certified date NULL,
 	date_expires date NULL,
 	CONSTRAINT part_certification_9_check CHECK ((date_expires > date_certified)),
 	CONSTRAINT part_certification_9_pkey PRIMARY KEY (id),
-	CONSTRAINT part_certification_9_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_oak.performer(id)
+	CONSTRAINT part_certification_9_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
+-- Permissions
 
--- playwright_oak.purchase definition
+ALTER TABLE playwright_combotables.part_certification_9 OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.part_certification_9 TO dbs25_team_oak;
+
+
+-- playwright_combotables.performer_rejection_log definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.purchase;
+-- DROP TABLE playwright_combotables.performer_rejection_log;
 
-CREATE TABLE playwright_oak.purchase (
+CREATE TABLE playwright_combotables.performer_rejection_log (
+	id int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	performer_id int4 NULL,
+	date_of_plays_rejected date NULL,
+	time_performer_clicked_reject timestamp NULL,
+	CONSTRAINT performer_rejection_log_pkey PRIMARY KEY (id),
+	CONSTRAINT performer_rejection_log_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
+);
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.performer_rejection_log OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.performer_rejection_log TO dbs25_team_oak;
+
+
+-- playwright_combotables.purchase definition
+
+-- Drop table
+
+-- DROP TABLE playwright_combotables.purchase;
+
+CREATE TABLE playwright_combotables.purchase (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	customer_id int4 NOT NULL,
 	day_sold timestamp NOT NULL,
 	CONSTRAINT purchase_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES playwright_oak.customer(id)
+	CONSTRAINT purchase_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES playwright_combotables.customer(id)
 );
 
+-- Permissions
 
--- playwright_oak.purchase_concession definition
+ALTER TABLE playwright_combotables.purchase OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.purchase TO dbs25_team_oak;
+
+
+-- playwright_combotables.purchase_concession definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.purchase_concession;
+-- DROP TABLE playwright_combotables.purchase_concession;
 
-CREATE TABLE playwright_oak.purchase_concession (
+CREATE TABLE playwright_combotables.purchase_concession (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	complex_id int4 NULL,
 	day_sold timestamp NOT NULL,
 	CONSTRAINT purchase_concession_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_concession_complex_id_fkey FOREIGN KEY (complex_id) REFERENCES playwright_oak.complex(id)
+	CONSTRAINT purchase_concession_complex_id_fkey FOREIGN KEY (complex_id) REFERENCES playwright_combotables.complex(id)
 );
 
+-- Permissions
 
--- playwright_oak.purchase_concession_item definition
+ALTER TABLE playwright_combotables.purchase_concession OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.purchase_concession TO dbs25_team_oak;
+
+
+-- playwright_combotables.purchase_concession_item definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.purchase_concession_item;
+-- DROP TABLE playwright_combotables.purchase_concession_item;
 
-CREATE TABLE playwright_oak.purchase_concession_item (
+CREATE TABLE playwright_combotables.purchase_concession_item (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	concession_item_id int4 NULL,
 	purchase_concession_id int4 NOT NULL,
 	quantity int4 NULL,
 	actual_price money NOT NULL,
 	CONSTRAINT purchase_concession_item_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_concession_item_concession_item_id_fkey FOREIGN KEY (concession_item_id) REFERENCES playwright_oak.concession_item(id),
-	CONSTRAINT purchase_concession_item_purchase_concession_id_fkey FOREIGN KEY (purchase_concession_id) REFERENCES playwright_oak.purchase_concession(id)
+	CONSTRAINT purchase_concession_item_concession_item_id_fkey FOREIGN KEY (concession_item_id) REFERENCES playwright_combotables.concession_item(id),
+	CONSTRAINT purchase_concession_item_purchase_concession_id_fkey FOREIGN KEY (purchase_concession_id) REFERENCES playwright_combotables.purchase_concession(id)
 );
 
+-- Permissions
 
--- playwright_oak.theatre definition
+ALTER TABLE playwright_combotables.purchase_concession_item OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.purchase_concession_item TO dbs25_team_oak;
+
+
+-- playwright_combotables.theatre definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.theatre;
+-- DROP TABLE playwright_combotables.theatre;
 
-CREATE TABLE playwright_oak.theatre (
+CREATE TABLE playwright_combotables.theatre (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	max_capacity int4 NULL,
 	complex_id int4 NULL,
 	CONSTRAINT theatre_pkey PRIMARY KEY (id),
-	CONSTRAINT theatre_complexid_fkey FOREIGN KEY (complex_id) REFERENCES playwright_oak.complex(id)
+	CONSTRAINT theatre_complexid_fkey FOREIGN KEY (complex_id) REFERENCES playwright_combotables.complex(id)
 );
 
+-- Permissions
 
--- playwright_oak.actual_schedule_play definition
+ALTER TABLE playwright_combotables.theatre OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.theatre TO dbs25_team_oak;
+
+
+-- playwright_combotables.actual_schedule_play definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.actual_schedule_play;
+-- DROP TABLE playwright_combotables.actual_schedule_play;
 
-CREATE TABLE playwright_oak.actual_schedule_play (
-	theatre_id int4 NOT NULL,
-	scheduled_time timestamp NOT NULL,
+CREATE TABLE playwright_combotables.actual_schedule_play (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	CONSTRAINT actual_schedule_play_pkey PRIMARY KEY (id),
-	CONSTRAINT actual_schedule_play_scheduled_time_key UNIQUE (scheduled_time),
-	CONSTRAINT actual_schedule_play_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_oak.theatre(id)
-);
-
-
--- playwright_oak.schedule_play_template_week definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.schedule_play_template_week;
-
-CREATE TABLE playwright_oak.schedule_play_template_week (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	theatre_id int4 NOT NULL,
-	day_of_week varchar(10) NOT NULL,
-	time_of_day int4 NOT NULL,
-	CONSTRAINT schedule_play_template_week_pkey PRIMARY KEY (id),
-	CONSTRAINT schedule_play_template_week_theatre_id_day_of_week_time_of__key UNIQUE (theatre_id, day_of_week, time_of_day),
-	CONSTRAINT schedule_play_template_week_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_oak.theatre(id)
-);
-
-
--- playwright_oak.seat definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.seat;
-
-CREATE TABLE playwright_oak.seat (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	theatre_id int4 NOT NULL,
-	seat_num int4 NOT NULL,
-	CONSTRAINT seat_pkey PRIMARY KEY (id),
-	CONSTRAINT seat_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_oak.theatre(id)
-);
-
-
--- playwright_oak.actual_schedule_performer definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.actual_schedule_performer;
-
-CREATE TABLE playwright_oak.actual_schedule_performer (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	schedule_id int4 NOT NULL,
 	cert_1_id int4 NULL,
 	cert_2_id int4 NULL,
 	dual_cert_id int4 NULL,
@@ -780,16 +1364,28 @@ CREATE TABLE playwright_oak.actual_schedule_performer (
 	cert_7_id int4 NULL,
 	cert_8_id int4 NULL,
 	cert_9_id int4 NULL,
-	CONSTRAINT actual_schedule_performer_pkey PRIMARY KEY (id),
-	CONSTRAINT actual_schedule_performer_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES playwright_oak.part_certification_1(id),
-	CONSTRAINT actual_schedule_performer_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES playwright_oak.part_certification_2(id),
-	CONSTRAINT actual_schedule_performer_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES playwright_oak.part_certification_5(id),
-	CONSTRAINT actual_schedule_performer_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES playwright_oak.part_certification_6(id),
-	CONSTRAINT actual_schedule_performer_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES playwright_oak.part_certification_7(id),
-	CONSTRAINT actual_schedule_performer_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES playwright_oak.part_certification_8(id),
-	CONSTRAINT actual_schedule_performer_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES playwright_oak.part_certification_9(id),
-	CONSTRAINT actual_schedule_performer_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES playwright_oak.dual_part_certification(id),
-	CONSTRAINT actual_schedule_performer_schedule_template_id_fkey FOREIGN KEY (schedule_id) REFERENCES playwright_oak.actual_schedule_play(id)
+	theatre_id int4 NOT NULL,
+	scheduled_time timestamp NOT NULL,
+	cert_1_accept bool NULL,
+	cert_2_accept bool NULL,
+	cert_3_accept bool NULL,
+	cert_4_accept bool NULL,
+	cert_5_accept bool NULL,
+	cert_6_accept bool NULL,
+	cert_7_accept bool NULL,
+	cert_8_accept bool NULL,
+	cert_9_accept bool NULL,
+	CONSTRAINT actual_schedule_play_pkey PRIMARY KEY (id),
+	CONSTRAINT actual_schedule_play_scheduled_time_key UNIQUE (scheduled_time),
+	CONSTRAINT actual_schedule_play_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES playwright_combotables.part_certification_1(id),
+	CONSTRAINT actual_schedule_play_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES playwright_combotables.part_certification_2(id),
+	CONSTRAINT actual_schedule_play_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES playwright_combotables.part_certification_5(id),
+	CONSTRAINT actual_schedule_play_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES playwright_combotables.part_certification_6(id),
+	CONSTRAINT actual_schedule_play_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES playwright_combotables.part_certification_7(id),
+	CONSTRAINT actual_schedule_play_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES playwright_combotables.part_certification_8(id),
+	CONSTRAINT actual_schedule_play_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES playwright_combotables.part_certification_9(id),
+	CONSTRAINT actual_schedule_play_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES playwright_combotables.dual_part_certification(id),
+	CONSTRAINT actual_schedule_play_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_combotables.theatre(id)
 );
 
 -- Table Triggers
@@ -799,43 +1395,28 @@ insert
     or
 update
     on
-    playwright_oak.actual_schedule_performer for each row execute function playwright_oak.active_cert_trigger();
+    playwright_combotables.actual_schedule_play for each row execute function playwright_combotables.active_cert_trigger();
 create trigger multiple_parts_active before
 insert
     or
 update
     on
-    playwright_oak.actual_schedule_performer for each row execute function playwright_oak.multiple_parts_trigger();
+    playwright_combotables.actual_schedule_play for each row execute function playwright_combotables.multiple_parts_trigger();
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.actual_schedule_play OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.actual_schedule_play TO dbs25_team_oak;
 
 
--- playwright_oak.purchase_seat definition
-
--- Drop table
-
--- DROP TABLE playwright_oak.purchase_seat;
-
-CREATE TABLE playwright_oak.purchase_seat (
-	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	seat_id int4 NOT NULL,
-	actual_schedule_play_id int4 NOT NULL,
-	actual_sell_price money NULL,
-	purchase_id int4 NULL,
-	CONSTRAINT purchase_seat_pkey PRIMARY KEY (id),
-	CONSTRAINT purchase_seat_actual_schedule_play_id_fkey FOREIGN KEY (actual_schedule_play_id) REFERENCES playwright_oak.actual_schedule_play(id),
-	CONSTRAINT purchase_seat_purchase_id_fkey FOREIGN KEY (purchase_id) REFERENCES playwright_oak.purchase(id),
-	CONSTRAINT purchase_seat_seat_id_fkey FOREIGN KEY (seat_id) REFERENCES playwright_oak.seat(id)
-);
-
-
--- playwright_oak.schedule_performer_template definition
+-- playwright_combotables.schedule_play_template definition
 
 -- Drop table
 
--- DROP TABLE playwright_oak.schedule_performer_template;
+-- DROP TABLE playwright_combotables.schedule_play_template;
 
-CREATE TABLE playwright_oak.schedule_performer_template (
+CREATE TABLE playwright_combotables.schedule_play_template (
 	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
-	schedule_template_id int4 NOT NULL,
 	cert_1_id int4 NULL,
 	cert_2_id int4 NULL,
 	dual_cert_id int4 NULL,
@@ -844,16 +1425,20 @@ CREATE TABLE playwright_oak.schedule_performer_template (
 	cert_7_id int4 NULL,
 	cert_8_id int4 NULL,
 	cert_9_id int4 NULL,
-	CONSTRAINT schedule_performer_template_pkey PRIMARY KEY (id),
-	CONSTRAINT schedule_performer_template_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES playwright_oak.part_certification_1(id),
-	CONSTRAINT schedule_performer_template_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES playwright_oak.part_certification_2(id),
-	CONSTRAINT schedule_performer_template_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES playwright_oak.part_certification_5(id),
-	CONSTRAINT schedule_performer_template_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES playwright_oak.part_certification_6(id),
-	CONSTRAINT schedule_performer_template_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES playwright_oak.part_certification_7(id),
-	CONSTRAINT schedule_performer_template_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES playwright_oak.part_certification_8(id),
-	CONSTRAINT schedule_performer_template_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES playwright_oak.part_certification_9(id),
-	CONSTRAINT schedule_performer_template_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES playwright_oak.dual_part_certification(id),
-	CONSTRAINT schedule_performer_template_schedule_template_id_fkey FOREIGN KEY (schedule_template_id) REFERENCES playwright_oak.schedule_play_template_week(id)
+	theatre_id int4 NOT NULL,
+	day_of_week varchar(10) NOT NULL,
+	time_of_day int4 NOT NULL,
+	CONSTRAINT schedule_play_template_pkey PRIMARY KEY (id),
+	CONSTRAINT schedule_play_template_theatre_id_day_of_week_time_of__key UNIQUE (theatre_id, day_of_week, time_of_day),
+	CONSTRAINT schedule_play_template_cert_1_id_fkey FOREIGN KEY (cert_1_id) REFERENCES playwright_combotables.part_certification_1(id),
+	CONSTRAINT schedule_play_template_cert_2_id_fkey FOREIGN KEY (cert_2_id) REFERENCES playwright_combotables.part_certification_2(id),
+	CONSTRAINT schedule_play_template_cert_5_id_fkey FOREIGN KEY (cert_5_id) REFERENCES playwright_combotables.part_certification_5(id),
+	CONSTRAINT schedule_play_template_cert_6_id_fkey FOREIGN KEY (cert_6_id) REFERENCES playwright_combotables.part_certification_6(id),
+	CONSTRAINT schedule_play_template_cert_7_id_fkey FOREIGN KEY (cert_7_id) REFERENCES playwright_combotables.part_certification_7(id),
+	CONSTRAINT schedule_play_template_cert_8_id_fkey FOREIGN KEY (cert_8_id) REFERENCES playwright_combotables.part_certification_8(id),
+	CONSTRAINT schedule_play_template_cert_9_id_fkey FOREIGN KEY (cert_9_id) REFERENCES playwright_combotables.part_certification_9(id),
+	CONSTRAINT schedule_play_template_dual_cert_id_fkey FOREIGN KEY (dual_cert_id) REFERENCES playwright_combotables.dual_part_certification(id),
+	CONSTRAINT schedule_play_template_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_combotables.theatre(id)
 );
 
 -- Table Triggers
@@ -863,19 +1448,838 @@ insert
     or
 update
     on
-    playwright_oak.schedule_performer_template for each row execute function playwright_oak.active_cert_trigger();
+    playwright_combotables.schedule_play_template for each row execute function playwright_combotables.active_cert_trigger();
 create trigger multiple_parts_template before
 insert
     or
 update
     on
-    playwright_oak.schedule_performer_template for each row execute function playwright_oak.multiple_parts_trigger();
+    playwright_combotables.schedule_play_template for each row execute function playwright_combotables.multiple_parts_trigger();
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.schedule_play_template OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.schedule_play_template TO dbs25_team_oak;
+
+
+-- playwright_combotables.seat definition
+
+-- Drop table
+
+-- DROP TABLE playwright_combotables.seat;
+
+CREATE TABLE playwright_combotables.seat (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	theatre_id int4 NOT NULL,
+	seat_num int4 NOT NULL,
+	CONSTRAINT seat_pkey PRIMARY KEY (id),
+	CONSTRAINT seat_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_combotables.theatre(id)
+);
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.seat OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.seat TO dbs25_team_oak;
+
+
+-- playwright_combotables.purchase_seat definition
+
+-- Drop table
+
+-- DROP TABLE playwright_combotables.purchase_seat;
+
+CREATE TABLE playwright_combotables.purchase_seat (
+	id int4 GENERATED BY DEFAULT AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	seat_id int4 NOT NULL,
+	actual_schedule_play_id int4 NOT NULL,
+	actual_sell_price money NULL,
+	purchase_id int4 NULL,
+	CONSTRAINT purchase_seat_pkey PRIMARY KEY (id),
+	CONSTRAINT purchase_seat_actual_schedule_play_id_fkey FOREIGN KEY (actual_schedule_play_id) REFERENCES playwright_combotables.actual_schedule_play(id),
+	CONSTRAINT purchase_seat_purchase_id_fkey FOREIGN KEY (purchase_id) REFERENCES playwright_combotables.purchase(id),
+	CONSTRAINT purchase_seat_seat_id_fkey FOREIGN KEY (seat_id) REFERENCES playwright_combotables.seat(id)
+);
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.purchase_seat OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.purchase_seat TO dbs25_team_oak;
+
+
+-- playwright_combotables.actor_certification_view source
+
+CREATE OR REPLACE VIEW playwright_combotables.actor_certification_view
+AS WITH full_certification AS (
+         SELECT p.id,
+            p.name,
+            1 AS part,
+            pc.date_certified,
+            pc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.part_certification_1 pc ON p.id = pc.performer_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            2 AS part,
+            pc.date_certified,
+            pc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.part_certification_2 pc ON p.id = pc.performer_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            5 AS part,
+            pc.date_certified,
+            pc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.part_certification_5 pc ON p.id = pc.performer_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            6 AS part,
+            pc.date_certified,
+            pc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.part_certification_6 pc ON p.id = pc.performer_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            7 AS part,
+            pc.date_certified,
+            pc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.part_certification_7 pc ON p.id = pc.performer_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            8 AS part,
+            pc.date_certified,
+            pc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.part_certification_8 pc ON p.id = pc.performer_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            9 AS part,
+            pc.date_certified,
+            pc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.part_certification_9 pc ON p.id = pc.performer_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            3 AS part,
+            dpc.date_certified,
+            dpc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.dual_part_certification dpc ON p.id = dpc.performer_part_3_id
+        UNION ALL
+         SELECT p.id,
+            p.name,
+            4 AS part,
+            dpc.date_certified,
+            dpc.date_expires
+           FROM playwright_combotables.performer p
+             JOIN playwright_combotables.dual_part_certification dpc ON p.id = dpc.performer_part_4_id
+        )
+ SELECT id,
+    name,
+    part,
+    date_certified,
+    date_expires
+   FROM full_certification fc
+  ORDER BY name, part;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.actor_certification_view OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.actor_certification_view TO dbs25_team_oak;
+
+
+-- playwright_combotables.actor_schedule_view source
+
+CREATE OR REPLACE VIEW playwright_combotables.actor_schedule_view
+AS WITH fullschedule AS (
+         SELECT perf.id,
+            perf.name,
+            1 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_1_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.part_certification_1 pc ON perf.id = pc.performer_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.cert_1_id = pc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            2 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_2_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.part_certification_2 pc ON perf.id = pc.performer_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.cert_2_id = pc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            5 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_5_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.part_certification_5 pc ON perf.id = pc.performer_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.cert_5_id = pc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            6 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_6_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.part_certification_6 pc ON perf.id = pc.performer_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.cert_6_id = pc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            7 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_7_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.part_certification_7 pc ON perf.id = pc.performer_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.cert_7_id = pc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            8 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_8_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.part_certification_8 pc ON perf.id = pc.performer_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.cert_8_id = pc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            9 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_9_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.part_certification_9 pc ON perf.id = pc.performer_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.cert_9_id = pc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            3 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_3_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.dual_part_certification dc ON perf.id = dc.performer_part_3_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.dual_cert_id = dc.id
+        UNION ALL
+         SELECT perf.id,
+            perf.name,
+            4 AS part,
+            asp.scheduled_time,
+            asp.theatre_id,
+            asp.cert_4_accept AS accepted,
+            asp.id AS asp_id
+           FROM playwright_combotables.performer perf
+             JOIN playwright_combotables.dual_part_certification dc ON perf.id = dc.performer_part_4_id
+             JOIN playwright_combotables.actual_schedule_play asp ON asp.dual_cert_id = dc.id
+        )
+ SELECT id,
+    name,
+    part,
+    asp_id,
+    scheduled_time,
+    theatre_id,
+    accepted
+   FROM fullschedule
+  ORDER BY scheduled_time, part;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.actor_schedule_view OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.actor_schedule_view TO dbs25_team_oak;
+
+
+-- playwright_combotables.actual_union_rules_all source
+
+CREATE OR REPLACE VIEW playwright_combotables.actual_union_rules_all
+AS WITH cert1 AS (
+         SELECT pc1.performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.part_certification_1 pc1 ON spt.cert_1_id = pc1.id
+          GROUP BY pc1.performer_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        ), cert2 AS (
+         SELECT pc2.performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.part_certification_2 pc2 ON spt.cert_2_id = pc2.id
+          GROUP BY pc2.performer_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        ), cert_dual AS (
+         SELECT dpc.performer_part_3_id AS performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.dual_part_certification dpc ON spt.dual_cert_id = dpc.id
+          GROUP BY dpc.performer_part_3_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        UNION
+         SELECT dpc.performer_part_4_id AS performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.dual_part_certification dpc ON spt.dual_cert_id = dpc.id
+          GROUP BY dpc.performer_part_4_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        ), cert5 AS (
+         SELECT pc5.performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.part_certification_5 pc5 ON spt.cert_5_id = pc5.id
+          GROUP BY pc5.performer_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        ), cert6 AS (
+         SELECT pc6.performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.part_certification_6 pc6 ON spt.cert_6_id = pc6.id
+          GROUP BY pc6.performer_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        ), cert7 AS (
+         SELECT pc7.performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.part_certification_7 pc7 ON spt.cert_7_id = pc7.id
+          GROUP BY pc7.performer_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        ), cert8 AS (
+         SELECT pc8.performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.part_certification_8 pc8 ON spt.cert_8_id = pc8.id
+          GROUP BY pc8.performer_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        ), cert9 AS (
+         SELECT pc9.performer_id,
+            EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) AS hours,
+            EXTRACT(dow FROM spt.scheduled_time) AS day1
+           FROM playwright_combotables.actual_schedule_play spt
+             JOIN playwright_combotables.part_certification_9 pc9 ON spt.cert_9_id = pc9.id
+          GROUP BY pc9.performer_id, (EXTRACT(dow FROM spt.scheduled_time))
+         HAVING EXTRACT(hour FROM max(spt.scheduled_time + '01:45:00'::interval) - min(spt.scheduled_time)) > 6::numeric
+        )
+ SELECT hours,
+    performer_id,
+    day1
+   FROM ( SELECT cert1.performer_id,
+            cert1.hours,
+            cert1.day1
+           FROM cert1
+        UNION
+         SELECT cert2.performer_id,
+            cert2.hours,
+            cert2.day1
+           FROM cert2
+        UNION
+         SELECT cert_dual.performer_id,
+            cert_dual.hours,
+            cert_dual.day1
+           FROM cert_dual
+        UNION
+         SELECT cert5.performer_id,
+            cert5.hours,
+            cert5.day1
+           FROM cert5
+        UNION
+         SELECT cert6.performer_id,
+            cert6.hours,
+            cert6.day1
+           FROM cert6
+        UNION
+         SELECT cert7.performer_id,
+            cert7.hours,
+            cert7.day1
+           FROM cert7
+        UNION
+         SELECT cert8.performer_id,
+            cert8.hours,
+            cert8.day1
+           FROM cert8
+        UNION
+         SELECT cert9.performer_id,
+            cert9.hours,
+            cert9.day1
+           FROM cert9) unnamed_subquery
+  ORDER BY day1;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.actual_union_rules_all OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.actual_union_rules_all TO dbs25_team_oak;
+
+
+-- playwright_combotables.availableseats source
+
+CREATE OR REPLACE VIEW playwright_combotables.availableseats
+AS SELECT a.seatid
+   FROM ( SELECT s.id AS seatid
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.theatre t ON asp.theatre_id = t.id
+             JOIN playwright_combotables.seat s ON s.theatre_id = t.id
+          WHERE asp.id = 2) a
+     LEFT JOIN ( SELECT ps2.seat_id AS seatid
+           FROM playwright_combotables.purchase_seat ps2
+          WHERE ps2.actual_schedule_play_id = 2) b ON a.seatid = b.seatid
+  WHERE b.seatid IS NULL
+  ORDER BY a.seatid;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.availableseats OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.availableseats TO dbs25_team_oak;
+
+
+-- playwright_combotables.double_booked_actor_actual source
+
+CREATE OR REPLACE VIEW playwright_combotables.double_booked_actor_actual
+AS WITH performer_schedules AS (
+         SELECT asp.id AS play_id,
+            pc1.performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.part_certification_1 pc1 ON asp.cert_1_id = pc1.id
+        UNION
+         SELECT asp.id AS play_id,
+            pc2.performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.part_certification_2 pc2 ON asp.cert_2_id = pc2.id
+        UNION
+         SELECT asp.id AS play_id,
+            dcp.performer_part_3_id AS performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.dual_part_certification dcp ON asp.dual_cert_id = dcp.id
+        UNION
+         SELECT asp.id AS play_id,
+            dcp.performer_part_4_id AS performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.dual_part_certification dcp ON asp.dual_cert_id = dcp.id
+        UNION
+         SELECT asp.id AS play_id,
+            pc5.performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.part_certification_5 pc5 ON asp.cert_5_id = pc5.id
+        UNION
+         SELECT asp.id AS play_id,
+            pc6.performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.part_certification_6 pc6 ON asp.cert_6_id = pc6.id
+        UNION
+         SELECT asp.id AS play_id,
+            pc7.performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.part_certification_7 pc7 ON asp.cert_7_id = pc7.id
+        UNION
+         SELECT asp.id AS play_id,
+            pc8.performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.part_certification_8 pc8 ON asp.cert_8_id = pc8.id
+        UNION
+         SELECT asp.id AS play_id,
+            pc9.performer_id,
+            asp.scheduled_time
+           FROM playwright_combotables.actual_schedule_play asp
+             JOIN playwright_combotables.part_certification_9 pc9 ON asp.cert_9_id = pc9.id
+        )
+ SELECT ps1.play_id AS play1_id,
+    ps2.play_id AS play2_id,
+    ps1.performer_id AS play1_performer,
+    ps2.performer_id AS play2_performer,
+    ps1.scheduled_time AS play1_scheduled_time,
+    ps2.scheduled_time AS play2_scheduled_time
+   FROM performer_schedules ps1
+     JOIN performer_schedules ps2 ON ps1.play_id <> ps2.play_id AND ps1.performer_id = ps2.performer_id
+  WHERE (ps1.scheduled_time + '01:45:00'::interval) >= ps2.scheduled_time AND (ps1.scheduled_time - '01:45:00'::interval) < ps2.scheduled_time AND ps1.scheduled_time::date = ps2.scheduled_time::date;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.double_booked_actor_actual OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.double_booked_actor_actual TO dbs25_team_oak;
+
+
+-- playwright_combotables.double_booked_actor_template source
+
+CREATE OR REPLACE VIEW playwright_combotables.double_booked_actor_template
+AS WITH performer_schedules AS (
+         SELECT spt.id AS play_id,
+            pc1.performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_1 pc1 ON spt.cert_1_id = pc1.id
+        UNION
+         SELECT spt.id AS play_id,
+            pc2.performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_2 pc2 ON spt.cert_2_id = pc2.id
+        UNION
+         SELECT spt.id AS play_id,
+            dcp.performer_part_3_id AS performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.dual_part_certification dcp ON spt.dual_cert_id = dcp.id
+        UNION
+         SELECT spt.id AS play_id,
+            dcp.performer_part_4_id AS performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.dual_part_certification dcp ON spt.dual_cert_id = dcp.id
+        UNION
+         SELECT spt.id AS play_id,
+            pc5.performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_5 pc5 ON spt.cert_5_id = pc5.id
+        UNION
+         SELECT spt.id AS play_id,
+            pc6.performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_6 pc6 ON spt.cert_6_id = pc6.id
+        UNION
+         SELECT spt.id AS play_id,
+            pc7.performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_7 pc7 ON spt.cert_7_id = pc7.id
+        UNION
+         SELECT spt.id AS play_id,
+            pc8.performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_8 pc8 ON spt.cert_8_id = pc8.id
+        UNION
+         SELECT spt.id AS play_id,
+            pc9.performer_id,
+            spt.time_of_day,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_9 pc9 ON spt.cert_9_id = pc9.id
+        )
+ SELECT ps1.play_id AS play1_id,
+    ps2.play_id AS play2_id,
+    ps1.performer_id AS play1_performer,
+    ps2.performer_id AS play2_performer,
+    ps1.time_of_day AS play1_time_of_day,
+    ps2.time_of_day AS play2_time_of_day
+   FROM performer_schedules ps1
+     JOIN performer_schedules ps2 ON ps1.play_id <> ps2.play_id AND ps1.performer_id = ps2.performer_id
+  WHERE (ps1.time_of_day::numeric + 1.75) >= ps2.time_of_day::numeric AND (ps1.time_of_day::numeric - 1.75) < ps2.time_of_day::numeric AND ps1.day_of_week::text = ps2.day_of_week::text;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.double_booked_actor_template OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.double_booked_actor_template TO dbs25_team_oak;
+
+
+-- playwright_combotables.double_booked_theatre_actual source
+
+CREATE OR REPLACE VIEW playwright_combotables.double_booked_theatre_actual
+AS SELECT asp1.id AS template1_id,
+    asp2.id AS template2_id,
+    asp1.theatre_id AS template1_theatre,
+    asp2.theatre_id AS template2_theatre,
+    asp1.scheduled_time AS temp1_start,
+    asp2.scheduled_time AS temp2_start
+   FROM playwright_combotables.actual_schedule_play asp1
+     JOIN playwright_combotables.actual_schedule_play asp2 ON asp1.id <> asp2.id AND asp1.theatre_id = asp2.theatre_id
+  WHERE (asp1.scheduled_time + '01:45:00'::interval) >= asp2.scheduled_time AND (asp1.scheduled_time - '01:45:00'::interval) < asp2.scheduled_time AND asp1.scheduled_time::date = asp2.scheduled_time::date;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.double_booked_theatre_actual OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.double_booked_theatre_actual TO dbs25_team_oak;
+
+
+-- playwright_combotables.double_booked_theatre_template source
+
+CREATE OR REPLACE VIEW playwright_combotables.double_booked_theatre_template
+AS SELECT spt1.id AS template1_id,
+    spt2.id AS template2_id,
+    spt1.theatre_id AS template1_theatre,
+    spt2.theatre_id AS template2_theatre,
+    spt1.time_of_day AS temp1_start,
+    spt2.time_of_day AS temp2_start
+   FROM playwright_combotables.schedule_play_template spt1
+     JOIN playwright_combotables.schedule_play_template spt2 ON spt1.id <> spt2.id AND spt1.theatre_id = spt2.theatre_id
+  WHERE (spt1.time_of_day::numeric + 1.75) >= spt2.time_of_day::numeric AND (spt1.time_of_day::numeric - 1.75) < spt2.time_of_day::numeric AND spt1.day_of_week::text = spt2.day_of_week::text;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.double_booked_theatre_template OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.double_booked_theatre_template TO dbs25_team_oak;
+
+
+-- playwright_combotables.multiple_part_day_actors source
+
+CREATE OR REPLACE VIEW playwright_combotables.multiple_part_day_actors
+AS WITH partcount AS (
+         SELECT actor_schedule_view.id,
+            actor_schedule_view.name,
+            actor_schedule_view.scheduled_time::date AS day,
+            count(actor_schedule_view.part) AS count
+           FROM playwright_combotables.actor_schedule_view
+          GROUP BY actor_schedule_view.scheduled_time, actor_schedule_view.id, actor_schedule_view.part, actor_schedule_view.name
+          ORDER BY (actor_schedule_view.scheduled_time::date)
+        )
+ SELECT id,
+    name,
+    day,
+    count
+   FROM partcount
+  WHERE count > 1;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.multiple_part_day_actors OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.multiple_part_day_actors TO dbs25_team_oak;
+
+
+-- playwright_combotables.performer_reliability_check source
+
+CREATE OR REPLACE VIEW playwright_combotables.performer_reliability_check
+AS SELECT pc1.performer_id AS perf1,
+    pc2.performer_id AS perf2,
+    dpc.performer_part_3_id AS perf3,
+    dpc.performer_part_4_id AS perf4,
+    pc5.performer_id AS perf5,
+    pc6.performer_id AS perf6,
+    pc7.performer_id AS perf7,
+    pc8.performer_id AS perf8,
+    pc9.performer_id AS perf9
+   FROM playwright_combotables.actual_schedule_play asp
+     LEFT JOIN playwright_combotables.part_certification_1 pc1 ON asp.cert_1_id = pc1.id
+     LEFT JOIN playwright_combotables.part_certification_2 pc2 ON asp.cert_2_id = pc2.id
+     LEFT JOIN playwright_combotables.dual_part_certification dpc ON asp.dual_cert_id = dpc.id
+     LEFT JOIN playwright_combotables.part_certification_5 pc5 ON asp.cert_5_id = pc5.id
+     LEFT JOIN playwright_combotables.part_certification_6 pc6 ON asp.cert_6_id = pc6.id
+     LEFT JOIN playwright_combotables.part_certification_7 pc7 ON asp.cert_7_id = pc7.id
+     LEFT JOIN playwright_combotables.part_certification_8 pc8 ON asp.cert_8_id = pc8.id
+     LEFT JOIN playwright_combotables.part_certification_9 pc9 ON asp.cert_9_id = pc9.id
+  WHERE asp.cert_1_accept = false OR asp.cert_2_accept = false OR asp.cert_3_accept = false OR asp.cert_4_accept = false OR asp.cert_5_accept = false OR asp.cert_6_accept = false OR asp.cert_7_accept = false OR asp.cert_8_accept = false OR asp.cert_9_accept = false;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.performer_reliability_check OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.performer_reliability_check TO dbs25_team_oak;
+
+
+-- playwright_combotables.schedule_holes source
+
+CREATE OR REPLACE VIEW playwright_combotables.schedule_holes
+AS SELECT id,
+    name,
+    part,
+    asp_id,
+    scheduled_time,
+    theatre_id,
+    accepted
+   FROM playwright_combotables.actor_schedule_view asv
+  WHERE accepted IS NULL OR accepted IS FALSE
+  ORDER BY scheduled_time;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.schedule_holes OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.schedule_holes TO dbs25_team_oak;
+
+
+-- playwright_combotables.template_union_rules_all source
+
+CREATE OR REPLACE VIEW playwright_combotables.template_union_rules_all
+AS WITH cert1 AS (
+         SELECT pc1.performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_1 pc1 ON spt.cert_1_id = pc1.id
+          GROUP BY pc1.performer_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        ), cert2 AS (
+         SELECT pc2.performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_2 pc2 ON spt.cert_2_id = pc2.id
+          GROUP BY pc2.performer_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        ), cert_dual AS (
+         SELECT dpc.performer_part_3_id AS performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.dual_part_certification dpc ON spt.dual_cert_id = dpc.id
+          GROUP BY dpc.performer_part_3_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        UNION
+         SELECT dpc.performer_part_4_id AS performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.dual_part_certification dpc ON spt.dual_cert_id = dpc.id
+          GROUP BY dpc.performer_part_4_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        ), cert5 AS (
+         SELECT pc5.performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_5 pc5 ON spt.cert_5_id = pc5.id
+          GROUP BY pc5.performer_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        ), cert6 AS (
+         SELECT pc6.performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_6 pc6 ON spt.cert_6_id = pc6.id
+          GROUP BY pc6.performer_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        ), cert7 AS (
+         SELECT pc7.performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_7 pc7 ON spt.cert_7_id = pc7.id
+          GROUP BY pc7.performer_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        ), cert8 AS (
+         SELECT pc8.performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_8 pc8 ON spt.cert_8_id = pc8.id
+          GROUP BY pc8.performer_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        ), cert9 AS (
+         SELECT pc9.performer_id,
+            max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric AS hours,
+            spt.day_of_week
+           FROM playwright_combotables.schedule_play_template spt
+             JOIN playwright_combotables.part_certification_9 pc9 ON spt.cert_9_id = pc9.id
+          GROUP BY pc9.performer_id, spt.day_of_week
+         HAVING (max(spt.time_of_day::numeric + 1.75) - min(spt.time_of_day)::numeric) > 6::numeric
+        )
+ SELECT hours,
+    performer_id,
+    day_of_week
+   FROM ( SELECT cert1.performer_id,
+            cert1.hours,
+            cert1.day_of_week
+           FROM cert1
+        UNION
+         SELECT cert2.performer_id,
+            cert2.hours,
+            cert2.day_of_week
+           FROM cert2
+        UNION
+         SELECT cert_dual.performer_id,
+            cert_dual.hours,
+            cert_dual.day_of_week
+           FROM cert_dual
+        UNION
+         SELECT cert5.performer_id,
+            cert5.hours,
+            cert5.day_of_week
+           FROM cert5
+        UNION
+         SELECT cert6.performer_id,
+            cert6.hours,
+            cert6.day_of_week
+           FROM cert6
+        UNION
+         SELECT cert7.performer_id,
+            cert7.hours,
+            cert7.day_of_week
+           FROM cert7
+        UNION
+         SELECT cert8.performer_id,
+            cert8.hours,
+            cert8.day_of_week
+           FROM cert8
+        UNION
+         SELECT cert9.performer_id,
+            cert9.hours,
+            cert9.day_of_week
+           FROM cert9) unnamed_subquery
+  ORDER BY day_of_week;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.template_union_rules_all OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.template_union_rules_all TO dbs25_team_oak;
+
+
+-- playwright_combotables.ticket_sales_per_showing source
+
+CREATE OR REPLACE VIEW playwright_combotables.ticket_sales_per_showing
+AS SELECT asp.id AS play_id,
+    asp.scheduled_time AS showing_timestamp,
+    count(ps.id) AS num_tickets_sold,
+    sum(ps.actual_sell_price) AS gross_income
+   FROM playwright_combotables.actual_schedule_play asp
+     LEFT JOIN playwright_combotables.purchase_seat ps ON asp.id = ps.actual_schedule_play_id
+     LEFT JOIN playwright_combotables.purchase p ON ps.purchase_id = p.id
+  GROUP BY asp.id, asp.scheduled_time
+  ORDER BY (count(ps.id)), asp.scheduled_time DESC;
+
+-- Permissions
+
+ALTER TABLE playwright_combotables.ticket_sales_per_showing OWNER TO dbs25_team_oak;
+GRANT ALL ON TABLE playwright_combotables.ticket_sales_per_showing TO dbs25_team_oak;
 
 
 
--- DROP FUNCTION playwright_oak.active_cert_trigger();
+-- DROP FUNCTION playwright_combotables.active_cert_trigger();
 
-CREATE OR REPLACE FUNCTION playwright_oak.active_cert_trigger()
+CREATE OR REPLACE FUNCTION playwright_combotables.active_cert_trigger()
  RETURNS trigger
  LANGUAGE plpgsql
 AS $function$
@@ -914,27 +2318,32 @@ end;
 $function$
 ;
 
--- DROP PROCEDURE playwright_oak.add_random_customer();
+-- Permissions
 
-CREATE OR REPLACE PROCEDURE playwright_oak.add_random_customer()
+ALTER FUNCTION playwright_combotables.active_cert_trigger() OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.active_cert_trigger() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.add_random_customer();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.add_random_customer()
  LANGUAGE plpgsql
 AS $procedure$
 
 declare
 	myName varchar(100);
 begin
-		insert into playwright_oak.customer (name) 
+		insert into customer (name) 
 		select * from (select 
 			    concat(
-			        (select givenname from playwright_oak.female order by random() limit 1),
+			        (select givenname from female order by random() limit 1),
 			        ' ',
-			        (select familysurname from playwright_oak.surname order by random() limit 1)
+			        (select familysurname from surname order by random() limit 1)
 			    ) 		union all
 				select
 			    	concat(
-			        	(select givenname from playwright_oak.male order by random() limit 1),
+			        	(select givenname from male order by random() limit 1),
 			        	' ',
-			        	(select familysurname from playwright_oak.surname order by random() limit 1)
+			        	(select familysurname from surname order by random() limit 1)
 			    	) 
 			) as B
 	order by random()
@@ -943,27 +2352,37 @@ end;
 $procedure$
 ;
 
--- DROP PROCEDURE playwright_oak.add_random_performer();
+-- Permissions
 
-CREATE OR REPLACE PROCEDURE playwright_oak.add_random_performer()
+ALTER PROCEDURE playwright_combotables.add_random_customer() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.add_random_customer() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.add_random_performer();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.add_random_performer()
  LANGUAGE plpgsql
 AS $procedure$
 
 declare
 	myName varchar(100);
 begin
-		insert into playwright_oak.performer (name) 
+	
+	if (select count(*) from female) = 0 then
+		raise Exception 'No rows present';
+	end if; 
+
+		insert into performer (name) 
 		select * from (select 
 			    concat(
-			        (select givenname from playwright_oak.female order by random() limit 1),
+			        (select givenname from female order by random() limit 1),
 			        ' ',
-			        (select familysurname from playwright_oak.surname order by random() limit 1)
+			        (select familysurname from surname order by random() limit 1)
 			    ) 		union all
 				select
 			    	concat(
-			        	(select givenname from playwright_oak.male order by random() limit 1),
+			        	(select givenname from male order by random() limit 1),
 			        	' ',
-			        	(select familysurname from playwright_oak.surname order by random() limit 1)
+			        	(select familysurname from surname order by random() limit 1)
 			    	) 
 			) as B
 	order by random()
@@ -972,36 +2391,125 @@ end;
 $procedure$
 ;
 
--- DROP PROCEDURE playwright_oak.generate_new_seats(int4, int4);
+-- Permissions
 
-CREATE OR REPLACE PROCEDURE playwright_oak.generate_new_seats(IN stage_id integer, IN num_seats integer)
+ALTER PROCEDURE playwright_combotables.add_random_performer() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.add_random_performer() TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.count_rows();
+
+CREATE OR REPLACE FUNCTION playwright_combotables.count_rows()
+ RETURNS integer
+ LANGUAGE plpgsql
+AS $function$
+declare
+	purchase_concession_count int;
+	complex_count int;
+	seat_count int;
+	theatre_count int;
+	purchase_seat_count int;
+	actual_schedule_play_count int;
+	purchase_concession_item_count int;
+begin
+	select count(*) into purchase_concession_count from purchase_concession;
+	select count(*) into complex_count from complex;
+	select count(*) into seat_count from seat;
+	select count(*) into theatre_count from theatre;
+	select count(*) into purchase_seat_count from purchase_seat;
+	select count(*) into actual_schedule_play_count from actual_schedule_play;
+	select count(*) into purchase_concession_item_count from purchase_concession_item;
+
+	return (purchase_concession_count + complex_count + seat_count + theatre_count + purchase_seat_count + actual_schedule_play_count + purchase_concession_item_count);
+end;
+$function$
+;
+
+-- Permissions
+
+ALTER FUNCTION playwright_combotables.count_rows() OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.count_rows() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.create_performers_and_certifications();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.create_performers_and_certifications()
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+	i int;
+begin
+	for i in 1..48 loop
+		call add_random_performer();
+	end loop;
+	call set_performer_certifications(now()::timestamp);
+	call set_performer_certifications((now() + interval '3 months')::timestamp);
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.create_performers_and_certifications() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.create_performers_and_certifications() TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.find_multipart_day_actors();
+
+CREATE OR REPLACE FUNCTION playwright_combotables.find_multipart_day_actors()
+ RETURNS SETOF playwright_combotables.multiple_part_day_actors
+ LANGUAGE plpgsql
+AS $function$
+BEGIN
+    RETURN QUERY SELECT * FROM multiple_part_day_actors;
+END;
+$function$
+;
+
+-- Permissions
+
+ALTER FUNCTION playwright_combotables.find_multipart_day_actors() OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.find_multipart_day_actors() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.generate_new_seats(int4);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.generate_new_seats(IN stage_id integer)
  LANGUAGE plpgsql
 AS $procedure$
 declare
     new_seat_num int;
     current_seat_count int;
     max_size int;
+	quantity_seats_to_make int;
 begin
+	-- new_seat_num = one greater than current greatest seat_num
+	-- new_seat_num will be my seat in the theatre like chair G12, but it is an int datatype for ease of data manipulation
     select coalesce(max(seat_num), 0) + 1
     into new_seat_num
     from seat
-    where seat.theatre_id = stage_id;  
+    where seat.theatre_id = stage_id; 
 
-    select count(*) into current_seat_count
+	--var current_seat_count= how many seats already exist in this table for this theatre
+    select coalesce (count(*), 0) into current_seat_count
     from seat
     where seat.theatre_id = stage_id;  
 
+	--var max_capacity = total seats my theatre can have
     select max_capacity into max_size
     from theatre
     where id = stage_id;  
 
-    -- guarantee no more seats than max capacity of theatre
-    if current_seat_count + num_seats > max_size then
-        raise exception 'cannot create % new seats. the total number of seats would exceed the theatre''s max_capacity of %.',
-                        num_seats, max_size;
+	--initialize quantity_seats_to_make
+	quantity_seats_to_make := max_size - current_seat_count;
+	
+	if quantity_seats_to_make <1 then
+		raise exception 'Cannot create new seats. My Max_size of theatre: %, my quantity of seats already made: %, my number of seats left I can make: % '
+			, max_size, current_seat_count, quantity_seats_to_make;
+	end if;
+
+    -- guarantee no more seats made than max capacity of theatre
+    if current_seat_count >= max_size then
+        raise exception 'Cannot create new seats. The total number of seats would exceed the theatre''s max_capacity of %.', max_size;
     end if;
 
-    for i in 1..num_seats loop
+    for i in 1..quantity_seats_to_make loop
         insert into seat (theatre_id, seat_num)  
         values (stage_id, new_seat_num);  
 
@@ -1011,24 +2519,310 @@ end;
 $procedure$
 ;
 
--- DROP PROCEDURE playwright_oak.make_actual_performer_schedule();
+-- Permissions
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_performer_schedule()
+ALTER PROCEDURE playwright_combotables.generate_new_seats(int4) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.generate_new_seats(int4) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.generate_random_conc_sale();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.generate_random_conc_sale()
  LANGUAGE plpgsql
 AS $procedure$
 declare
+
+	random_complex_id int;
+    random_quantity int;
+	purchase_id int;
+	row_val int;
+   	
 begin
-	insert into actual_schedule_performer(schedule_template_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id)
-	select
-		schedule_template_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id
-	from schedule_performer_template;
+	-- what complex did we sell in
+	select complex.id into random_complex_id from complex order by random() limit 1; 
+	
+	-- what is the next sale id?
+	select count(*)+1 into purchase_id from purchase_concession;
+
+	-- begin the sale.
+	insert into purchase_concession (id,complex_id,day_sold) values (purchase_id,random_complex_id,now());
+
+	-- for each kind of item in the concession_items
+	for row_val in (select id from concession_item) loop
+		-- for this item, a random quantity 0-3
+		select floor(random()*4) into random_quantity;
+		if random_quantity > 0 then
+			insert into purchase_concession_item (purchase_concession_id,concession_item_id,quantity,actual_price) values (purchase_id,row_val,random_quantity,(select concession_item.shelf_price from concession_item where concession_item.id = row_val) * random_quantity); -- multiply by tax?
+		end if;
+	end loop;
+	
+	
+   
+    
 end;
 $procedure$
 ;
 
--- DROP FUNCTION playwright_oak.make_actual_play_time(text, int4, timestamp);
+-- Permissions
 
-CREATE OR REPLACE FUNCTION playwright_oak.make_actual_play_time(p_day_of_week text, p_time_of_day integer, start_day timestamp without time zone)
+ALTER PROCEDURE playwright_combotables.generate_random_conc_sale() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.generate_random_conc_sale() TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.get_num_available_seat(int4);
+
+CREATE OR REPLACE FUNCTION playwright_combotables.get_num_available_seat(asp_id integer)
+ RETURNS integer
+ LANGUAGE plpgsql
+AS $function$
+
+declare 
+	my_seat_count int;
+	verify_asp_id int;
+begin
+		if asp_id is null then
+			raise exception 'cannot have invalid instance of actual_schedule_play id: %', asp_id;
+		end if;
+
+		select * into verify_asp_id
+			from actual_schedule_play
+			where actual_schedule_play.id = asp_id
+			limit 1;
+		if verify_asp_id is null then
+			raise exception 'Could not find this instance of actual_schedule_play_id in table: %', asp_id;
+		end if;
+
+			select count(A.seat_id) 
+			into my_seat_count
+				from (
+	
+				select 	s.id seat_id from
+					actual_schedule_play asp 
+					inner join
+					theatre t on (asp.theatre_id = t.id)
+					inner join 
+					seat s on (s.theatre_id = t.id)
+					where 
+					asp.id = asp_id -- the showing in question variable
+					)	A 
+		
+			left outer join 
+			(
+				--sold seat query
+				select 
+					ps2.seat_id 
+					from
+					purchase_seat ps2
+					where 
+						ps2.actual_schedule_play_id = asp_id -- the showing in question variable. 
+			
+				) B 
+		on (A.seat_id = B.seat_id)
+		where B.seat_id is null
+		order by 1;
+		
+
+		if my_seat_count is null then
+			raise exception 'cannot find a ticket to sell for this actual_schedule_play id: % because my_seat_count: % is null', asp_id, my_seat_count;
+		end if;
+		if my_seat_count = 0 then
+			raise exception 'cannot find a ticket to sell for this actual_schedule_play id: % because my_seat_count: % is 0', asp_id, my_seat_count;
+		end if;
+				
+
+	return my_seat_count;
+end;
+$function$
+;
+
+-- Permissions
+
+ALTER FUNCTION playwright_combotables.get_num_available_seat(int4) OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.get_num_available_seat(int4) TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.get_seat(int4);
+
+CREATE OR REPLACE FUNCTION playwright_combotables.get_seat(asp_id integer)
+ RETURNS integer
+ LANGUAGE plpgsql
+AS $function$
+
+declare 
+	my_seat_id int;
+
+begin
+		if asp_id is null then
+			raise exception 'cannot have invalid instance of actual_schedule_play id: %', asp_id;
+		end if;
+
+			select A.seat_id 
+			into my_seat_id 
+				from (
+	
+				select 	s.id seat_id from
+					actual_schedule_play asp 
+					inner join
+					theatre t on (asp.theatre_id = t.id)
+					inner join 
+					seat s on (s.theatre_id = t.id)
+					where 
+					asp.id = asp_id -- the showing in question variable
+					)	A 
+		
+			left outer join 
+			(
+				--sold seat query
+				select 
+					ps2.seat_id 
+					from
+					purchase_seat ps2
+					where 
+						ps2.actual_schedule_play_id = asp_id -- the showing in question variable. 
+			
+				) B 
+		on (A.seat_id = B.seat_id)
+		where B.seat_id is null
+		order by 1 
+		limit 1;
+		
+
+		if my_seat_id is null then
+			raise exception 'cannot find a ticket to sell for this actual_schedule_play id: %', asp_id;
+		end if;
+				
+
+	return my_seat_id;
+end;
+$function$
+;
+
+-- Permissions
+
+ALTER FUNCTION playwright_combotables.get_seat(int4) OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.get_seat(int4) TO public;
+GRANT ALL ON FUNCTION playwright_combotables.get_seat(int4) TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.get_ticket_sales_between(date, date);
+
+CREATE OR REPLACE FUNCTION playwright_combotables.get_ticket_sales_between(start date, myend date)
+ RETURNS SETOF playwright_combotables.ticket_sales_per_showing
+ LANGUAGE plpgsql
+AS $function$
+begin
+
+	-- throw an error if I get a null start date input
+	if start is null then
+		raise exception 'Cannot get ticket sales for null start date :(';
+	end if;
+
+	-- if I get a null end date input make it the same as start date to only return the one day.
+	if myEnd is null then
+		myEnd := start;
+	end if;
+
+	return query
+		select * from ticket_sales_per_showing ts 
+			where ts.showing_timestamp between start AND myEnd
+			order by ts.num_tickets_sold desc, ts.gross_income desc nulls last;
+
+end;
+$function$
+;
+
+-- Permissions
+
+ALTER FUNCTION playwright_combotables.get_ticket_sales_between(date, date) OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.get_ticket_sales_between(date, date) TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.get_ticket_sales_between(date, date, int4);
+
+CREATE OR REPLACE FUNCTION playwright_combotables.get_ticket_sales_between(start date, myend date, myhour integer)
+ RETURNS SETOF playwright_combotables.ticket_sales_per_showing
+ LANGUAGE plpgsql
+AS $function$
+begin
+
+	-- throw an error if I get a null start date input
+	if start is null then
+		raise exception 'Cannot get ticket sales for null start date :(';
+	end if;
+
+	-- if I get a null end date input make it the same as start date to only return the one day.
+	if myEnd is null then
+		myEnd := start;
+	end if;
+
+	-- throw error if the hour is larger than 19 (7pm, the last showing)
+	if myHour > 19 then
+		raise exception 'Cannot find plays later than 19:00 hours aka 7pm';
+	end if;
+
+	-- 
+	if myHour is null then
+	
+		return query
+			select * from ticket_sales_per_showing ts 
+				where ts.showing_timestamp between start AND myEnd
+				order by ts.num_tickets_sold desc, ts.gross_income desc nulls last;
+	
+	else
+	return query 
+			select * from ticket_sales_per_showing ts
+				where (ts.showing_timestamp between start AND myEnd)
+				AND (extract (hour from ts.showing_timestamp) = myHour)
+				order by ts.num_tickets_sold desc, ts.gross_income desc nulls last;
+	end if;
+end;
+$function$
+;
+
+-- Permissions
+
+ALTER FUNCTION playwright_combotables.get_ticket_sales_between(date, date, int4) OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.get_ticket_sales_between(date, date, int4) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.load_concession_items();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.load_concession_items()
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+begin
+	insert into concession_item (id,name,shelf_price) values (1,'hot-dog',5.00);
+	insert into concession_item (id,name,shelf_price) values (2,'soft-drink',2.00);
+	insert into concession_item (id,name,shelf_price) values (3,'popcorn',1.00);
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.load_concession_items() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.load_concession_items() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.make_actual_performer_schedule(timestamp);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.make_actual_performer_schedule(IN day_to_schedule timestamp without time zone)
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+begin
+
+		insert into actual_schedule_play(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id, theatre_id, scheduled_time)
+		select spt.cert_1_id, spt.cert_2_id, spt.dual_cert_id, spt.cert_5_id, spt.cert_6_id, spt.cert_7_id, spt.cert_8_id, spt.cert_9_id
+			, spt.theatre_id, make_actual_play_time(spt.day_of_week, spt.time_of_day, day_to_schedule) AS scheduled_time
+		from schedule_play_template spt;
+
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.make_actual_performer_schedule(timestamp) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.make_actual_performer_schedule(timestamp) TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.make_actual_play_time(text, int4, timestamp);
+
+CREATE OR REPLACE FUNCTION playwright_combotables.make_actual_play_time(p_day_of_week text, p_time_of_day integer, start_day timestamp without time zone)
  RETURNS timestamp without time zone
  LANGUAGE plpgsql
 AS $function$
@@ -1067,126 +2861,14 @@ END;
 $function$
 ;
 
--- DROP FUNCTION playwright_oak.make_actual_play_time(text, int4);
+-- Permissions
 
-CREATE OR REPLACE FUNCTION playwright_oak.make_actual_play_time(p_day_of_week text, p_time_of_day integer)
- RETURNS timestamp without time zone
- LANGUAGE plpgsql
-AS $function$
-DECLARE
-    current_d date := current_date;
-    current_dow int;
-    template_dow int;
-    day_offset int;
-    computed_play_time timestamp;
-BEGIN
-    -- Get today's day-of-week (0=Sun, 1=Mon, etc.)
-    current_dow := extract(dow from current_d)::int;
+ALTER FUNCTION playwright_combotables.make_actual_play_time(text, int4, timestamp) OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.make_actual_play_time(text, int4, timestamp) TO dbs25_team_oak;
 
-    -- Map text day to a number
-    CASE p_day_of_week
-        WHEN 'Sunday' THEN template_dow := 0;
-        WHEN 'Monday' THEN template_dow := 1;
-        WHEN 'Tuesday' THEN template_dow := 2;
-        WHEN 'Wednesday' THEN template_dow := 3;
-        WHEN 'Thursday' THEN template_dow := 4;
-        WHEN 'Friday' THEN template_dow := 5;
-        WHEN 'Saturday' THEN template_dow := 6;
-        ELSE
-            RAISE EXCEPTION 'Invalid day of week: %', p_day_of_week;
-    END CASE;
+-- DROP PROCEDURE playwright_combotables.make_play_template_data();
 
-    -- Calculate day offset to the next occurrence of the scheduled day
-    day_offset := (template_dow - current_dow + 7) % 7;
-
-    -- If scheduled day is today but the scheduled time has passed, schedule for next week.
-    IF day_offset = 0 AND ((current_d + ((p_time_of_day::text || ' hours')::interval)) < now()) THEN
-        day_offset := 7;
-    END IF;
-
-    -- Compute the full timestamp
-    computed_play_time := (current_d + day_offset) + ((p_time_of_day::text || ' hours')::interval);
-
-    RETURN computed_play_time;
-END;
-$function$
-;
-
--- DROP PROCEDURE playwright_oak.make_actual_schedule();
-
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_schedule()
- LANGUAGE plpgsql
-AS $procedure$
-declare
-	hour_of_play int;
-	day_of_play varchar(8);
-	current_dow int;
-	template_dow int;
-	play_time_actual timestamp;
-	day_offset int;
-	play_time_template time;
-begin
-	select day_of_week into day_of_play from schedule_play_template_week;
-	select time_of_day into hour_of_play from schedule_play_template_week;
-	select extract(dow from now())::int into current_dow;
-
-	 case day_of_play
-        when 'Sunday' then template_dow = 0;
-        when 'Monday' then template_dow = 1;
-        when 'Tuesday' then template_dow = 2;
-        when 'Wednesday' then template_dow = 3;
-        when 'Thursday' then template_dow = 4;
-        when 'Friday' then template_dow = 5;
-        when 'Saturday' then template_dow = 6;
-        else
-            raise exception 'Invalid day of week: %', day_of_play;
-    end case;
-
-	day_offset = (template_dow - current_dow + 7) % 7;
-	play_time_actual = (current_date + day_offset) + ((hour_of_play::text || 'hours')::interval);
-
-	if (day_offset = 0) and (play_time_template < now()::time) then
-		play_time_actual = (current_date + 7) + ((hour_of_play::text || 'hours')::interval);
-	end if;
-
-	raise notice 'play time is: %', play_time_actual;
-end;
-$procedure$
-;
-
--- DROP PROCEDURE playwright_oak.make_actual_week_schedule();
-
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_week_schedule()
- LANGUAGE plpgsql
-AS $procedure$
-BEGIN
-    INSERT INTO actual_schedule_play(theatre_id, scheduled_time)
-    SELECT 
-        theatre_id, 
-        make_actual_play_time(day_of_week, time_of_day) AS scheduled_time
-    FROM schedule_play_template_week;
-END;
-$procedure$
-;
-
--- DROP PROCEDURE playwright_oak.make_actual_week_schedule(timestamp);
-
-CREATE OR REPLACE PROCEDURE playwright_oak.make_actual_week_schedule(IN start_day timestamp without time zone)
- LANGUAGE plpgsql
-AS $procedure$
-BEGIN
-    INSERT INTO actual_schedule_play(theatre_id, scheduled_time)
-    SELECT 
-        theatre_id, 
-        make_actual_play_time(day_of_week, time_of_day, start_day) AS scheduled_time
-    FROM schedule_play_template_week;
-END;
-$procedure$
-;
-
--- DROP PROCEDURE playwright_oak.make_performer_template_data();
-
-CREATE OR REPLACE PROCEDURE playwright_oak.make_performer_template_data()
+CREATE OR REPLACE PROCEDURE playwright_combotables.make_play_template_data()
  LANGUAGE plpgsql
 AS $procedure$
 declare
@@ -1198,6 +2880,7 @@ declare
 	cert_7_ids int[];
 	cert_8_ids int[];
 	cert_9_ids int[];
+	theatre_ids int[];
 begin
 	select array_agg(id order by id) into cert_1_ids from part_certification_1;
 	select array_agg(id order by id) into cert_2_ids from part_certification_2;
@@ -1207,55 +2890,297 @@ begin
 	select array_agg(id order by id) into cert_7_ids from part_certification_7;
 	select array_agg(id order by id) into cert_8_ids from part_certification_8;
 	select array_agg(id order by id) into cert_9_ids from part_certification_9;
+	select array_agg(id order by id) into theatre_ids from theatre;
 
-	insert into schedule_performer_template(schedule_template_id, cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id)
+	insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id, cert_9_id
+		, theatre_id, day_of_week, time_of_day)
 	select 
-		series.n as schedule_template_id
-		, cert_1_ids[(series.n % array_length(cert_1_ids, 1)) + 1] as cert_1_id
+		cert_1_ids[(series.n % array_length(cert_1_ids, 1)) + 1] as cert_1_id
 		, cert_2_ids[(series.n % array_length(cert_2_ids, 1)) + 1] as cert_2_id
-		, dual_cert_ids[(series.n % array_length(cert_1_ids, 1)) + 1] as cert_1_id
+		, dual_cert_ids[(series.n % array_length(dual_cert_ids, 1)) + 1] as dual_cert_id
 		, cert_5_ids[(series.n % array_length(cert_5_ids, 1)) + 1] as cert_5_id
 		, cert_6_ids[(series.n % array_length(cert_6_ids, 1)) + 1] as cert_6_id
 		, cert_7_ids[(series.n % array_length(cert_7_ids, 1)) + 1] as cert_7_id
 		, cert_8_ids[(series.n % array_length(cert_8_ids, 1)) + 1] as cert_8_id
 		, cert_9_ids[(series.n % array_length(cert_9_ids, 1)) + 1] as cert_9_id
-	from generate_series(1, 91) as series(n);
+		, theatre_ids[(series.n % array_length(theatre_ids, 1)) + 1] as theatre_id
+		, case (series.n / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+		, (series.n % 13) + 7 as time_of_day
+	from generate_series(0, 90) as series(n);
 end;
 $procedure$
 ;
 
--- DROP PROCEDURE playwright_oak.make_play_template_data();
+-- Permissions
 
-CREATE OR REPLACE PROCEDURE playwright_oak.make_play_template_data()
+ALTER PROCEDURE playwright_combotables.make_play_template_data() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.make_play_template_data() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.make_template_shifts();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.make_template_shifts()
  LANGUAGE plpgsql
 AS $procedure$
 declare
+	i int;
+	j int;
 	theatre_ids int[];
+	cert1_count int;
+	cert2_count int;
+	dual_cert_count int;
+	cert5_count int;
+	cert6_count int;
+	cert7_count int;
+	cert8_count int;
+	cert9_count int;
+	series int = 0;
+	other int = 0;
 begin
+	select count(*) into cert1_count from part_certification_1;
+	select count(*) into cert2_count from part_certification_2;
+	select count(*) into dual_cert_count from dual_part_certification;
+	select count(*) into cert5_count from part_certification_5;
+	select count(*) into cert6_count from part_certification_6;
+	select count(*) into cert7_count from part_certification_7;
+	select count(*) into cert8_count from part_certification_8;
+	select count(*) into cert9_count from part_certification_9;
 	select array_agg(id order by id) into theatre_ids from theatre;
 
-	insert into schedule_play_template_week(theatre_id, day_of_week, time_of_day)
-	select 
-		theatre_ids[(series.n % array_length(theatre_ids, 1)) + 1] as theatre_id
-		, case (series.n / 13)
-			when 0 then 'Monday'
-			when 1 then 'Tuesday'
-			when 2 then 'Wednesday'
-			when 3 then 'Thursday'
-			when 4 then 'Friday'
-			when 5 then 'Saturday'
-			when 6 then 'Sunday'
-		end as day_of_week
-		, (series.n % 13) + 7 as time_of_day
-	from generate_series(0, 90) as series(n);
-	
+	for i in 1..7 loop
+		for j in 1..2 loop
+			insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id
+			, cert_9_id, theatre_id, day_of_week, time_of_day)
+			select (other % cert1_count) + 1
+			, (other % cert2_count) + 1
+			, (other % dual_cert_count) + 1
+			, (other % cert5_count) + 1
+			, (other % cert6_count) + 1
+			, (other % cert7_count) + 1
+			, (other % cert8_count) + 1
+			, (other % cert9_count) + 1
+			, theatre_ids[(series % array_length(theatre_ids, 1)) + 1] as theatre_id
+			, case (series / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+			, (series % 13) + 7 as time_of_day;
+			series = series + 1;
+			insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id
+			, cert_9_id, theatre_id, day_of_week, time_of_day)
+			select ((other + 1) % cert1_count) + 1
+			, ((other + 1) % cert2_count) + 1
+			, ((other + 1) % dual_cert_count) + 1
+			, ((other + 1) % cert5_count) + 1
+			, ((other + 1) % cert6_count) + 1
+			, ((other + 1) % cert7_count) + 1
+			, ((other + 1) % cert8_count) + 1
+			, ((other + 1) % cert9_count) + 1
+			, theatre_ids[(series % array_length(theatre_ids, 1)) + 1] as theatre_id
+			, case (series / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+			, (series % 13) + 7 as time_of_day;
+			series = series + 1;
+			insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id
+			, cert_9_id, theatre_id, day_of_week, time_of_day)
+			select (other % cert1_count) + 1
+			, (other % cert2_count) + 1
+			, (other % dual_cert_count) + 1
+			, (other % cert5_count) + 1
+			, (other % cert6_count) + 1
+			, (other % cert7_count) + 1
+			, (other % cert8_count) + 1
+			, (other % cert9_count) + 1
+			, theatre_ids[(series % array_length(theatre_ids, 1)) + 1] as theatre_id
+			, case (series / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+			, (series % 13) + 7 as time_of_day;
+			series = series + 1;
+			insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id
+			, cert_9_id, theatre_id, day_of_week, time_of_day)
+			select ((other + 1) % cert1_count) + 1
+			, ((other + 1) % cert2_count) + 1
+			, ((other + 1) % dual_cert_count) + 1
+			, ((other + 1) % cert5_count) + 1
+			, ((other + 1) % cert6_count) + 1
+			, ((other + 1) % cert7_count) + 1
+			, ((other + 1) % cert8_count) + 1
+			, ((other + 1) % cert9_count) + 1
+			, theatre_ids[(series % array_length(theatre_ids, 1)) + 1] as theatre_id
+			, case (series / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+			, (series % 13) + 7 as time_of_day;
+			series = series + 1;
+			insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id
+			, cert_9_id, theatre_id, day_of_week, time_of_day)
+			select (other % cert1_count) + 1
+			, (other % cert2_count) + 1
+			, (other % dual_cert_count) + 1
+			, (other % cert5_count) + 1
+			, (other % cert6_count) + 1
+			, (other % cert7_count) + 1
+			, (other % cert8_count) + 1
+			, (other % cert9_count) + 1
+			, theatre_ids[(series % array_length(theatre_ids, 1)) + 1] as theatre_id
+			, case (series / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+			, (series % 13) + 7 as time_of_day;
+			series = series + 1;
+			insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id
+			, cert_9_id, theatre_id, day_of_week, time_of_day)
+			select ((other + 1) % cert1_count) + 1
+			, ((other + 1) % cert2_count) + 1
+			, ((other + 1) % dual_cert_count) + 1
+			, ((other + 1) % cert5_count) + 1
+			, ((other + 1) % cert6_count) + 1
+			, ((other + 1) % cert7_count) + 1
+			, ((other + 1) % cert8_count) + 1
+			, ((other + 1) % cert9_count) + 1
+			, theatre_ids[(series % array_length(theatre_ids, 1)) + 1] as theatre_id
+			, case (series / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+			, (series % 13) + 7 as time_of_day;
+			series = series + 1;
+			other = other + 2;
+		end loop;
+		insert into schedule_play_template(cert_1_id, cert_2_id, dual_cert_id, cert_5_id, cert_6_id, cert_7_id, cert_8_id
+			, cert_9_id, theatre_id, day_of_week, time_of_day)
+			select (other % cert1_count) + 1 as cert_1_id
+			, (other % cert2_count) + 1 as cert_2_id
+			, (other % dual_cert_count) + 1 as dual_cert_id
+			, (other % cert5_count) + 1 as cert_5_id
+			, (other % cert6_count) + 1 as cert_6_id
+			, (other % cert7_count) + 1 as cert_7_id
+			, (other % cert8_count) + 1 as cert_8_id
+			, (other % cert9_count) + 1 as cert_9_id
+			, theatre_ids[(series % array_length(theatre_ids, 1)) + 1] as theatre_id
+			, case (series / 13)
+					when 0 then 'Monday'
+					when 1 then 'Tuesday'
+					when 2 then 'Wednesday'
+					when 3 then 'Thursday'
+					when 4 then 'Friday'
+					when 5 then 'Saturday'
+					when 6 then 'Sunday'
+				end as day_of_week
+			, (series % 13) + 7 as time_of_day;
+			series = series + 1;
+	end loop;
 end;
 $procedure$
 ;
 
--- DROP FUNCTION playwright_oak.multiple_parts_constraint();
+-- Permissions
 
-CREATE OR REPLACE FUNCTION playwright_oak.multiple_parts_constraint()
+ALTER PROCEDURE playwright_combotables.make_template_shifts() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.make_template_shifts() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.million_rows(timestamp);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.million_rows(IN first_date timestamp without time zone)
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+	i int;
+	j int;
+	k int;
+	l int;
+	m int;
+	customer_count int;
+	next_date timestamp = first_date;
+begin
+	--truncate table actual_schedule_play() restart identity cascade;
+	truncate table performer restart identity cascade;
+	truncate table customer restart identity cascade;
+	truncate table complex restart identity cascade;
+	truncate table concession_item restart identity cascade;
+	raise notice 'Truncate table correct';
+
+	call populate_theatre_complex();
+	raise notice 'Populate theatre done';
+	call create_performers_and_certifications();
+	raise notice 'Create performers and certs done';
+	call make_template_shifts();
+	for i in 1..16 loop
+		call make_actual_performer_schedule(next_date::timestamp); --one week at a time
+		next_date = next_date + interval '1 week';
+	end loop;
+	raise notice 'Actual schedules done';
+	call load_concession_items();
+	for j in 1..150000 loop
+		call generate_random_conc_sale();
+	end loop;
+	raise notice 'Concession sales done';
+	for k in 1..3 loop
+		call generate_new_seats(k);
+	end loop;
+	for l in 1..100 loop
+		call add_random_customer();
+	end loop;
+	select count(*) into customer_count from customer;
+	for m in 1..(select count(*) from actual_schedule_play) loop
+		call sell_tickets(500, m, null, null, null);
+	end loop;
+	raise notice 'Finished seat and everything';
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.million_rows(timestamp) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.million_rows(timestamp) TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.multiple_parts_constraint();
+
+CREATE OR REPLACE FUNCTION playwright_combotables.multiple_parts_constraint()
  RETURNS boolean
  LANGUAGE plpgsql
 AS $function$
@@ -1288,9 +3213,14 @@ end;
 $function$
 ;
 
--- DROP FUNCTION playwright_oak.multiple_parts_trigger();
+-- Permissions
 
-CREATE OR REPLACE FUNCTION playwright_oak.multiple_parts_trigger()
+ALTER FUNCTION playwright_combotables.multiple_parts_constraint() OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.multiple_parts_constraint() TO dbs25_team_oak;
+
+-- DROP FUNCTION playwright_combotables.multiple_parts_trigger();
+
+CREATE OR REPLACE FUNCTION playwright_combotables.multiple_parts_trigger()
  RETURNS trigger
  LANGUAGE plpgsql
 AS $function$
@@ -1334,31 +3264,708 @@ end;
 $function$
 ;
 
--- DROP PROCEDURE playwright_oak.populate_theatre_complex();
+-- Permissions
 
-CREATE OR REPLACE PROCEDURE playwright_oak.populate_theatre_complex()
+ALTER FUNCTION playwright_combotables.multiple_parts_trigger() OWNER TO dbs25_team_oak;
+GRANT ALL ON FUNCTION playwright_combotables.multiple_parts_trigger() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.performer_accept_scheduled_day(int4, date);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.performer_accept_scheduled_day(IN perf_id integer, IN my_day date)
+ LANGUAGE plpgsql
+AS $procedure$
+
+begin
+		
+	
+	if perf_id is null then
+		raise exception 'cannot accept schedule when given a null performer id';
+	end if;
+		
+	if my_day is null then
+		raise exception 'cannot accept schedule when given a null date';
+	end if;
+
+update actual_schedule_play asp
+	set cert_1_accept = true
+		from part_certification_1 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_1_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+
+update actual_schedule_play asp
+	set cert_2_accept = true
+		from part_certification_2 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_2_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+update actual_schedule_play asp
+	set cert_3_accept = true
+		from dual_part_certification dpc
+		inner join performer p on (p.id = dpc.performer_part_3_id)
+		where asp.dual_cert_id = dpc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+
+update actual_schedule_play asp
+	set cert_4_accept = true
+		from dual_part_certification dpc
+		inner join performer p on (p.id = dpc.performer_part_4_id)
+		where asp.dual_cert_id = dpc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+
+
+
+
+update actual_schedule_play asp
+	set cert_5_accept = true
+		from part_certification_5 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_5_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+
+update actual_schedule_play asp
+	set cert_6_accept = true
+		from part_certification_6 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_6_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+
+update actual_schedule_play asp
+	set cert_7_accept = true
+		from part_certification_7 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_7_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+
+update actual_schedule_play asp
+	set cert_8_accept = true
+		from part_certification_8 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_8_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+update actual_schedule_play asp
+	set cert_9_accept = true
+		from part_certification_9 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_9_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+	-- my select version of the two types of tables for testing purposes below	
+	/*--set the cert_accept for each part individually to null based on the same day and performer_id
+	select p.id pid, asp.cert_1_accept
+		from actual_schedule_play asp 
+		inner join part_certification_1 pc on (asp.cert_1_id = pc.id)
+		inner join performer p on (p.id = pc.performer_id )
+		
+		where date(asp.scheduled_time) = my_day
+		and p.id = perf_id;
+		
+		
+		--dual_cert part 3
+	select asp.id aspid, p.name pname,p.id pid, asp.scheduled_time, asp.cert_3_accept
+		from actual_schedule_play asp 
+		inner join dual_part_certification dpc on (asp.dual_cert_id = dpc.id)
+		inner join performer p on (p.id = dpc.performer_part_3_id )
+		
+		where date(asp.scheduled_time) = my_day
+		and p.id = perf_id;
+		
+		
+	*/
+		
+	
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.performer_accept_scheduled_day(int4, date) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.performer_accept_scheduled_day(int4, date) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.performer_reject_scheduled_day(int4, date);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.performer_reject_scheduled_day(IN perf_id integer, IN my_day date)
+ LANGUAGE plpgsql
+AS $procedure$
+
+begin
+		
+	
+	if perf_id is null then
+		raise exception 'cannot reject schedule when given a null performer id';
+	end if;
+		
+	if my_day is null then
+		raise exception 'cannot reject schedule when given a null date';
+	end if;
+
+-- cycle through each of the 9 parts and update asp accept column on the given day. 
+update actual_schedule_play asp
+	set cert_1_accept = false
+		from part_certification_1 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_1_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+
+update actual_schedule_play asp
+	set cert_2_accept = false
+		from part_certification_2 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_2_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+update actual_schedule_play asp
+	set cert_3_accept = false
+		from dual_part_certification dpc
+		inner join performer p on (p.id = dpc.performer_part_3_id)
+		where asp.dual_cert_id = dpc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+
+update actual_schedule_play asp
+	set cert_4_accept = false
+		from dual_part_certification dpc
+		inner join performer p on (p.id = dpc.performer_part_4_id)
+		where asp.dual_cert_id = dpc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+
+
+
+
+update actual_schedule_play asp
+	set cert_5_accept = false
+		from part_certification_5 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_5_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+
+update actual_schedule_play asp
+	set cert_6_accept = false
+		from part_certification_6 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_6_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+
+update actual_schedule_play asp
+	set cert_7_accept = false
+		from part_certification_7 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_7_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+
+update actual_schedule_play asp
+	set cert_8_accept = false
+		from part_certification_8 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_8_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+	
+update actual_schedule_play asp
+	set cert_9_accept = false
+		from part_certification_9 pc
+		inner join performer p on (p.id = pc.performer_id)
+		where asp.cert_9_id = pc.id
+		AND p.id = perf_id
+		AND date(asp.scheduled_time) = my_day;
+
+
+-- adds a row to the performer_rejection_log table
+insert into performer_rejection_log (
+					performer_id
+				, date_of_plays_rejected
+				, time_performer_clicked_reject)
+	values (perf_id, my_day, now()::timestamp);
+
+
+	-- my select version of the two types of tables for testing purposes below	
+	/*--set the cert_accept for each part individually to null based on the same day and performer_id
+	select p.id pid, asp.cert_1_accept
+		from actual_schedule_play asp 
+		inner join part_certification_1 pc on (asp.cert_1_id = pc.id)
+		inner join performer p on (p.id = pc.performer_id )
+		
+		where date(asp.scheduled_time) = my_day
+		and p.id = perf_id;
+		
+	--dual_cert part 3
+	select asp.id aspid, p.name pname,p.id pid, asp.scheduled_time, asp.cert_3_accept
+		from actual_schedule_play asp 
+		inner join dual_part_certification dpc on (asp.dual_cert_id = dpc.id)
+		inner join performer p on (p.id = dpc.performer_part_3_id )
+		
+		where date(asp.scheduled_time) = my_day
+		and p.id = perf_id;
+	*/
+		
+	
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.performer_reject_scheduled_day(int4, date) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.performer_reject_scheduled_day(int4, date) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.performer_respond_to_schedule_day(int4, bool, date);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.performer_respond_to_schedule_day(IN pid integer, IN answer boolean, IN myday date)
+ LANGUAGE plpgsql
+AS $procedure$
+
+
+begin 
+
+	if pid is null then
+		raise exception 'cannot accept/reject schedule if performer_id is null.';
+	end if;	
+	if answer is null then
+		raise exception 'cannot accept/reject schedule if answer input is null.';
+	end if;	
+
+	if myDay is null then
+		raise exception 'cannot accept/reject schedule if date input is null.';
+	end if;	
+
+	if answer then
+		call performer_accept_scheduled_day(pid, myDay);
+
+	else
+		call performer_reject_scheduled_day(pid, myDay);
+
+	end if;
+
+end;
+
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.performer_respond_to_schedule_day(int4, bool, date) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.performer_respond_to_schedule_day(int4, bool, date) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.populate_theatre_complex();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.populate_theatre_complex()
  LANGUAGE plpgsql
 AS $procedure$
 begin
 	insert into complex(address) values (concat(floor(random() * 101), ' Street'));
 	insert into complex(address) values (concat(floor(random() * 101), ' Street'));
 	insert into theatre(max_capacity, complex_id) 
-		select floor(random() * 501)
+		select 500
 		, (select id from complex order by random() limit 1) as complex_id 
 		from generate_series(1, 3, 1);
 end;
 $procedure$
 ;
 
--- DROP PROCEDURE playwright_oak.set_performer_certifications();
+-- Permissions
 
-CREATE OR REPLACE PROCEDURE playwright_oak.set_performer_certifications()
+ALTER PROCEDURE playwright_combotables.populate_theatre_complex() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.populate_theatre_complex() TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.schedule_performer_for_specific_play(int4, int4, int4);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.schedule_performer_for_specific_play(IN asp_id integer, IN perf_id integer, IN part integer)
+ LANGUAGE plpgsql
+AS $procedure$
+
+declare
+    cert_id int;
+begin 
+    -- get the certification Id for the part and the performer
+    
+    if part > 9 or part < 0 or part is null then
+        raise exception 'Invalid part number: %', part;
+
+    elsif asp_id is null then
+        raise exception 'Cannot have null actual_schedule_play_id';
+
+    elsif perf_id is null then
+        raise exception 'Cannot have null performer_id';
+
+    elsif part = 1 then
+        select id into cert_id 
+        from part_certification_1 p 
+        where p.performer_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.cert_1_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_1_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 2 then
+        select id into cert_id 
+        from part_certification_2 p 
+        where p.performer_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.cert_2_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_2_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 3 then
+        select id into cert_id 
+        from dual_part_certification d 
+        where d.performer_part_3_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.dual_cert_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_3_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 4 then
+        select id into cert_id 
+        from dual_part_certification d 
+        where d.performer_part_4_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.dual_cert_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_4_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 5 then
+        select id into cert_id 
+        from part_certification_5 p 
+        where p.performer_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.cert_5_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_5_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 6 then
+        select id into cert_id 
+        from part_certification_6 p 
+        where p.performer_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.cert_6_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_6_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 7 then
+        select id into cert_id 
+        from part_certification_7 p 
+        where p.performer_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.cert_7_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_7_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 8 then
+        select id into cert_id 
+        from part_certification_8 p 
+        where p.performer_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.cert_8_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_8_accept = null
+        where asp.id = asp_id;
+
+    elsif part = 9 then
+        select id into cert_id 
+        from part_certification_9 p 
+        where p.performer_id = perf_id AND date_expires > now()::date 
+        limit 1;
+
+        if cert_id is null then
+            raise exception 'PerformerID: % does not have a certification for part: %', perf_id, part;
+        end if;
+
+        -- update that play to have this player via their certification id
+        update actual_schedule_play asp
+        set asp.cert_9_id = cert_id
+        where asp.id = asp_id;
+
+        -- update the part accept bool to null
+        update actual_schedule_play asp
+        set asp.cert_9_accept = null
+        where asp.id = asp_id;
+
+    else
+        raise exception 'Invalid part number: %', part;
+    end if;
+
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.schedule_performer_for_specific_play(int4, int4, int4) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.schedule_performer_for_specific_play(int4, int4, int4) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.sell_tickets(IN qty integer, IN asp_id integer, IN cust_id integer, IN time_sold timestamp without time zone, IN price_per_seat money)
+ LANGUAGE plpgsql
+AS $procedure$
+
+declare 
+			--MAKE FUNCTION TO THROW ERROR IF TRY TO BUY TICKET 
+			-- FOR SHOW THAT ALREADY PASSED 
+	myTime timestamp; -- time of play showing
+	iteration int := 0;
+	purch_id int;
+	my_seat_id int;
+	num_available_seats int;
+begin
+
+	 
+	--default time_sold is now()
+	if time_sold is null then
+		time_sold = now();
+	end if;
+
+	-- default qty = 1
+	if qty is null then
+		qty := 1;
+	end if;
+
+	-- if price_per_seat is null, generate random price between $0 and $50
+	if price_per_seat is null then
+		price_per_seat := (round((random()* 50):: numeric, 2))::money;
+	end if;
+
+	--default cust_id is random()
+	if cust_id is null then
+		select id into cust_id 
+					from customer 
+					order by random() 
+					limit 1;
+	end if;
+
+	-- default asp_id is random() where it's start date > the timestamp of when said ticket was sold. 
+	if asp_id is null then
+		select id into asp_id 
+					from actual_schedule_play 
+					where scheduled_time > time_sold 
+					order by random() 
+					limit 1;
+	end if;
+	
+	if asp_id is null then
+		raise exception 'My Actual_Play_Id: % was inputted null and Could not find a future showing to sell tickets to.', asp_id;
+	end if;
+
+	--initialize my variable saying when the play will start. 
+	select scheduled_time into myTime
+				from actual_schedule_play 
+				where id = asp_id;
+
+	-- throw an error if you're buying a ticket for a play that already passed.
+	if  myTime < time_sold then
+		raise exception 'cannot purchase a ticket for a show that has already passed. You entered show id: %'
+						, asp_id; 
+	end if;
+
+	-- throw an error if they try to buy more seats than are available
+	select get_num_available_seat(asp_id) into num_available_seats;
+	if qty > num_available_seats then 
+		raise exception 'cannot purchase % tickets for a show that only has % tickets remaining. The show id is: %'
+						,qty, num_available_seats, asp_id; 
+	end if;
+	
+	--insert into purchase table
+
+	insert into purchase (customer_id, day_sold)
+		values (cust_id, time_sold);
+
+	-- set purch_id to be an fk to the purchase table
+	-- this way all subsequent tickets sold in this procedure call to point to the same purchase.
+	select id into purch_id from purchase where day_sold = time_sold limit 1;
+
+
+	--loop for purchase_ticket table
+	--insert into purchase_seat
+	for i in 1..qty loop 
+		my_seat_id := get_seat(asp_id);
+
+		insert into purchase_seat 
+					(purchase_id
+					, seat_id
+					, actual_sell_price
+					, actual_schedule_play_id)
+
+			values (purch_id
+					, my_seat_id	
+					,price_per_seat
+					,asp_id);
+			
+	end loop;
+
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money) TO public;
+GRANT ALL ON PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.set_performer_certifications(timestamp);
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.set_performer_certifications(IN start_date timestamp without time zone)
  LANGUAGE plpgsql
 AS $procedure$
 declare
 	i int;
 begin
-	for i in select id from performer order by id loop
+	for i in select id from performer order by id  loop
+		if i % 9 = 0 then
+			insert into part_certification_1(performer_id, date_certified, date_expires)
+			values (i, start_date, start_date + interval '3 months');
+		elsif i % 9 = 1 then
+			insert into part_certification_2(performer_id, date_certified, date_expires)
+			values (i, start_date, start_date + interval '3 months');
+		elsif i % 9 = 2 then
+			insert into dual_part_certification(performer_part_3_id, performer_part_4_id, date_certified, date_expires)
+			values (i, i + 1, start_date, start_date + interval '3 months');
+		elsif i % 9 = 4 then
+			insert into part_certification_5(performer_id, date_certified, date_expires)
+			values (i, start_date, start_date + interval '3 months');
+		elsif i % 9 = 5 then
+			insert into part_certification_6(performer_id, date_certified, date_expires)
+			values (i, start_date, start_date + interval '3 months');
+		elsif i % 9 = 6 then
+			insert into part_certification_7(performer_id, date_certified, date_expires)
+			values (i, start_date, start_date + interval '3 months');
+		elsif i % 9 = 7 then
+			insert into part_certification_8(performer_id, date_certified, date_expires)
+			values (i, start_date, start_date + interval '3 months');
+		elsif i % 9 = 8 then
+			insert into part_certification_9(performer_id, date_certified, date_expires)
+			values (i, start_date, start_date + interval '3 months');
+		end if;
+	end loop;
+end;
+$procedure$
+;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.set_performer_certifications(timestamp) OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.set_performer_certifications(timestamp) TO dbs25_team_oak;
+
+-- DROP PROCEDURE playwright_combotables.set_performer_certifications();
+
+CREATE OR REPLACE PROCEDURE playwright_combotables.set_performer_certifications()
+ LANGUAGE plpgsql
+AS $procedure$
+declare
+	i int;
+begin
+	for i in select id from performer order by id  loop
 		if i % 9 = 0 then
 			insert into part_certification_1(performer_id, date_certified, date_expires)
 			values (i, now(), now() + interval '3 months');
@@ -1388,3 +3995,13 @@ begin
 end;
 $procedure$
 ;
+
+-- Permissions
+
+ALTER PROCEDURE playwright_combotables.set_performer_certifications() OWNER TO dbs25_team_oak;
+GRANT ALL ON PROCEDURE playwright_combotables.set_performer_certifications() TO dbs25_team_oak;
+
+
+-- Permissions
+
+GRANT ALL ON SCHEMA playwright_combotables TO dbs25_team_oak;
