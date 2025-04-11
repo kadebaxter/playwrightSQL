@@ -11,12 +11,6 @@ CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.actual_schedule_play_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.actual_schedule_play_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.actual_schedule_play_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq1
@@ -26,12 +20,6 @@ CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.actual_schedule_play_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.actual_schedule_play_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.actual_schedule_play_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq2
@@ -41,12 +29,6 @@ CREATE SEQUENCE playwright_combotables.actual_schedule_play_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.actual_schedule_play_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.actual_schedule_play_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.complex_id_seq;
 
 CREATE SEQUENCE playwright_combotables.complex_id_seq
@@ -56,12 +38,6 @@ CREATE SEQUENCE playwright_combotables.complex_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.complex_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.complex_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.complex_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.complex_id_seq1
@@ -71,12 +47,6 @@ CREATE SEQUENCE playwright_combotables.complex_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.complex_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.complex_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.complex_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.complex_id_seq2
@@ -86,12 +56,6 @@ CREATE SEQUENCE playwright_combotables.complex_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.complex_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.complex_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.concession_item_id_seq;
 
 CREATE SEQUENCE playwright_combotables.concession_item_id_seq
@@ -101,12 +65,6 @@ CREATE SEQUENCE playwright_combotables.concession_item_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.concession_item_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.concession_item_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.concession_item_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.concession_item_id_seq1
@@ -116,12 +74,6 @@ CREATE SEQUENCE playwright_combotables.concession_item_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.concession_item_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.concession_item_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.concession_item_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.concession_item_id_seq2
@@ -131,12 +83,6 @@ CREATE SEQUENCE playwright_combotables.concession_item_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.concession_item_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.concession_item_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.customer_id_seq;
 
 CREATE SEQUENCE playwright_combotables.customer_id_seq
@@ -146,12 +92,6 @@ CREATE SEQUENCE playwright_combotables.customer_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.customer_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.customer_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.customer_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.customer_id_seq1
@@ -161,12 +101,6 @@ CREATE SEQUENCE playwright_combotables.customer_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.customer_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.customer_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.customer_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.customer_id_seq2
@@ -176,12 +110,6 @@ CREATE SEQUENCE playwright_combotables.customer_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.customer_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.customer_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.dual_part_certification_id_seq;
 
 CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq
@@ -191,12 +119,6 @@ CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.dual_part_certification_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.dual_part_certification_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.dual_part_certification_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq1
@@ -206,12 +128,6 @@ CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.dual_part_certification_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.dual_part_certification_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.dual_part_certification_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq2
@@ -221,12 +137,6 @@ CREATE SEQUENCE playwright_combotables.dual_part_certification_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.dual_part_certification_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.dual_part_certification_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.htest;
 
 CREATE SEQUENCE playwright_combotables.htest
@@ -236,12 +146,6 @@ CREATE SEQUENCE playwright_combotables.htest
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.htest OWNER TO postgres;
-GRANT ALL ON SEQUENCE playwright_combotables.htest TO postgres;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_1_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq
@@ -251,12 +155,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_1_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_1_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_1_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq1
@@ -266,12 +164,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_1_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_1_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_1_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq2
@@ -281,12 +173,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_1_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_1_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_1_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_2_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq
@@ -296,12 +182,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_2_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_2_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_2_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq1
@@ -311,12 +191,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_2_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_2_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_2_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq2
@@ -326,12 +200,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_2_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_2_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_2_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_5_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq
@@ -341,12 +209,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_5_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_5_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_5_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq1
@@ -356,12 +218,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_5_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_5_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_5_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq2
@@ -371,12 +227,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_5_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_5_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_5_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_6_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq
@@ -386,12 +236,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_6_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_6_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_6_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq1
@@ -401,12 +245,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_6_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_6_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_6_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq2
@@ -416,12 +254,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_6_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_6_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_6_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_7_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq
@@ -431,12 +263,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_7_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_7_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_7_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq1
@@ -446,12 +272,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_7_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_7_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_7_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq2
@@ -461,12 +281,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_7_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_7_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_7_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_8_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq
@@ -476,12 +290,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_8_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_8_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_8_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq1
@@ -491,12 +299,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_8_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_8_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_8_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq2
@@ -506,12 +308,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_8_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_8_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_8_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_9_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq
@@ -521,12 +317,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_9_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_9_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_9_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq1
@@ -536,12 +326,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_9_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_9_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_certification_9_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq2
@@ -551,12 +335,6 @@ CREATE SEQUENCE playwright_combotables.part_certification_9_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_certification_9_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_certification_9_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.part_id_seq;
 
 CREATE SEQUENCE playwright_combotables.part_id_seq
@@ -566,12 +344,6 @@ CREATE SEQUENCE playwright_combotables.part_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.part_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.part_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.performer_id_seq;
 
 CREATE SEQUENCE playwright_combotables.performer_id_seq
@@ -581,12 +353,6 @@ CREATE SEQUENCE playwright_combotables.performer_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.performer_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.performer_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.performer_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.performer_id_seq1
@@ -596,12 +362,6 @@ CREATE SEQUENCE playwright_combotables.performer_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.performer_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.performer_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.performer_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.performer_id_seq2
@@ -611,12 +371,6 @@ CREATE SEQUENCE playwright_combotables.performer_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.performer_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.performer_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.performer_rejection_log_id_seq;
 
 CREATE SEQUENCE playwright_combotables.performer_rejection_log_id_seq
@@ -626,12 +380,6 @@ CREATE SEQUENCE playwright_combotables.performer_rejection_log_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.performer_rejection_log_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.performer_rejection_log_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_concession_id_seq;
 
 CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq
@@ -641,12 +389,6 @@ CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_concession_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_concession_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq1
@@ -656,12 +398,6 @@ CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_concession_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_concession_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq2
@@ -671,12 +407,6 @@ CREATE SEQUENCE playwright_combotables.purchase_concession_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_concession_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_concession_item_id_seq;
 
 CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq
@@ -686,12 +416,6 @@ CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_concession_item_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_item_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_concession_item_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq1
@@ -701,12 +425,6 @@ CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_concession_item_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_item_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_concession_item_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq2
@@ -716,12 +434,6 @@ CREATE SEQUENCE playwright_combotables.purchase_concession_item_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_concession_item_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_concession_item_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_id_seq;
 
 CREATE SEQUENCE playwright_combotables.purchase_id_seq
@@ -731,12 +443,6 @@ CREATE SEQUENCE playwright_combotables.purchase_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.purchase_id_seq1
@@ -746,12 +452,6 @@ CREATE SEQUENCE playwright_combotables.purchase_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.purchase_id_seq2
@@ -761,12 +461,6 @@ CREATE SEQUENCE playwright_combotables.purchase_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_seat_id_seq;
 
 CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq
@@ -776,12 +470,6 @@ CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_seat_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_seat_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_seat_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq1
@@ -791,12 +479,6 @@ CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_seat_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_seat_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.purchase_seat_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq2
@@ -806,12 +488,6 @@ CREATE SEQUENCE playwright_combotables.purchase_seat_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.purchase_seat_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.purchase_seat_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.schedule_play_template_id_seq;
 
 CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq
@@ -821,12 +497,6 @@ CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.schedule_play_template_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.schedule_play_template_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.schedule_play_template_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq1
@@ -836,12 +506,6 @@ CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.schedule_play_template_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.schedule_play_template_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.schedule_play_template_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq2
@@ -851,12 +515,6 @@ CREATE SEQUENCE playwright_combotables.schedule_play_template_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.schedule_play_template_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.schedule_play_template_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.seat_id_seq;
 
 CREATE SEQUENCE playwright_combotables.seat_id_seq
@@ -866,12 +524,6 @@ CREATE SEQUENCE playwright_combotables.seat_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.seat_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.seat_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.seat_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.seat_id_seq1
@@ -881,12 +533,6 @@ CREATE SEQUENCE playwright_combotables.seat_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.seat_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.seat_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.seat_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.seat_id_seq2
@@ -896,12 +542,6 @@ CREATE SEQUENCE playwright_combotables.seat_id_seq2
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.seat_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.seat_id_seq2 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.theatre_id_seq;
 
 CREATE SEQUENCE playwright_combotables.theatre_id_seq
@@ -911,12 +551,6 @@ CREATE SEQUENCE playwright_combotables.theatre_id_seq
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.theatre_id_seq OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.theatre_id_seq TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.theatre_id_seq1;
 
 CREATE SEQUENCE playwright_combotables.theatre_id_seq1
@@ -926,12 +560,6 @@ CREATE SEQUENCE playwright_combotables.theatre_id_seq1
 	START 1
 	CACHE 1
 	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.theatre_id_seq1 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.theatre_id_seq1 TO dbs25_team_oak;
-
 -- DROP SEQUENCE playwright_combotables.theatre_id_seq2;
 
 CREATE SEQUENCE playwright_combotables.theatre_id_seq2
@@ -940,13 +568,7 @@ CREATE SEQUENCE playwright_combotables.theatre_id_seq2
 	MAXVALUE 2147483647
 	START 1
 	CACHE 1
-	NO CYCLE;
-
--- Permissions
-
-ALTER SEQUENCE playwright_combotables.theatre_id_seq2 OWNER TO dbs25_team_oak;
-GRANT ALL ON SEQUENCE playwright_combotables.theatre_id_seq2 TO dbs25_team_oak;
--- playwright_combotables.complex definition
+	NO CYCLE;-- playwright_combotables.complex definition
 
 -- Drop table
 
@@ -957,11 +579,6 @@ CREATE TABLE playwright_combotables.complex (
 	address varchar(80) NULL,
 	CONSTRAINT complex_pkey PRIMARY KEY (id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.complex OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.complex TO dbs25_team_oak;
 
 
 -- playwright_combotables.concession_item definition
@@ -977,11 +594,6 @@ CREATE TABLE playwright_combotables.concession_item (
 	CONSTRAINT concession_item_pkey PRIMARY KEY (id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.concession_item OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.concession_item TO dbs25_team_oak;
-
 
 -- playwright_combotables.customer definition
 
@@ -995,11 +607,6 @@ CREATE TABLE playwright_combotables.customer (
 	CONSTRAINT customer_pkey PRIMARY KEY (id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.customer OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.customer TO dbs25_team_oak;
-
 
 -- playwright_combotables.female definition
 
@@ -1011,11 +618,6 @@ CREATE TABLE playwright_combotables.female (
 	givenname varchar(50) NULL
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.female OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.female TO dbs25_team_oak;
-
 
 -- playwright_combotables.male definition
 
@@ -1026,11 +628,6 @@ GRANT ALL ON TABLE playwright_combotables.female TO dbs25_team_oak;
 CREATE TABLE playwright_combotables.male (
 	givenname varchar(50) NULL
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.male OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.male TO dbs25_team_oak;
 
 
 -- playwright_combotables.performer definition
@@ -1045,11 +642,6 @@ CREATE TABLE playwright_combotables.performer (
 	CONSTRAINT performer_pkey PRIMARY KEY (id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.performer OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.performer TO dbs25_team_oak;
-
 
 -- playwright_combotables.surname definition
 
@@ -1060,11 +652,6 @@ GRANT ALL ON TABLE playwright_combotables.performer TO dbs25_team_oak;
 CREATE TABLE playwright_combotables.surname (
 	familysurname varchar(50) NULL
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.surname OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.surname TO dbs25_team_oak;
 
 
 -- playwright_combotables.dual_part_certification definition
@@ -1084,11 +671,6 @@ CREATE TABLE playwright_combotables.dual_part_certification (
 	CONSTRAINT dual_part_certification_performer_2_id_fkey FOREIGN KEY (performer_part_4_id) REFERENCES playwright_combotables.performer(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.dual_part_certification OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.dual_part_certification TO dbs25_team_oak;
-
 
 -- playwright_combotables.part_certification_1 definition
 
@@ -1105,11 +687,6 @@ CREATE TABLE playwright_combotables.part_certification_1 (
 	CONSTRAINT part_certification_1_pkey PRIMARY KEY (id),
 	CONSTRAINT part_certification_1_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.part_certification_1 OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.part_certification_1 TO dbs25_team_oak;
 
 
 -- playwright_combotables.part_certification_2 definition
@@ -1128,11 +705,6 @@ CREATE TABLE playwright_combotables.part_certification_2 (
 	CONSTRAINT part_certification_2_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.part_certification_2 OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.part_certification_2 TO dbs25_team_oak;
-
 
 -- playwright_combotables.part_certification_5 definition
 
@@ -1149,11 +721,6 @@ CREATE TABLE playwright_combotables.part_certification_5 (
 	CONSTRAINT part_certification_5_pkey PRIMARY KEY (id),
 	CONSTRAINT part_certification_5_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.part_certification_5 OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.part_certification_5 TO dbs25_team_oak;
 
 
 -- playwright_combotables.part_certification_6 definition
@@ -1172,11 +739,6 @@ CREATE TABLE playwright_combotables.part_certification_6 (
 	CONSTRAINT part_certification_6_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.part_certification_6 OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.part_certification_6 TO dbs25_team_oak;
-
 
 -- playwright_combotables.part_certification_7 definition
 
@@ -1193,11 +755,6 @@ CREATE TABLE playwright_combotables.part_certification_7 (
 	CONSTRAINT part_certification_7_pkey PRIMARY KEY (id),
 	CONSTRAINT part_certification_7_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.part_certification_7 OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.part_certification_7 TO dbs25_team_oak;
 
 
 -- playwright_combotables.part_certification_8 definition
@@ -1216,11 +773,6 @@ CREATE TABLE playwright_combotables.part_certification_8 (
 	CONSTRAINT part_certification_8_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.part_certification_8 OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.part_certification_8 TO dbs25_team_oak;
-
 
 -- playwright_combotables.part_certification_9 definition
 
@@ -1238,11 +790,6 @@ CREATE TABLE playwright_combotables.part_certification_9 (
 	CONSTRAINT part_certification_9_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.part_certification_9 OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.part_certification_9 TO dbs25_team_oak;
-
 
 -- playwright_combotables.performer_rejection_log definition
 
@@ -1259,11 +806,6 @@ CREATE TABLE playwright_combotables.performer_rejection_log (
 	CONSTRAINT performer_rejection_log_performer_id_fkey FOREIGN KEY (performer_id) REFERENCES playwright_combotables.performer(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.performer_rejection_log OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.performer_rejection_log TO dbs25_team_oak;
-
 
 -- playwright_combotables.purchase definition
 
@@ -1279,11 +821,6 @@ CREATE TABLE playwright_combotables.purchase (
 	CONSTRAINT purchase_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES playwright_combotables.customer(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.purchase OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.purchase TO dbs25_team_oak;
-
 
 -- playwright_combotables.purchase_concession definition
 
@@ -1298,11 +835,6 @@ CREATE TABLE playwright_combotables.purchase_concession (
 	CONSTRAINT purchase_concession_pkey PRIMARY KEY (id),
 	CONSTRAINT purchase_concession_complex_id_fkey FOREIGN KEY (complex_id) REFERENCES playwright_combotables.complex(id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.purchase_concession OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.purchase_concession TO dbs25_team_oak;
 
 
 -- playwright_combotables.purchase_concession_item definition
@@ -1322,11 +854,6 @@ CREATE TABLE playwright_combotables.purchase_concession_item (
 	CONSTRAINT purchase_concession_item_purchase_concession_id_fkey FOREIGN KEY (purchase_concession_id) REFERENCES playwright_combotables.purchase_concession(id)
 );
 
--- Permissions
-
-ALTER TABLE playwright_combotables.purchase_concession_item OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.purchase_concession_item TO dbs25_team_oak;
-
 
 -- playwright_combotables.theatre definition
 
@@ -1341,11 +868,6 @@ CREATE TABLE playwright_combotables.theatre (
 	CONSTRAINT theatre_pkey PRIMARY KEY (id),
 	CONSTRAINT theatre_complexid_fkey FOREIGN KEY (complex_id) REFERENCES playwright_combotables.complex(id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.theatre OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.theatre TO dbs25_team_oak;
 
 
 -- playwright_combotables.actual_schedule_play definition
@@ -1403,11 +925,6 @@ update
     on
     playwright_combotables.actual_schedule_play for each row execute function playwright_combotables.multiple_parts_trigger();
 
--- Permissions
-
-ALTER TABLE playwright_combotables.actual_schedule_play OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.actual_schedule_play TO dbs25_team_oak;
-
 
 -- playwright_combotables.schedule_play_template definition
 
@@ -1456,11 +973,6 @@ update
     on
     playwright_combotables.schedule_play_template for each row execute function playwright_combotables.multiple_parts_trigger();
 
--- Permissions
-
-ALTER TABLE playwright_combotables.schedule_play_template OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.schedule_play_template TO dbs25_team_oak;
-
 
 -- playwright_combotables.seat definition
 
@@ -1475,11 +987,6 @@ CREATE TABLE playwright_combotables.seat (
 	CONSTRAINT seat_pkey PRIMARY KEY (id),
 	CONSTRAINT seat_theatre_id_fkey FOREIGN KEY (theatre_id) REFERENCES playwright_combotables.theatre(id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.seat OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.seat TO dbs25_team_oak;
 
 
 -- playwright_combotables.purchase_seat definition
@@ -1499,11 +1006,6 @@ CREATE TABLE playwright_combotables.purchase_seat (
 	CONSTRAINT purchase_seat_purchase_id_fkey FOREIGN KEY (purchase_id) REFERENCES playwright_combotables.purchase(id),
 	CONSTRAINT purchase_seat_seat_id_fkey FOREIGN KEY (seat_id) REFERENCES playwright_combotables.seat(id)
 );
-
--- Permissions
-
-ALTER TABLE playwright_combotables.purchase_seat OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.purchase_seat TO dbs25_team_oak;
 
 
 -- playwright_combotables.actor_certification_view source
@@ -1589,11 +1091,6 @@ AS WITH full_certification AS (
     date_expires
    FROM full_certification fc
   ORDER BY name, part;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.actor_certification_view OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.actor_certification_view TO dbs25_team_oak;
 
 
 -- playwright_combotables.actor_schedule_view source
@@ -1708,11 +1205,6 @@ AS WITH fullschedule AS (
     accepted
    FROM fullschedule
   ORDER BY scheduled_time, part;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.actor_schedule_view OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.actor_schedule_view TO dbs25_team_oak;
 
 
 -- playwright_combotables.actual_union_rules_all source
@@ -1835,11 +1327,6 @@ AS WITH cert1 AS (
            FROM cert9) unnamed_subquery
   ORDER BY day1;
 
--- Permissions
-
-ALTER TABLE playwright_combotables.actual_union_rules_all OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.actual_union_rules_all TO dbs25_team_oak;
-
 
 -- playwright_combotables.availableseats source
 
@@ -1855,11 +1342,6 @@ AS SELECT a.seatid
           WHERE ps2.actual_schedule_play_id = 2) b ON a.seatid = b.seatid
   WHERE b.seatid IS NULL
   ORDER BY a.seatid;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.availableseats OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.availableseats TO dbs25_team_oak;
 
 
 -- playwright_combotables.double_booked_actor_actual source
@@ -1929,11 +1411,6 @@ AS WITH performer_schedules AS (
    FROM performer_schedules ps1
      JOIN performer_schedules ps2 ON ps1.play_id <> ps2.play_id AND ps1.performer_id = ps2.performer_id
   WHERE (ps1.scheduled_time + '01:45:00'::interval) >= ps2.scheduled_time AND (ps1.scheduled_time - '01:45:00'::interval) < ps2.scheduled_time AND ps1.scheduled_time::date = ps2.scheduled_time::date;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.double_booked_actor_actual OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.double_booked_actor_actual TO dbs25_team_oak;
 
 
 -- playwright_combotables.double_booked_actor_template source
@@ -2013,11 +1490,6 @@ AS WITH performer_schedules AS (
      JOIN performer_schedules ps2 ON ps1.play_id <> ps2.play_id AND ps1.performer_id = ps2.performer_id
   WHERE (ps1.time_of_day::numeric + 1.75) >= ps2.time_of_day::numeric AND (ps1.time_of_day::numeric - 1.75) < ps2.time_of_day::numeric AND ps1.day_of_week::text = ps2.day_of_week::text;
 
--- Permissions
-
-ALTER TABLE playwright_combotables.double_booked_actor_template OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.double_booked_actor_template TO dbs25_team_oak;
-
 
 -- playwright_combotables.double_booked_theatre_actual source
 
@@ -2032,11 +1504,6 @@ AS SELECT asp1.id AS template1_id,
      JOIN playwright_combotables.actual_schedule_play asp2 ON asp1.id <> asp2.id AND asp1.theatre_id = asp2.theatre_id
   WHERE (asp1.scheduled_time + '01:45:00'::interval) >= asp2.scheduled_time AND (asp1.scheduled_time - '01:45:00'::interval) < asp2.scheduled_time AND asp1.scheduled_time::date = asp2.scheduled_time::date;
 
--- Permissions
-
-ALTER TABLE playwright_combotables.double_booked_theatre_actual OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.double_booked_theatre_actual TO dbs25_team_oak;
-
 
 -- playwright_combotables.double_booked_theatre_template source
 
@@ -2050,11 +1517,6 @@ AS SELECT spt1.id AS template1_id,
    FROM playwright_combotables.schedule_play_template spt1
      JOIN playwright_combotables.schedule_play_template spt2 ON spt1.id <> spt2.id AND spt1.theatre_id = spt2.theatre_id
   WHERE (spt1.time_of_day::numeric + 1.75) >= spt2.time_of_day::numeric AND (spt1.time_of_day::numeric - 1.75) < spt2.time_of_day::numeric AND spt1.day_of_week::text = spt2.day_of_week::text;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.double_booked_theatre_template OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.double_booked_theatre_template TO dbs25_team_oak;
 
 
 -- playwright_combotables.multiple_part_day_actors source
@@ -2075,11 +1537,6 @@ AS WITH partcount AS (
     count
    FROM partcount
   WHERE count > 1;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.multiple_part_day_actors OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.multiple_part_day_actors TO dbs25_team_oak;
 
 
 -- playwright_combotables.performer_reliability_check source
@@ -2105,11 +1562,6 @@ AS SELECT pc1.performer_id AS perf1,
      LEFT JOIN playwright_combotables.part_certification_9 pc9 ON asp.cert_9_id = pc9.id
   WHERE asp.cert_1_accept = false OR asp.cert_2_accept = false OR asp.cert_3_accept = false OR asp.cert_4_accept = false OR asp.cert_5_accept = false OR asp.cert_6_accept = false OR asp.cert_7_accept = false OR asp.cert_8_accept = false OR asp.cert_9_accept = false;
 
--- Permissions
-
-ALTER TABLE playwright_combotables.performer_reliability_check OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.performer_reliability_check TO dbs25_team_oak;
-
 
 -- playwright_combotables.schedule_holes source
 
@@ -2124,11 +1576,6 @@ AS SELECT id,
    FROM playwright_combotables.actor_schedule_view asv
   WHERE accepted IS NULL OR accepted IS FALSE
   ORDER BY scheduled_time;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.schedule_holes OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.schedule_holes TO dbs25_team_oak;
 
 
 -- playwright_combotables.template_union_rules_all source
@@ -2251,11 +1698,6 @@ AS WITH cert1 AS (
            FROM cert9) unnamed_subquery
   ORDER BY day_of_week;
 
--- Permissions
-
-ALTER TABLE playwright_combotables.template_union_rules_all OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.template_union_rules_all TO dbs25_team_oak;
-
 
 -- playwright_combotables.ticket_sales_per_showing source
 
@@ -2269,11 +1711,6 @@ AS SELECT asp.id AS play_id,
      LEFT JOIN playwright_combotables.purchase p ON ps.purchase_id = p.id
   GROUP BY asp.id, asp.scheduled_time
   ORDER BY (count(ps.id)), asp.scheduled_time DESC;
-
--- Permissions
-
-ALTER TABLE playwright_combotables.ticket_sales_per_showing OWNER TO dbs25_team_oak;
-GRANT ALL ON TABLE playwright_combotables.ticket_sales_per_showing TO dbs25_team_oak;
 
 
 
@@ -2318,11 +1755,6 @@ end;
 $function$
 ;
 
--- Permissions
-
-ALTER FUNCTION playwright_combotables.active_cert_trigger() OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.active_cert_trigger() TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.add_random_customer();
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.add_random_customer()
@@ -2351,11 +1783,6 @@ begin
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.add_random_customer() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.add_random_customer() TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.add_random_performer();
 
@@ -2391,11 +1818,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.add_random_performer() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.add_random_performer() TO dbs25_team_oak;
-
 -- DROP FUNCTION playwright_combotables.count_rows();
 
 CREATE OR REPLACE FUNCTION playwright_combotables.count_rows()
@@ -2424,11 +1846,6 @@ end;
 $function$
 ;
 
--- Permissions
-
-ALTER FUNCTION playwright_combotables.count_rows() OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.count_rows() TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.create_performers_and_certifications();
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.create_performers_and_certifications()
@@ -2446,11 +1863,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.create_performers_and_certifications() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.create_performers_and_certifications() TO dbs25_team_oak;
-
 -- DROP FUNCTION playwright_combotables.find_multipart_day_actors();
 
 CREATE OR REPLACE FUNCTION playwright_combotables.find_multipart_day_actors()
@@ -2462,11 +1874,6 @@ BEGIN
 END;
 $function$
 ;
-
--- Permissions
-
-ALTER FUNCTION playwright_combotables.find_multipart_day_actors() OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.find_multipart_day_actors() TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.generate_new_seats(int4);
 
@@ -2519,11 +1926,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.generate_new_seats(int4) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.generate_new_seats(int4) TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.generate_random_conc_sale();
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.generate_random_conc_sale()
@@ -2541,17 +1943,20 @@ begin
 	select complex.id into random_complex_id from complex order by random() limit 1; 
 	
 	-- what is the next sale id?
-	select count(*)+1 into purchase_id from purchase_concession;
+	select nextval('purchase_concession_id_seq2') into purchase_id; -- Heber says bad - use sequences
 
 	-- begin the sale.
-	insert into purchase_concession (id,complex_id,day_sold) values (purchase_id,random_complex_id,now());
+	insert into purchase_concession (id,complex_id,day_sold) values (
+		purchase_id,random_complex_id,now());
 
 	-- for each kind of item in the concession_items
 	for row_val in (select id from concession_item) loop
 		-- for this item, a random quantity 0-3
 		select floor(random()*4) into random_quantity;
 		if random_quantity > 0 then
-			insert into purchase_concession_item (purchase_concession_id,concession_item_id,quantity,actual_price) values (purchase_id,row_val,random_quantity,(select concession_item.shelf_price from concession_item where concession_item.id = row_val) * random_quantity); -- multiply by tax?
+			insert into purchase_concession_item (purchase_concession_id,concession_item_id,quantity,actual_price) 
+values (purchase_id,row_val,random_quantity,(select concession_item.shelf_price 
+from concession_item where concession_item.id = row_val) * random_quantity); -- multiply by tax?
 		end if;
 	end loop;
 	
@@ -2561,11 +1966,6 @@ begin
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.generate_random_conc_sale() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.generate_random_conc_sale() TO dbs25_team_oak;
 
 -- DROP FUNCTION playwright_combotables.get_num_available_seat(int4);
 
@@ -2633,11 +2033,6 @@ end;
 $function$
 ;
 
--- Permissions
-
-ALTER FUNCTION playwright_combotables.get_num_available_seat(int4) OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.get_num_available_seat(int4) TO dbs25_team_oak;
-
 -- DROP FUNCTION playwright_combotables.get_seat(int4);
 
 CREATE OR REPLACE FUNCTION playwright_combotables.get_seat(asp_id integer)
@@ -2694,12 +2089,6 @@ end;
 $function$
 ;
 
--- Permissions
-
-ALTER FUNCTION playwright_combotables.get_seat(int4) OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.get_seat(int4) TO public;
-GRANT ALL ON FUNCTION playwright_combotables.get_seat(int4) TO dbs25_team_oak;
-
 -- DROP FUNCTION playwright_combotables.get_ticket_sales_between(date, date);
 
 CREATE OR REPLACE FUNCTION playwright_combotables.get_ticket_sales_between(start date, myend date)
@@ -2726,11 +2115,6 @@ begin
 end;
 $function$
 ;
-
--- Permissions
-
-ALTER FUNCTION playwright_combotables.get_ticket_sales_between(date, date) OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.get_ticket_sales_between(date, date) TO dbs25_team_oak;
 
 -- DROP FUNCTION playwright_combotables.get_ticket_sales_between(date, date, int4);
 
@@ -2774,11 +2158,6 @@ end;
 $function$
 ;
 
--- Permissions
-
-ALTER FUNCTION playwright_combotables.get_ticket_sales_between(date, date, int4) OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.get_ticket_sales_between(date, date, int4) TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.load_concession_items();
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.load_concession_items()
@@ -2792,11 +2171,6 @@ begin
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.load_concession_items() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.load_concession_items() TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.make_actual_performer_schedule(timestamp);
 
@@ -2814,11 +2188,6 @@ begin
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.make_actual_performer_schedule(timestamp) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.make_actual_performer_schedule(timestamp) TO dbs25_team_oak;
 
 -- DROP FUNCTION playwright_combotables.make_actual_play_time(text, int4, timestamp);
 
@@ -2860,11 +2229,6 @@ BEGIN
 END;
 $function$
 ;
-
--- Permissions
-
-ALTER FUNCTION playwright_combotables.make_actual_play_time(text, int4, timestamp) OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.make_actual_play_time(text, int4, timestamp) TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.make_play_template_data();
 
@@ -2918,11 +2282,6 @@ begin
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.make_play_template_data() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.make_play_template_data() TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.make_template_shifts();
 
@@ -3117,11 +2476,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.make_template_shifts() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.make_template_shifts() TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.million_rows(timestamp);
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.million_rows(IN first_date timestamp without time zone)
@@ -3133,7 +2487,7 @@ declare
 	k int;
 	l int;
 	m int;
-	customer_count int;
+	play_count int;
 	next_date timestamp = first_date;
 begin
 	--truncate table actual_schedule_play() restart identity cascade;
@@ -3164,19 +2518,14 @@ begin
 	for l in 1..100 loop
 		call add_random_customer();
 	end loop;
-	select count(*) into customer_count from customer;
-	for m in 1..(select count(*) from actual_schedule_play) loop
+	select count(*) into play_count from actual_schedule_play;
+	for m in 1..play_count loop
 		call sell_tickets(500, m, null, null, null);
 	end loop;
 	raise notice 'Finished seat and everything';
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.million_rows(timestamp) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.million_rows(timestamp) TO dbs25_team_oak;
 
 -- DROP FUNCTION playwright_combotables.multiple_parts_constraint();
 
@@ -3212,11 +2561,6 @@ begin
 end;
 $function$
 ;
-
--- Permissions
-
-ALTER FUNCTION playwright_combotables.multiple_parts_constraint() OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.multiple_parts_constraint() TO dbs25_team_oak;
 
 -- DROP FUNCTION playwright_combotables.multiple_parts_trigger();
 
@@ -3263,11 +2607,6 @@ begin
 end;
 $function$
 ;
-
--- Permissions
-
-ALTER FUNCTION playwright_combotables.multiple_parts_trigger() OWNER TO dbs25_team_oak;
-GRANT ALL ON FUNCTION playwright_combotables.multiple_parts_trigger() TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.performer_accept_scheduled_day(int4, date);
 
@@ -3391,11 +2730,6 @@ update actual_schedule_play asp
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.performer_accept_scheduled_day(int4, date) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.performer_accept_scheduled_day(int4, date) TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.performer_reject_scheduled_day(int4, date);
 
@@ -3527,11 +2861,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.performer_reject_scheduled_day(int4, date) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.performer_reject_scheduled_day(int4, date) TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.performer_respond_to_schedule_day(int4, bool, date);
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.performer_respond_to_schedule_day(IN pid integer, IN answer boolean, IN myday date)
@@ -3565,11 +2894,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.performer_respond_to_schedule_day(int4, bool, date) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.performer_respond_to_schedule_day(int4, bool, date) TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.populate_theatre_complex();
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.populate_theatre_complex()
@@ -3585,11 +2909,6 @@ begin
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.populate_theatre_complex() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.populate_theatre_complex() TO dbs25_team_oak;
 
 -- DROP PROCEDURE playwright_combotables.schedule_performer_for_specific_play(int4, int4, int4);
 
@@ -3799,11 +3118,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.schedule_performer_for_specific_play(int4, int4, int4) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.schedule_performer_for_specific_play(int4, int4, int4) TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money);
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.sell_tickets(IN qty integer, IN asp_id integer, IN cust_id integer, IN time_sold timestamp without time zone, IN price_per_seat money)
@@ -3845,8 +3159,9 @@ begin
 	end if;
 
 	-- default asp_id is random() where it's start date > the timestamp of when said ticket was sold. 
+	--initialize my variable saying when the play will start. 
 	if asp_id is null then
-		select id into asp_id 
+		select id,scheduled_time into asp_id , myTime
 					from actual_schedule_play 
 					where scheduled_time > time_sold 
 					order by random() 
@@ -3857,11 +3172,7 @@ begin
 		raise exception 'My Actual_Play_Id: % was inputted null and Could not find a future showing to sell tickets to.', asp_id;
 	end if;
 
-	--initialize my variable saying when the play will start. 
-	select scheduled_time into myTime
-				from actual_schedule_play 
-				where id = asp_id;
-
+	
 	-- throw an error if you're buying a ticket for a play that already passed.
 	if  myTime < time_sold then
 		raise exception 'cannot purchase a ticket for a show that has already passed. You entered show id: %'
@@ -3907,12 +3218,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money) TO public;
-GRANT ALL ON PROCEDURE playwright_combotables.sell_tickets(int4, int4, int4, timestamp, money) TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.set_performer_certifications(timestamp);
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.set_performer_certifications(IN start_date timestamp without time zone)
@@ -3952,11 +3257,6 @@ end;
 $procedure$
 ;
 
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.set_performer_certifications(timestamp) OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.set_performer_certifications(timestamp) TO dbs25_team_oak;
-
 -- DROP PROCEDURE playwright_combotables.set_performer_certifications();
 
 CREATE OR REPLACE PROCEDURE playwright_combotables.set_performer_certifications()
@@ -3995,13 +3295,3 @@ begin
 end;
 $procedure$
 ;
-
--- Permissions
-
-ALTER PROCEDURE playwright_combotables.set_performer_certifications() OWNER TO dbs25_team_oak;
-GRANT ALL ON PROCEDURE playwright_combotables.set_performer_certifications() TO dbs25_team_oak;
-
-
--- Permissions
-
-GRANT ALL ON SCHEMA playwright_combotables TO dbs25_team_oak;
